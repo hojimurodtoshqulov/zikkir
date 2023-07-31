@@ -1,0 +1,49 @@
+@import "./scss/varuables.scss";
+::-webkit-scrollbar {
+	width: 8px;
+	height: 0px;
+}
+::-webkit-scrollbar-button {
+	display: none;
+}
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 7px #319ba1;
+	background: #000;
+}
+::-webkit-scrollbar-thumb {
+	width: 5px;
+	background: #319ba1;
+	border-radius: 5px !important;
+	box-shadow: 0 0 10px #000;
+}
+.active {
+	color: $primary;
+}
+:root {
+	// --background: #262745;
+	--background: #fff;
+	--color: #fff;
+	--transparentBG: #22244fe4;
+	--cardBG: #252650;
+	--btnBG: #319ba1;
+	--btnEmptyBG: #ff00;
+	--btnHoverBG: #ff00;
+	--btnHoverColor: #fff;
+	--headerBottomShadow: #000;
+}
+[data-theme="dark"] {
+	--background: rgb(236, 239, 255);
+	--color: #262745;
+	--transparentBG: rgba(255, 255, 255, 0.85);
+	--cardBG: #fff;
+	--btnBG: #fff;
+	--btnEmptyBG: #fff;
+	--btnHoverBG: #319ba1;
+	--btnHoverColor: #fff;
+	--headerBottomShadow: rgba(0, 0, 0, 0.436);
+
+}
+body {
+	background: var(--background);
+	color: var(--color);
+}

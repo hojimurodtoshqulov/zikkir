@@ -1,0 +1,248 @@
+@import "../../scss/varuables.scss";
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+::placeholder {
+	color: var(--color);
+}
+.submit {
+	margin: 0;
+	padding: 0;
+	width: $w_100;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 4em;
+	// color: $light;
+	width: $w_100;
+	flex-direction: column;
+	gap: 4em;
+	h2 {
+		font-family: $font_titles;
+		font-size: 2.5em;
+		text-align: center;
+		color: var(--color);
+	}
+
+	p {
+		width: 100%;
+		text-align: justify;
+		font-family: $font_texts;
+		font-size: 1.1em;
+		color: var(--color);
+	}
+	form {
+		width: $w_100;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+		gap: 2em 0;
+		input {
+			width: 48%;
+			background: none;
+			padding: 0% 2%;
+			height: 60px;
+			font-size: 1.5em;
+			border: none;
+			border: 2px solid $primary;
+			font-size: 1.2em;
+		}
+		input:focus {
+			border: none;
+			border: 2px solid $denger;
+			outline: none;
+		}
+		label {
+			order: 5;
+			width: 70%;
+			height: 60px;
+			display: flex;
+			align-items: center !important;
+			justify-content: flex-start !important;
+			gap: 0px;
+			color: var(--color);
+			font-size: 1.2rem;
+			input {
+				display: block !important;
+				height: 30%;
+				margin: 0 !important;
+				padding: 0 !important;
+				width: 5% !important;
+			}
+			.link {
+				color: $primary !important;
+				margin-left: 3px;
+				text-decoration: underline;
+			}
+		}
+		span {
+			align-self: flex-start;
+			order: 6;
+			width: 30%;
+			height: 60px;
+			button {
+				font-size: 20px;
+				color: var(--color);
+				height: 100% !important;
+			}
+			input {
+				display: block !important;
+			}
+		}
+	}
+
+	h2 {
+		font-size: 2.2em;
+	}
+
+	p {
+		font-size: 1.4em;
+		width: 90%;
+	}
+}
+.openSuccess {
+	transition: all 1s ease-in;
+	position: fixed;
+	top: 37%;
+	right: 4%;
+	z-index: 12345;
+	width: 40%;
+	background: $light;
+	// color: $dark;
+
+	border-radius: 15px 15px 0 15px;
+	padding: 3% 5%;
+	text-align: center;
+	.corner {
+		width: 30px;
+		height: 20px;
+		transform: rotate(20deg);
+		background: #fff;
+		border-radius: 0 100% 0 0;
+		position: absolute;
+		bottom: -5%;
+		right: -1%;
+		z-index: -1;
+	}
+}
+.closeSuccess {
+	top: 37%;
+	right: -40%;
+}
+@media (max-width: $xl) {
+	.submit {
+	}
+}
+
+@media (max-width: $md) {
+	.submit {
+		width: $w_100;
+		flex-direction: column;
+		gap: 2.3em;
+
+		h2 {
+			font-size: 1.8em;
+		}
+
+		p {
+			font-size: 1.4em;
+			width: 90%;
+		}
+
+		form {
+			gap: 1.5em 0;
+			input {
+				font-size: 1.2em;
+			}
+			label {
+				order: 5;
+				width: 100%;
+				height: 60px;
+				display: flex;
+				align-items: center !important;
+				justify-content: flex-start !important;
+				flex-wrap: wrap;
+				gap: 0px;
+				font-size: 1rem;
+				input {
+					display: block !important;
+					height: 30%;
+					margin: 0 3px 0 0 !important;
+					padding: 0 !important;
+					width: 5% !important;
+				}
+				.link {
+					color: $primary !important;
+					margin-left: 3px;
+					text-decoration: underline;
+				}
+			}
+			span {
+				width: 100%;
+			}
+			.input-check-div {
+				width: $w_100;
+
+				label {
+					font-size: 1.4em;
+				}
+			}
+		}
+	}
+	.closeSuccess {
+		.corner {
+			bottom: -5%;
+			right: -1.5%;
+		}
+	}
+}
+
+@media (max-width: $sm) {
+	.submit {
+		h2 {
+			font-size: 1.6em;
+		}
+		p {
+			font-size: 1em;
+			width: 100%;
+		}
+
+		form {
+			gap: 1.5em 0;
+			.input-tell {
+				width: $w_100;
+			}
+			.input-name {
+				order: 2;
+				width: $w_100;
+			}
+			.input-price {
+				order: 3;
+				width: $w_100;
+			}
+			textarea {
+				order: 4;
+			}
+		}
+	}
+}
+
+@media (max-width: $xs) {
+	.submit {
+		gap: 2em;
+		h2 {
+			font-size: 1.3em;
+		}
+	}
+	.closeSuccess {
+		.corner {
+			bottom: -5%;
+			right: -2%;
+		}
+	}
+}
