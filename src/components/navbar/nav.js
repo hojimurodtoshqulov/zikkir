@@ -13,7 +13,7 @@ const Nav = ({ onClick }) => {
 	const [navColorBg, setnavColorBg] = useState(0);
 	const [navSize, setnavSize] = useState("12vh");
 	const [navSizeMobile, setnavSizeMobile] = useState("9.4vh");
-	const [navLogoFSZ, setNavLogoFSZ] = useState("20px");
+	const [navBg, setNavBg] = useState("transparent");
 	const [navLinkColor, setNavLinkColor] = useState("");
 	// const [navContainerBR, setNavContainerBR] = useState("2px solid #fff");
 	const listenScrollEvent = () => {
@@ -21,7 +21,7 @@ const Nav = ({ onClick }) => {
 		window.scrollY > 80 ? setnavSize("10vh") : setnavSize("12vh");
 		window.scrollY > 80 ? setNavLinkColor("#fff") : setNavLinkColor("");
 		window.scrollY > 80 ? setnavSizeMobile("9.4vh") : setnavSizeMobile("9.4vh");
-		window.scrollY > 80 ? setNavLogoFSZ("15px") : setNavLogoFSZ("20px");
+		window.scrollY > 80 ? setNavBg("#a9a7a749") : setNavBg("transparent");
 		// window.scrollY > 80
 		// 	? setNavContainerBR("2px solid #ff00")
 		// 	: setNavContainerBR("2px solid #fff");
@@ -65,6 +65,7 @@ const Nav = ({ onClick }) => {
 				className={scss.nav}
 				style={{
 					backdropFilter: `blur(${navColorBg}px)`,
+					background: navBg,
 					transition: "all 0.8s",
 					height: width(),
 				}}
@@ -90,7 +91,7 @@ const Nav = ({ onClick }) => {
 							</NavLink>{" "}
 							<NavLink
 								style={{ color: navLinkColor }}
-								to="/projects"
+								to="/cho'lquvar"
 								onClick={scrollToTop}
 							>
 								{t("nav.projects")} <span></span>

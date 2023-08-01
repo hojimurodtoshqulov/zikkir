@@ -1,9 +1,9 @@
 import scss from "./header.module.scss";
 import { Link, useNavigate } from "react-router-dom";
-import img1 from "../../media/u2.png";
+import img1 from "../../media/u1.png";
 import img2 from "../../media/u4.png";
 import img3 from "../../media/u3.png";
-import img4 from "../../media/u5.png";
+import img4 from "../../media/u2.png";
 import img5 from "../../media/logo_white.png";
 import Button from "../button/button";
 import Modal from "../modal/modal";

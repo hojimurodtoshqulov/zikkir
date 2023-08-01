@@ -2,7 +2,6 @@ import React from "react";
 import Submit from "../submitApp/submit";
 import "./modal.scss";
 import { useState } from "react";
-import LeasingService from "../leasingImages/leasingService";
 import { VscChromeClose } from "react-icons/vsc";
 
 const Modal = ({ open, onClose, theme }) => {
@@ -17,11 +16,7 @@ const Modal = ({ open, onClose, theme }) => {
 			<div className={`modalContainer `}>
 				{/* <Submit onClose={onClose} /> */}
 
-				{theme === "submit" ? (
-					<Submit onClose={onClose} />
-				) : (
-					<LeasingService theme={theme} />
-				)}
+				{theme === "submit" ? <Submit onClose={onClose} /> : <>...</>}
 				<p onClick={onClose} className="close">
 					<VscChromeClose />
 				</p>

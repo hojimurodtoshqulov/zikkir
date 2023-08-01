@@ -1,9 +1,6 @@
 import { useEffect, useState } from "react";
 import scss from "./footer.module.scss";
-import logo from "../../media/logo_head.png";
-import img1 from "../../media/Frame163.png";
-import img2 from "../../media/Frame164.png";
-import img3 from "../../media/Frame165.png";
+import logo from "../../media/logo_footer.png";
 import { Link } from "react-router-dom";
 import { FaFacebookF, FaTwitter } from "react-icons/fa";
 import { RiInstagramFill } from "react-icons/ri";
@@ -20,6 +17,7 @@ const Footer = () => {
 	return (
 		<footer className={scss.footer}>
 			<div className="container">
+				<div className={scss.footer__line}></div>
 				<div className={scss.footer__row1}>
 					<div className={scss.footer__row1_col1} data-aos="fade-left">
 						<Link
@@ -28,39 +26,48 @@ const Footer = () => {
 							onClick={scrollToTop}
 						>
 							<img src={logo} alt="" />
-							<h2>ijara leasing</h2>
 						</Link>
-						<div className={scss.footer__row1_col1_imgDiv}>
-							<Link to="/" className={scss.footer__row1_col1_imgDiv_img}>
-								{/* <img src={img1} alt="" /> */}
-								<FaFacebookF />
-							</Link>
-							<Link to="/" className={scss.footer__row1_col1_imgDiv_img}>
-								{/* <img src={img2} alt="" /> */}
-								<FaTwitter />
-							</Link>
-							<Link to="/" className={scss.footer__row1_col1_imgDiv_img}>
-								{/* <img src={img3} alt="" /> */}
-								<RiInstagramFill />
-							</Link>
-						</div>
 					</div>
-					<div className={scss.footer__row1_line}></div>
+					<div className={scss.footer__row1_col3} data-aos="fade-right">
+						<h4>Контактная информация</h4>
+						<p>
+							<a href="mail:info@zikkir">
+								<span>info@zikkir</span>
+							</a>
+						</p>
+						<p>
+							<a href="tel:+998990003300">+998 99 000 33 00 </a>
+							<a href="tel:+998991113300 ">+998 99 111 33 00 </a>
+						</p>
+						<p>
+							Г. Ташкент, Яшнабадский р-н, ул. Паркентская, д. 180, Ориентир:
+							бывшая «Корзинка Авиатор»
+						</p>
+					</div>
 					<div className={scss.footer__row1_col2} data-aos="fade-down">
+						<h4>Основные ссылки</h4>
 						<Link
 							to="/company"
 							className={scss.footer__row1_col2_link}
 							onClick={scrollToTop}
 						>
-							<span>О компании</span> <p></p>
+							О компании <p></p>
 						</Link>
 						<Link
-							to="/requisites"
+							to="/news"
 							className={scss.footer__row1_col2_link}
 							onClick={scrollToTop}
 						>
-							Реквизиты <p></p>
+							Новости <p></p>
 						</Link>
+						<Link
+							to="/company"
+							className={scss.footer__row1_col2_link}
+							onClick={scrollToTop}
+						>
+							О нас <p></p>
+						</Link>
+
 						<Link
 							to="/contact"
 							className={scss.footer__row1_col2_link}
@@ -68,34 +75,73 @@ const Footer = () => {
 						>
 							Контакты <p></p>
 						</Link>
+					</div>
+					<div className={scss.footer__row1_col2} data-aos="fade-down">
+						<h4>Наши проекты</h4>
+						<Link
+							to="/paxtazor"
+							className={scss.footer__row1_col2_link}
+							onClick={scrollToTop}
+						>
+							Paxtazor <p></p>
+						</Link>
+						<Link
+							to="/cholquvar"
+							className={scss.footer__row1_col2_link}
+							onClick={scrollToTop}
+						>
+							Cholquvar <p></p>
+						</Link>
+						<Link
+							to="/contact"
+							className={scss.footer__row1_col2_link}
+							onClick={scrollToTop}
+						>
+							Lorem ipsum <p></p>
+						</Link>
 						<Link
 							to="/programs"
 							className={scss.footer__row1_col2_link}
 							onClick={scrollToTop}
 						>
-							<span>Лизинговые программы</span> <p></p>
+							Lorem ipsum <p></p>
 						</Link>
+					</div>
+					<div className={scss.footer__row1_col2} data-aos="fade-down">
+						<h4>Социальные сети</h4>
+
 						<Link
-							to="/leasing"
+							to="/Telegram"
 							className={scss.footer__row1_col2_link}
 							onClick={scrollToTop}
 						>
-							Экспресс лизинг <p></p>
+							Telegram <p></p>
 						</Link>
-					</div>
-					<div className={scss.footer__row1_line}></div>
-					<div className={scss.footer__row1_col3} data-aos="fade-right">
-						<h1>Наш адрес:</h1>
-						<p>Юнусабадский район, Ц-5, д.78, кв.13</p>
-						<h1>Телефон:</h1>
-						<p>
-							<a href="tel:+998991609000">+998 (99) 160-90-00</a>
-							<a href="tel:+998991619000">+998 (99) 161-90-00</a>
-						</p>
+						<Link
+							to="/Instagram"
+							className={scss.footer__row1_col2_link}
+							onClick={scrollToTop}
+						>
+							Instagram <p></p>
+						</Link>
+						<Link
+							to="/Facebook"
+							className={scss.footer__row1_col2_link}
+							onClick={scrollToTop}
+						>
+							Facebook <p></p>
+						</Link>
+						<Link
+							to="/YouTube"
+							className={scss.footer__row1_col2_link}
+							onClick={scrollToTop}
+						>
+							YouTube <p></p>
+						</Link>
 					</div>
 				</div>
 			</div>
-			<div className={scss.footer__row2}>
+			{/* <div className={scss.footer__row2}>
 				<motion.p
 					initial={{
 						transform: "rotate(30deg)",
@@ -107,10 +153,10 @@ const Footer = () => {
 					}}
 					transition={{ transition, duration: 1 }}
 				>
-					OOO &nbsp; <Link to="/">“IJARA LEASING”</Link>&nbsp; 2021 - 2023
+					OOO &nbsp; <Link to="/">" ZIK KIR "</Link>&nbsp; 2021 - 2023
 					<span></span>
 				</motion.p>
-			</div>
+			</div> */}
 		</footer>
 	);
 };

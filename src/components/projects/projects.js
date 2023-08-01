@@ -13,22 +13,22 @@ const Projects = () => {
 	const data = [
 		{
 			img: img1,
-			link: "https://kitob.uz/",
+			link: "/cho'lquvar",
 			title: "Cho'lquvar",
 		},
 		{
 			img: img2,
-			link: "https://uzedu.uz/y3",
+			link: "/paxtazor",
 			title: "Paxtazor",
 		},
 		{
 			img: img3,
-			link: "https://itsm.uz/uz/edu-kids",
+			link: "/cho'lquvar",
 			title: "Bla bla",
 		},
 		{
 			img: img4,
-			link: "https://educare.uzedu.uz/",
+			link: "/paxtazor",
 			title: "Big house",
 		},
 	];
@@ -65,10 +65,10 @@ const Projects = () => {
 								key={index}
 								className={index === imageIndex ? "slide active" : "slide"}
 							>
-								<a href={item.link} target="_blank">
+								<Link to={item.link} target="_blank">
 									<img src={item.img} alt={item.img} />
 									<p className="link">{item.title}</p>
-								</a>
+								</Link>
 							</div>
 						))}
 					</Slider>

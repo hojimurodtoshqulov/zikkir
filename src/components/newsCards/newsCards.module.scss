@@ -1,0 +1,90 @@
+@import "../../scss/varuables.scss";
+.newsCards {
+	padding: 120px 0;
+	transition: 0.3s;
+	&Div {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 80px 60px;
+		.slide {
+			margin-right: 15px;
+			width: 500px;
+			padding: 0 0 50px 0;
+			border-radius: 20px;
+			display: flex;
+			flex-direction: column;
+			gap: 20px;
+			box-shadow: 0 0 15px #00000058;
+			color: $dark;
+			transition: 0.3s;
+			position: relative;
+			&:hover {
+				transform: scale(1.01);
+			}
+			&Img {
+				width: 100%;
+				height: 350px;
+			}
+			&ImgLine {
+				width: 80%;
+				margin: 0 auto;
+			}
+			&Text {
+				color: #424242;
+				text-align: center;
+				font-size: 18px;
+				width: 80%;
+				margin-left: 10%;
+			}
+			.titlesDiv {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				position: absolute;
+				top: 20px;
+				left: 20px;
+				z-index: 33;
+				width: 100%;
+				font-family: sans-serif;
+				color: $light;
+				h5 {
+					width: 50%;
+				}
+				p {
+					width: auto;
+					text-align: center;
+					font-family: "Marko One", serif;
+				}
+			}
+			p {
+			}
+			.arrowDiv {
+				width: 100%;
+				display: flex;
+				align-items: center;
+				justify-content: flex-end;
+				a {
+					justify-self: flex-end;
+					display: inline-block;
+					width: 30px;
+					height: 30px;
+					border-radius: 50%;
+					position: relative;
+					&:hover {
+						transform: perspective(100px) rotateX(-180deg);
+					}
+					span {
+						color: #000;
+						position: absolute;
+						top: -8px;
+						right: 6px;
+						font-size: 3rem;
+						font-weight: 100;
+					}
+				}
+			}
+		}
+	}
+}

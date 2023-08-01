@@ -8,7 +8,7 @@
 	color: $primary;
 }
 .nav {
-	// background: $bg;
+	// background: #a9a7a749;
 	// backdrop-filter: blur(10px);
 	position: fixed;
 	top: 0;
@@ -39,6 +39,7 @@
 			align-items: center;
 			justify-content: flex-start;
 			gap: 11px;
+			filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.869));
 			img {
 				width: auto;
 				height: 60%;
@@ -74,6 +75,8 @@
 				flex-wrap: wrap;
 				transition: 0s !important;
 				position: relative;
+				text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.884);
+
 				&:hover {
 					span {
 						width: 100%;
@@ -220,10 +223,12 @@
 			}
 		}
 		&_toggleTheme {
-			border: 1px solid red;
 			span {
 				cursor: pointer;
 			}
+		}
+		a {
+			text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.884);
 		}
 	}
 }

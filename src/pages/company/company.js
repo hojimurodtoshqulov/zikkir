@@ -1,62 +1,77 @@
-import React from "react";
-import "./company.scss";
-import InfoCard from "../../components/infoCard/infoCard";
-import Title from "../../components/title/title";
+import scss from "./company.module.scss";
+import img1 from "../../media/u6.1.png";
+import img2 from "../../media/logo_white.png";
 
+import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-
-/* 
-
-«Ijara Leasing» 
-
-«Ijara Leasing» 
-
-*/
+import MainSymbol from "../../components/mainSymbol/mainSymbol";
 
 const Company = () => {
-  const { t, i18n } = useTranslation();
-  return (
-    <main className="company">
-      <div className="container">
-        <section className="company__section">
-          <Title title={t("companyPage.about.title")} typed />
-          <p data-aos="flip-down" className="company__par">
-            <span className="par__title">«Ijara Leasing»</span>{" "}
-            {t("companyPage.about.p1")}
-          </p>
-          <p data-aos="flip-up" className="company__par">
-            <span className="par__title">«Ijara Leasing»</span>
-            {t("companyPage.about.p2")}
-          </p>
-          <p data-aos="flip-down" className="company__par">
-            <span className="par__title">«Ijara Leasing»</span>
-            {t("companyPage.about.p3")}
-          </p>
-        </section>
-        <section className="company__section">
-          <Title title={t("companyPage.mission.title")} typed />
-          <p data-aos="zoom-out" className="company__par">
-            <span className="par__title">«Ijara Leasing»</span>
-            {t("companyPage.mission.p1")}
-          </p>
-        </section>
-        {/* <div className="card-wrapper">
-          <InfoCard
-            title={t("companyPage.card1.title")}
-            text={t("companyPage.card1.text")}
-          />
-          <InfoCard
-            title={t("companyPage.card2.title")}
-            text={t("companyPage.card2.text")}
-          />
-          <InfoCard
-            title={t("companyPage.card3.title")}
-            text={t("companyPage.card3.text")}
-          />
-        </div> */}
-      </div>
-    </main>
-  );
+	const transition = { type: "spring", duration: 2 };
+	const { t } = useTranslation();
+	return (
+		<div className={scss.aboutUsDiv}>
+			<div className="container">
+				<div className={scss.aboutUs}>
+					<div className={scss.aboutUs__col1}>
+						<div className={scss.aboutUs__col1_titles} data-aos="fade-right">
+							<h2>
+								<MainSymbol symbolWith={30} brr={9} /> {t("nav.company")}
+							</h2>
+						</div>
+						<div className={scss.aboutUs__col1_texts} data-aos="fade-right">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								Phasellus dapibus mauris in lectus tempus, eget tincidunt lacus
+								varius. Sed euismod orci dictum faucibus malesuada. Praesent sed
+								eros tincidunt,viverra neque auctor, lobortis enim. Lorem ipsum
+								dolor sit amet, consectetur adipiscing elit. Phasellus dapibus
+								mauris in lectus tempus, eget tincidunt lacus varius.
+							</p>
+						</div>
+						<div className={scss.counts} data-aos="fade-right">
+							<h4>
+								4
+								<span>
+									<MainSymbol symbolWith={15} brr={5} /> лет на рынке
+								</span>
+							</h4>
+							<h4>
+								5
+								<span>
+									<MainSymbol symbolWith={15} brr={5} /> успешных проектов
+								</span>
+							</h4>
+						</div>
+						<div className={scss.counts} data-aos="fade-right">
+							<h4>
+								2000 +
+								<span>
+									<MainSymbol symbolWith={15} brr={5} /> лет на рынке
+								</span>
+							</h4>
+							<h4>
+								50000 +
+								<span>
+									<MainSymbol symbolWith={15} brr={5} /> успешных проектов
+								</span>
+							</h4>
+						</div>
+					</div>
+					<div className={scss.aboutUs__col2}>
+						<img
+							className={scss.aboutUs__col2_img1}
+							src={img1}
+							alt={img1}
+							data-aos="fade-up"
+							data-aos-delay="500"
+						/>
+						<img className={scss.aboutUs__col2_img2} src={img2} alt={img2} />
+					</div>
+				</div>
+			</div>
+		</div>
+	);
 };
 
 export default Company;

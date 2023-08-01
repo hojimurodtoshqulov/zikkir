@@ -1,0 +1,76 @@
+@import "../../scss/varuables.scss";
+.mapForm {
+	background-image: url("../../media/u14.png");
+	background-size: cover;
+	padding: 120px 0;
+	position: relative;
+	height: 840px;
+	&__elements {
+		display: flex;
+		&_col1 {
+			width: 50%;
+			.map {
+				position: absolute;
+				top: 120px;
+				bottom: 120px;
+				left: 0;
+				height: 600px;
+				width: 50%;
+				border-top: 8px solid $primary;
+				border-right: 8px solid $primary;
+				border-bottom: 8px solid $primary;
+				border-radius: 0 15px 15px 0;
+				overflow: hidden;
+			}
+		}
+		&_col2 {
+			width: 50%;
+			padding: 0 0 0 100px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: flex-start;
+			gap: 30px;
+			h2 {
+				line-height: 60px;
+			}
+			p {
+				line-height: 30px;
+				font-size: 20px;
+				letter-spacing: 1px;
+			}
+			form {
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+				justify-content: center;
+				gap: 30px;
+				input {
+					width: 90%;
+					border: none;
+					background: none;
+					border-bottom: 3px solid $light;
+					padding: 10px 15px;
+					color: $light;
+					font-size: 18px;
+				}
+				button {
+					background: $primary;
+					color: $light;
+					font-size: 15px;
+					border: none;
+					border-radius: 8px;
+					padding: 15px 50px;
+				}
+				p {
+					font-size: 13px;
+					line-height: 13px;
+					text-align: center;
+					width: 70%;
+					align-items: flex-start;
+					color: #ddd;
+				}
+			}
+		}
+	}
+}

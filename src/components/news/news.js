@@ -148,7 +148,7 @@ const News = ({}) => {
 				<div className={scss.slider}>
 					<div className={scss.slide_track}>
 						{dataCards?.map((item, index) => (
-							<Link to="/services" className={scss.slide} key={index}>
+							<Link to="/news" className={scss.slide} key={index}>
 								<div className={scss.titlesDiv}>
 									<p>2023-06-24</p>
 									<h5>{item.title}</h5>
