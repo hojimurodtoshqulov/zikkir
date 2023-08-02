@@ -44,13 +44,7 @@
 				width: auto;
 				height: 60%;
 				transition: 2s;
-				// border-radius: 50%;
-				// animation: rotate 7s cubic-bezier(0.87, -0.17, 0.16, 1.27) infinite
-				//   reverse forwards;
-				// animation: name duration timing-function delay iteration-count direction fill-mode;
-				// animation-duration: inherit;
-				// animation-direction: ;
-				animation: rotate 5s linear infinite alternate;
+				// animation: rotate 5s linear infinite alternate;
 				&:hover {
 					transform: perspective(100px) rotateX(-360deg);
 				}
@@ -61,7 +55,7 @@
 			}
 		}
 		&_links {
-			width: 50%;
+			width: 40%;
 			display: flex;
 			align-items: center;
 			justify-content: space-between;

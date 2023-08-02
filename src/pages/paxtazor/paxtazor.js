@@ -2,7 +2,7 @@ import React, { Suspense } from "react";
 import scss from "./paxtazor.module.scss";
 import "react-toastify/dist/ReactToastify.css";
 import Form from "../../components/form/form";
-import Map_form from "../../components/map_form/map_form";
+// import Map_form from "../../components/map_form/map_form";
 import ProjectsHeader from "../../components/projectsHeader/projectsHeader";
 import img1 from "../../media/u4.png";
 import img2 from "../../media/u7.png";
@@ -31,7 +31,7 @@ const Paxtazor = () => {
 				<Form />
 				<Architect bgImg1={img1} />
 				<ProjectPlan />
-				<Map_form />
+				{/* <Map_form /> */}
 			</div>
 		</Suspense>
 	);

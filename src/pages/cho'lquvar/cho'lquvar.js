@@ -2,7 +2,7 @@ import React, { Suspense } from "react";
 import scss from "./cho'lquvar.module.scss";
 import "react-toastify/dist/ReactToastify.css";
 import Form from "../../components/form/form";
-import Map_form from "../../components/map_form/map_form";
+// import Map_form from "../../components/map_form/map_form";
 import ProjectsHeader from "../../components/projectsHeader/projectsHeader";
 import img1 from "../../media/u3.png";
 import img2 from "../../media/u2.png";
@@ -31,7 +31,7 @@ const Cholquvar = () => {
 				<Form />
 				<Architect bgImg1={img7} />
 				<ProjectPlan />
-				<Map_form />
+				{/* <Map_form /> */}
 			</div>
 		</Suspense>
 	);

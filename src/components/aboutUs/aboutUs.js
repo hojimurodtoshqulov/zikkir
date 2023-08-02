@@ -72,6 +72,7 @@ const AboutUs = () => {
 							src={img2}
 							alt={img2}
 							data-aos="fade-up"
+							style={{ opacity: "0.7" }}
 						/>
 						<div className={scss.aboutUs__col2_img3}>
 							<img src={img2} alt={img2} data-aos="fade-up" />

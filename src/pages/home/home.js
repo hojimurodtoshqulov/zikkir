@@ -8,7 +8,7 @@ import AboutUs from "../../components/aboutUs/aboutUs";
 import Advantages from "../../components/advantages/advantages";
 import Projects from "../../components/projects/projects";
 import News from "../../components/news/news";
-import Form from "../../components/form/form";
+// import Form from "../../components/form/form";
 import Map_form from "../../components/map_form/map_form";
 const Home = () => {
 	const handleClick = (e) => {
@@ -25,7 +25,7 @@ const Home = () => {
 				<Advantages />
 				<Projects />
 				<News />
-				<Form />
+				{/* <Form /> */}
 				<Map_form />
 			</div>
 		</Suspense>
