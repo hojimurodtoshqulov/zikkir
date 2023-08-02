@@ -5,7 +5,7 @@ import i18next from "i18next";
 import Footer from "../components/footer/footer";
 import MobileNav from "../components/mobileNav";
 import { useState, useEffect } from "react";
-import video from "../media/zikkirAnimation2.mp4";
+import video from "../media/zikkirAnimation3.mp4";
 
 const Layout = () => {
 	const handleClick = (e) => {
@@ -15,7 +15,7 @@ const Layout = () => {
 	useEffect(() => {
 		setTimeout(() => {
 			setActive(false);
-		}, 5000);
+		}, 4000);
 	}, []);
 	return (
 		<Suspense fallback="loading">

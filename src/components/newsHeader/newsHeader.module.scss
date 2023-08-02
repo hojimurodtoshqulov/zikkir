@@ -14,10 +14,11 @@
 		// margin-top: 20vh;
 		text-align: center;
 		font-size: 60px;
-		background: #d4d4d4c1;
-		backdrop-filter: blur(4px);
+		background: #0000;
+		backdrop-filter: blur(7px);
 		padding: 15px 50px;
 		border-radius: 20px;
+		border: 2px solid rgba(255, 255, 255, 0.431);
 	}
 	&Img {
 		position: absolute;
