@@ -72,10 +72,14 @@
 				left: 0;
 			}
 			&_img3 {
-				width: 50%;
+				width: 30%;
 				position: absolute;
-				bottom: -200px;
+				top: -0.5%;
 				right: 0;
+				transform: rotate(180deg);
+				img {
+					width: 100%;
+				}
 			}
 		}
 	}

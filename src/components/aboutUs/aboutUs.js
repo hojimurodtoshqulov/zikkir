@@ -67,7 +67,15 @@ const AboutUs = () => {
 							data-aos="fade-up"
 							data-aos-delay="500"
 						/>
-						<img className={scss.aboutUs__col2_img2} src={img2} alt={img2} />
+						<img
+							className={scss.aboutUs__col2_img2}
+							src={img2}
+							alt={img2}
+							data-aos="fade-up"
+						/>
+						<div className={scss.aboutUs__col2_img3}>
+							<img src={img2} alt={img2} data-aos="fade-up" />
+						</div>
 					</div>
 				</div>
 			</div>

@@ -142,10 +142,8 @@ const News = ({}) => {
 	return (
 		<div className={scss.news}>
 			<div className={scss.sectionSlides} data-aos="fade-up">
-				<h2 data-aos="flip-up" data-aos-duration="500">
-					Новости
-				</h2>
-				<div className={scss.slider}>
+				<h2 data-aos="flip-up">Новости</h2>
+				<div className={scss.slider} data-aos="fade-up">
 					<div className={scss.slide_track}>
 						{dataCards?.map((item, index) => (
 							<Link to="/news" className={scss.slide} key={index}>

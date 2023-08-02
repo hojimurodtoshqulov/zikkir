@@ -57,15 +57,16 @@ const Projects = () => {
 	return (
 		<div className="projects">
 			<div className="container">
-				<h2>Наши проекты</h2>
+				<h2 data-aos="fade-up">Наши проекты</h2>
 				<div className="resourses">
 					<Slider {...settings}>
 						{data.map((item, index) => (
 							<div
 								key={index}
 								className={index === imageIndex ? "slide active" : "slide"}
+								data-aos="fade-up"
 							>
-								<Link to={item.link} target="_blank">
+								<Link to={item.link} target="_blank" data-aos="fade-up">
 									<img src={item.img} alt={item.img} />
 									<p className="link">{item.title}</p>
 								</Link>
@@ -74,8 +75,10 @@ const Projects = () => {
 					</Slider>
 				</div>
 			</div>
-			<img className="logo1" src={img5} alt={img5} />
-			<img className="logo2" src={img5} alt={img5} />
+			<img className="logo1" src={img5} alt={img5} data-aos="fade-up" />
+			<div className="logo2">
+				<img data-aos="fade-up" src={img5} alt={img5} />
+			</div>
 		</div>
 	);
 };

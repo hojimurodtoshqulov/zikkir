@@ -6,9 +6,9 @@ const NewsHeader = ({ bgImage, title }) => {
 			className={scss.newsHeader}
 			style={{ backgroundImage: `url("${bgImage}")` }}
 		>
-			<h1> НОВОСТИ</h1>
-			<img src={img1} alt={img1} className={scss.newsHeaderImg} />
-			<img src={img1} alt={img1} className={scss.newsHeaderImg2} />
+			<h1 data-aos="zoom-in-up"> НОВОСТИ</h1>
+			<img src={img1} alt={img1} className={scss.newsHeaderImg} data-aos="fade-up" />
+			<div className={scss.newsHeaderImg2}><img src={img1} alt={img1} data-aos="fade-up" /></div>
 		</div>
 	);
 };

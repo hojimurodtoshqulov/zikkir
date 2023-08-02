@@ -7,9 +7,9 @@ const ContactHeader = ({ bgImage, title }) => {
 			style={{ backgroundImage: `url("${bgImage}")` }}
 		>
 			<div className="container">
-				<div className={scss.elements}>
+				<div className={scss.elements} data-aos="fade-up">
 					<div className={scss.elementsDiv}>
-						<div className={scss.elementsDivCol1}>
+						<div className={scss.elementsDivCol1} data-aos="fade-up-left">
 							<p>
 								Время работы <br />
 								Отдел продаж: Пн-Пт: с <span>9:00</span> до <br />
@@ -17,13 +17,13 @@ const ContactHeader = ({ bgImage, title }) => {
 								<span>18:00</span>
 							</p>
 						</div>
-						<div className={scss.elementsDivCol1}>
+						<div className={scss.elementsDivCol1} data-aos="fade-up-right">
 							<p>Круглосуточный кол-центр</p> <br />
 							<a href="tel:+998788880000">78 888 00 00</a>
 						</div>
 					</div>
 					<div className={scss.elementsDiv}>
-						<div className={scss.elementsDivCol}>
+						<div className={scss.elementsDivCol} data-aos="flip-up">
 							<p>
 								Мы расположены по адресу: <br />
 								<span>
@@ -34,12 +34,13 @@ const ContactHeader = ({ bgImage, title }) => {
 						</div>
 					</div>
 					<div className={scss.elementsDiv}>
-						<div className={scss.elementsDivCol}>
+						<div className={scss.elementsDivCol} data-aos="flip-up">
 							<p>
-								Почтовые адреса Общая информация: {" "}
+								Почтовые адреса Общая информация:{" "}
 								<span>
 									<a href="">info@gh.uz</a>{" "}
-								</span> <br />
+								</span>{" "}
+								<br />
 								Обратная связь:{" "}
 								<span>
 									<a href=""> feedback@gh.uz</a>{" "}
@@ -57,8 +58,16 @@ const ContactHeader = ({ bgImage, title }) => {
 					</div>
 				</div>
 			</div>
-			<img src={img1} alt={img1} className={scss.contactHeaderImg} />
-			<img src={img1} alt={img1} className={scss.contactHeaderImg2} />
+			<img
+				src={img1}
+				alt={img1}
+				className={scss.contactHeaderImg}
+				data-aos="fade-up"
+				data-aos-delay="900"
+			/>
+			<div className={scss.contactHeaderImg2}>
+				<img src={img1} alt={img1} data-aos="fade-up" data-aos-delay="900" />
+			</div>
 		</div>
 	);
 };

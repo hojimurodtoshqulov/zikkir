@@ -54,21 +54,30 @@ const ProjectPlan = () => {
 	};
 	return (
 		<div className="projectPlan">
-			<div className="container">
-				<h3>ПРОДУМАННЫЕ ПЛАНИРОВОЧНЫЕ РЕШЕНИЯ</h3>
-				<div className="projectPlan__rooms">
+			<div className="container" data-aos="fade-up">
+				<h3 data-aos="flip-up">ПРОДУМАННЫЕ ПЛАНИРОВОЧНЫЕ РЕШЕНИЯ</h3>
+				<div className="projectPlan__rooms" data-aos="fade-left">
 					<button>Все</button>
-					<p>1 - комнатные</p>
-					<p>2 - комнатные</p>
-					<p>3 - комнатные</p>
-					<p>4 - комнатные</p>
+					<p data-aos="flip-up" data-aos-delay="300">
+						1 - комнатные
+					</p>
+					<p data-aos="flip-up" data-aos-delay="500">
+						2 - комнатные
+					</p>
+					<p data-aos="flip-up" data-aos-delay="700">
+						3 - комнатные
+					</p>
+					<p data-aos="flip-up" data-aos-delay="900">
+						4 - комнатные
+					</p>
 				</div>
-				<div className="resourses">
+				<div className="resourses" data-aos="flip-up">
 					<Slider {...settings}>
 						{data.map((item, index) => (
 							<div
 								key={index}
 								className={index === imageIndex ? "slide active" : "slide"}
+								
 							>
 								<a>
 									<img src={item.img} alt={item.img} />

@@ -3,15 +3,17 @@
 @import "../../scss/varuables.scss";
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
 .projects {
+	border-top: 10px solid $primary;
 	background-image: url("../../media/u2.png");
 	background-size: cover;
 	padding: 150px 0 200px 0;
 	text-align: center;
 	position: relative;
+	overflow: hidden;
 	h2 {
 		text-align: center;
 		padding: 15px 40px;
-		background: #acabafe4;
+		background: linear-gradient(to top, #08a1dd2c, #08a1dda5);
 		backdrop-filter: blur(4px);
 		border-radius: 15px;
 		display: inline-block;
@@ -111,10 +113,13 @@
 	}
 	.logo2 {
 		position: absolute;
-		top: 0;
+		top: -0.5%;
 		right: 0;
 		z-index: 2;
 		transform: rotate(180deg);
 		width: 30%;
+		img {
+			width: 100%;
+		}
 	}
 }

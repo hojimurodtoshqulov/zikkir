@@ -5,18 +5,13 @@ const Advantages = ({}) => {
 	return (
 		<div className={scss.advantages}>
 			<div className="container">
-				<h2>Преимущества</h2>
+				<h2 data-aos="fade-up-right">Преимущества</h2>
 				<div className={scss.advantages__elements}>
 					<div
 						className={scss.advantages__elements_texts}
 						data-aos="fade-right"
 					>
-						<div
-							className={scss.line}
-							data-aos="fade-down"
-							data-aos-easing="linear"
-							data-aos-duration="1500"
-						></div>
+						<div className={scss.line}></div>
 						<h3>
 							<span>1</span>
 							Lorem, ipsum dolor.
@@ -29,12 +24,7 @@ const Advantages = ({}) => {
 						</p>
 					</div>
 					<div className={scss.advantages__elements_texts} data-aos="fade-left">
-						<div
-							className={scss.line}
-							data-aos="fade-down"
-							data-aos-easing="linear"
-							data-aos-duration="1500"
-						></div>
+						<div className={scss.line}></div>
 						<h3>
 							<span>2</span>
 							Lorem, ipsum dolor.

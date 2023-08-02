@@ -10,24 +10,28 @@ const NewsCards = () => {
 			title: " Lorem ipsum dolor sit amet",
 			description:
 				"Стиль жизни на берегу реки воплощен в нашем новом жилом комплексе с собственной набережной и озелененной территорией. Здесь будет все для того, чтобы жизнь стала… ",
+			aos: "fade-left",
 		},
 		{
 			img: img2,
 			title: " Lorem ipsum dolor sit amet",
 			description:
 				"Стиль жизни на берегу реки воплощен в нашем новом жилом комплексе с собственной набережной и озелененной территорией. Здесь будет все для того, чтобы жизнь стала… ",
+			aos: "fade-right",
 		},
 		{
 			img: img1,
 			title: " Lorem ipsum dolor sit amet",
 			description:
 				"Стиль жизни на берегу реки воплощен в нашем новом жилом комплексе с собственной набережной и озелененной территорией. Здесь будет все для того, чтобы жизнь стала… ",
+			aos: "fade-left",
 		},
 		{
 			img: img2,
 			title: " Lorem ipsum dolor sit amet",
 			description:
 				"Стиль жизни на берегу реки воплощен в нашем новом жилом комплексе с собственной набережной и озелененной территорией. Здесь будет все для того, чтобы жизнь стала… ",
+			aos: "fade-right",
 		},
 	];
 	return (
@@ -35,7 +39,7 @@ const NewsCards = () => {
 			<div className="container">
 				<div className={scss.newsCardsDiv}>
 					{dataCards?.map((item, index) => (
-						<div className={scss.slide} key={index}>
+						<div className={scss.slide} key={index} data-aos={item.aos} >
 							<div className={scss.titlesDiv}>
 								<p>2023-06-24</p>
 								<h5>{item.title}</h5>

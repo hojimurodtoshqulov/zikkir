@@ -63,7 +63,7 @@ const Header = () => {
 				<div className="container">
 					<div className={scss.header__container}>
 						<motion.div className={scss.header__container_elements}>
-							<h1>ZIK KIR</h1>
+							<h1 data-aos="zoom-in-up">ZIK KIR</h1>
 							<AnimatePresence exitBeforeEnter>
 								<motion.p
 									key={selected}
@@ -107,8 +107,15 @@ const Header = () => {
 								btnTitle={t("home.hero.btnText1")}
 							/>
 						</div>
-						<img className={scss.header__container_elements_whiteLogo} src={img5} alt={img5} />
-						<img className={scss.header__container_elements_whiteLogo2} src={img5} alt={img5} />
+						<img
+							className={scss.header__container_elements_whiteLogo}
+							src={img5}
+							alt={img5}
+							data-aos="fade-up"
+						/>
+						<div className={scss.header__container_elements_whiteLogo2}>
+							<img src={img5} alt={img5} data-aos="fade-up" />
+						</div>
 					</div>
 
 					{/* <div className={scss.arrows}>
