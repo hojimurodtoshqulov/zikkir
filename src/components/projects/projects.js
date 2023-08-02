@@ -9,25 +9,31 @@ import img2 from "../../media/u7.png";
 import img3 from "../../media/u8.png";
 import img4 from "../../media/u5.png";
 import img5 from "../../media/logo_white.png";
+import logo1 from "../../media/cholquvar.png";
+import logo2 from "../../media/paxtazor.png";
 const Projects = () => {
 	const data = [
 		{
 			img: img1,
+			logo: logo1,
 			link: "/cho'lquvar",
 			title: "Cho'lquvar",
 		},
 		{
 			img: img2,
+			logo: logo2,
 			link: "/paxtazor",
 			title: "Paxtazor",
 		},
 		{
 			img: img3,
+			logo: logo1,
 			link: "/cho'lquvar",
 			title: "Bla bla",
 		},
 		{
 			img: img4,
+			logo: logo2,
 			link: "/paxtazor",
 			title: "Big house",
 		},
@@ -68,7 +74,8 @@ const Projects = () => {
 							>
 								<Link to={item.link} target="_blank" data-aos="fade-up">
 									<img src={item.img} alt={item.img} />
-									<p className="link">{item.title}</p>
+									{/* <p >{item.title}</p> */}
+									<img className="link" src={item.logo} alt={item.logo} />
 								</Link>
 							</div>
 						))}
