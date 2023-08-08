@@ -76,7 +76,7 @@ const Footer = () => {
 							Контакты <p></p>
 						</Link>
 					</div>
-					<div className={scss.footer__row1_col2} data-aos="fade-down">
+					<div className={scss.footer__row1_col2} data-aos="fade-up">
 						<h4>Наши проекты</h4>
 						<Link
 							to="/paxtazor"

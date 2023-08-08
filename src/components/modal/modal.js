@@ -5,17 +5,16 @@ import { useState } from "react";
 import { VscChromeClose } from "react-icons/vsc";
 
 const Modal = ({ open, onClose, theme }) => {
-	const [openModal, setOpenModal] = useState(true);
-	// console.log(open);
+	// const [openModal, setOpenModal] = useState(true);
+	console.log(open);
 	//   if (!open) return null;
 	const log = () => {
 		// console.log("bla");
 	};
 	return (
-		<div className={"overlay " + (open ? "active" : "")}>
+		<div className={"overlay" + (open ? "active" : "")}>
 			<div className={`modalContainer `}>
 				{/* <Submit onClose={onClose} /> */}
-
 				{theme === "submit" ? <Submit onClose={onClose} /> : <>...</>}
 				<p onClick={onClose} className="close">
 					<VscChromeClose />

@@ -63,7 +63,9 @@ const Header = () => {
 				<div className="container">
 					<div className={scss.header__container}>
 						<motion.div className={scss.header__container_elements}>
-							<h1 data-aos="zoom-in-up">ZIK KIR</h1>
+							<h1 data-aos="zoom-in-up" data-aos-delay="300">
+								ZIK KIR
+							</h1>
 							<AnimatePresence exitBeforeEnter>
 								<motion.p
 									key={selected}

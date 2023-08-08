@@ -4,6 +4,7 @@ import "react-toastify/dist/ReactToastify.css";
 import Form from "../../components/form/form";
 // import Map_form from "../../components/map_form/map_form";
 import ProjectsHeader from "../../components/projectsHeader/projectsHeader";
+import img from "../../media/cholquvar.png";
 import img1 from "../../media/u3.png";
 import img2 from "../../media/u2.png";
 import img3 from "../../media/u9.png";
@@ -19,7 +20,7 @@ const Cholquvar = () => {
 	return (
 		<Suspense fallback="loading">
 			<div className={scss.cholquvar}>
-				<ProjectsHeader bgImage={img1} title={"Cho'lquvar"} />
+				<ProjectsHeader bgImage={img1} logo={img} />
 				<ProjectsAbout
 					img1={img2}
 					img2={img3}

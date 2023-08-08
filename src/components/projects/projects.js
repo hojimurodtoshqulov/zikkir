@@ -72,7 +72,7 @@ const Projects = () => {
 								className={index === imageIndex ? "slide active" : "slide"}
 								data-aos="fade-up"
 							>
-								<Link to={item.link} target="_blank" data-aos="fade-up">
+								<Link to={item.link}  data-aos="fade-up">
 									<img src={item.img} alt={item.img} />
 									{/* <p >{item.title}</p> */}
 									<img className="link" src={item.logo} alt={item.logo} />

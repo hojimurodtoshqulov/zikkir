@@ -8,9 +8,15 @@ import img5 from "../../media/logo_grey.png";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { HiArrowLongRight } from "react-icons/hi2";
-import Button from "../button/button";
+import Modal from "../modal/modal";
+import { useState } from "react";
 const News = ({}) => {
+	const [openModal, setOpenModal] = useState(false);
+	const [cardOreder, setcardOreder] = useState(0);
 	const { t } = useTranslation();
+	const scrollToTop = () => {
+		window.scrollTo(0, 0);
+	};
 	const dataCards = [
 		{
 			img: img1,
@@ -140,30 +146,50 @@ const News = ({}) => {
 		},
 	];
 	return (
-		<div className={scss.news}>
-			<div className={scss.sectionSlides} data-aos="fade-up">
-				<h2 data-aos="flip-up">Новости</h2>
-				<div className={scss.slider} data-aos="fade-up">
-					<div className={scss.slide_track}>
-						{dataCards?.map((item, index) => (
-							<Link to="/news" className={scss.slide} key={index}>
-								<div className={scss.titlesDiv}>
-									<p>2023-06-24</p>
-									<h5>{item.title}</h5>
-								</div>
-								<img src={item.img} alt={item.img} className={scss.slideImg} />
-								<img src={img4} alt={img4} className={scss.slideImgLine} />
-								<p className={scss.slideText}>{item.description}</p>
-							</Link>
-						))}
+		<>
+			<div className={scss.news}>
+				<div className={scss.sectionSlides} data-aos="fade-up">
+					<h2 data-aos="flip-up">Новости</h2>
+					<div className={scss.slider} data-aos="fade-up">
+						<div className={scss.slide_track}>
+							{dataCards?.map((item, index) => (
+								<Link
+									to="/news"
+									className={scss.slide}
+									key={index}
+									// onClick={() => {
+									// 	setOpenModal(true);
+									// 	setcardOreder(index);
+									// }}
+									onClick={scrollToTop}
+								>
+									<div className={scss.titlesDiv}>
+										<p>2023-06-24</p>
+										<h5>{item.title}</h5>
+									</div>
+									<img
+										src={item.img}
+										alt={item.img}
+										className={scss.slideImg}
+									/>
+									<img src={img4} alt={img4} className={scss.slideImgLine} />
+									<p className={scss.slideText}>{item.description}</p>
+								</Link>
+							))}
+						</div>
+						<div className={scss.shadow}></div>
+						<div className={scss.shadow2}></div>
 					</div>
-					<div className={scss.shadow}></div>
-					<div className={scss.shadow2}></div>
+					<img src={img5} alt={img5} className={scss.whiteLogo} />
+					<img src={img5} alt={img5} className={scss.whiteLogo2} />
 				</div>
-				<img src={img5} alt={img5} className={scss.whiteLogo} />
-				<img src={img5} alt={img5} className={scss.whiteLogo2} />
 			</div>
-		</div>
+			{/* <Modal
+				open={openModal}
+				onClose={() => setOpenModal(false)}
+				theme={`leasingDatas ${cardOreder}`}
+			/> */}
+		</>
 	);
 };
 

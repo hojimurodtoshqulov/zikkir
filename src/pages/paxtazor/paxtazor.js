@@ -4,6 +4,7 @@ import "react-toastify/dist/ReactToastify.css";
 import Form from "../../components/form/form";
 // import Map_form from "../../components/map_form/map_form";
 import ProjectsHeader from "../../components/projectsHeader/projectsHeader";
+import logo from "../../media/paxtazor.png";
 import img1 from "../../media/u4.png";
 import img2 from "../../media/u7.png";
 import img3 from "../../media/u17.png";
@@ -19,7 +20,7 @@ const Paxtazor = () => {
 	return (
 		<Suspense fallback="loading">
 			<div className={scss.paxtazor}>
-				<ProjectsHeader bgImage={img1} title={"Paxtazor"} />
+				<ProjectsHeader bgImage={img1} logo={logo} />
 				<ProjectsAbout
 					img1={img2}
 					img2={img3}
