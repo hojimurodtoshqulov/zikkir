@@ -38,13 +38,12 @@
 	.content {
 		width: 60%;
 		color: $light;
-
 		h2 {
 			font-size: 2rem;
 			position: relative;
 			z-index: 10;
 			margin-bottom: 2rem;
-
+			text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.625);
 			// &::after {
 			// 	display: inline-block;
 			// 	position: absolute;
@@ -66,6 +65,7 @@
 
 		p {
 			line-height: 140%;
+			text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.708);
 		}
 	}
 

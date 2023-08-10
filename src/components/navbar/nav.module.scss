@@ -96,38 +96,43 @@
 			}
 			.dropdown {
 				position: relative;
-				// transition: 0.3s;
+				transition: 0.3s;
 				&:hover {
 					.dropdownItems {
 						z-index: 12;
-						top: calc(100% + 3px);
+						top: calc(100% + 5px);
 						visibility: visible;
 						opacity: 1;
+						transition: 0.3s;
 					}
 				}
 				&Title {
 				}
 				&Title:hover ~ .dropdownItems {
 					background-color: transparent !important;
-					border: 2px solid $primary;
+					transition: 0.3s;
+
 					a {
 						// background-color: unset;
-						color: $primary;
+						color: $light;
 					}
 				}
 				&Items {
+					transition: 0.3s;
 					min-width: max-content;
-					border: 2px solid $primary;
-					// transition: 0.3s;
 					position: absolute;
 					top: calc(-200% + 10px);
 					left: 0;
 					z-index: -12;
 					visibility: hidden;
 					opacity: 0;
+					padding-top: 15px;
+					div {
+						border: 2px solid $primary;
+					}
 					a {
 						background-color: #ff00;
-						color: $primary;
+						color: $light;
 						padding: 10px 40px;
 						font-family: $font_btn;
 						font-style: normal;
@@ -137,8 +142,8 @@
 						cursor: pointer;
 						text-shadow: 1px 3px 10px rgba(0, 0, 0, 0.499);
 						&:hover {
-							background: #319ba1;
-							color: #fff;
+							background: $primary;
+							color: $light;
 						}
 					}
 				}

@@ -89,13 +89,24 @@ const Nav = ({ onClick }) => {
 							>
 								{t("nav.company")} <span></span>
 							</NavLink>{" "}
-							<NavLink
+							<Link
 								style={{ color: navLinkColor }}
-								to="/cho'lquvar"
 								onClick={scrollToTop}
+								className={scss.dropdown}
 							>
 								{t("nav.projects")} <span></span>
-							</NavLink>{" "}
+								<AiFillCaretDown />
+								<div className={scss.dropdownItems}>
+									<div>
+										<Link to="/cho'lquvar" onClick={scrollToTop}>
+											{t("Cho'lquvar")}
+										</Link>
+										<Link to="/paxtazor" onClick={scrollToTop}>
+											{t("Paxtazor")}
+										</Link>
+									</div>
+								</div>
+							</Link>{" "}
 							<NavLink
 								style={{ color: navLinkColor }}
 								to="/news"
