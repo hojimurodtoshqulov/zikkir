@@ -94,7 +94,7 @@ const Nav = ({ onClick }) => {
 								onClick={scrollToTop}
 								className={scss.dropdown}
 							>
-								{t("nav.projects")} <span></span>
+								{t("nav.projects")} 
 								<AiFillCaretDown />
 								<div className={scss.dropdownItems}>
 									<div>

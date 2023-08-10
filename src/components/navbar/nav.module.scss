@@ -106,14 +106,10 @@
 						transition: 0.3s;
 					}
 				}
-				&Title {
-				}
 				&Title:hover ~ .dropdownItems {
 					background-color: transparent !important;
 					transition: 0.3s;
-
 					a {
-						// background-color: unset;
 						color: $light;
 					}
 				}
@@ -128,11 +124,13 @@
 					opacity: 0;
 					padding-top: 15px;
 					div {
-						border: 2px solid $primary;
+						border: 2px solid rgba(255, 255, 255, 0.491);
+						border-radius: 10px;
+						overflow: hidden;
 					}
 					a {
-						background-color: #ff00;
-						color: $light;
+						background: #fff;
+						color: $primary;
 						padding: 10px 40px;
 						font-family: $font_btn;
 						font-style: normal;
