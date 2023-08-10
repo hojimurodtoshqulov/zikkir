@@ -1,8 +1,8 @@
 import scss from "./architect.module.scss";
 import img1 from "../../media/arch1.png";
 import img2 from "../../media/arch2.png";
-import img3 from "../../media/arch3.png";
-import img4 from "../../media/arch4.png";
+import img3 from "../../media/arch5.png";
+import img4 from "../../media/arch6.png";
 const Architect = ({ bgImg1 }) => {
 	return (
 		<div
@@ -35,11 +35,11 @@ const Architect = ({ bgImg1 }) => {
 					<div className={scss.elementsRow}>
 						<div className={scss.elementsRowDiv} data-aos="fade-down-left">
 							<img src={img3} alt={img3} />
-							<p>Витражное Остекление</p>
+							<p>Внутреннее Eco пространство</p>
 						</div>
 						<div className={scss.elementsRowDiv} data-aos="fade-down-right">
 							<img src={img4} alt={img4} />
-							<p>Увеличенная Высота Потолков В Чистоте</p>
+							<p>Надежная система безопасности</p>
 						</div>
 					</div>
 				</div>

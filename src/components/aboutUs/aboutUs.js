@@ -21,14 +21,7 @@ const AboutUs = () => {
 							</h2>
 						</div>
 						<div className={scss.aboutUs__col1_texts} data-aos="fade-right">
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-								Phasellus dapibus mauris in lectus tempus, eget tincidunt lacus
-								varius. Sed euismod orci dictum faucibus malesuada. Praesent sed
-								eros tincidunt,viverra neque auctor, lobortis enim. Lorem ipsum
-								dolor sit amet, consectetur adipiscing elit. Phasellus dapibus
-								mauris in lectus tempus, eget tincidunt lacus varius.
-							</p>
+							<p>{t("home.aboutUs.text")}</p>
 						</div>
 						<div className={scss.counts} data-aos="fade-right">
 							<h4>
