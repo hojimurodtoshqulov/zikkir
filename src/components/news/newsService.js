@@ -8,31 +8,41 @@ import img4 from "../../media/u12.png";
 import img5 from "../../media/u7.png";
 
 const NewsService = ({ theme }) => {
-	const [_, order] = theme.split(" ");
+	// const [_, order] = theme.split(" ");
 	const { t } = useTranslation();
 	const images = [img1, img2, img3, img4, img5];
 	const titles = [
-		t("home.leasingImages.catalog1"),
-		t("home.leasingImages.catalog2"),
-		t("home.leasingImages.catalog3"),
-		t("home.leasingImages.catalog4"),
-		t("home.leasingImages.catalog5"),
+		t("News houses"),
+		t("News houses"),
+		t("News houses"),
+		t("News houses"),
+		t("News houses"),
 	];
 	const texts = [
-		t("home.leasingImages.catalog1text"),
-		t("home.leasingImages.catalog2text"),
-		t("home.leasingImages.catalog3text"),
-		t("home.leasingImages.catalog4text"),
-		t("home.leasingImages.catalog5text"),
+		t(
+			"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus ab in voluptatibus sunt harum sed iure a consequatur neque doloremque."
+		),
+		t(
+			"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus ab in voluptatibus sunt harum sed iure a consequatur neque doloremque."
+		),
+		t(
+			"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus ab in voluptatibus sunt harum sed iure a consequatur neque doloremque."
+		),
+		t(
+			"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus ab in voluptatibus sunt harum sed iure a consequatur neque doloremque."
+		),
+		t(
+			"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus ab in voluptatibus sunt harum sed iure a consequatur neque doloremque."
+		),
 	];
 	return (
 		<div className={styles.main}>
 			<div className={styles.imgWrap}>
-				<img src={images[order]} alt={images[order]} />
+				<img src={img1} alt={img1} />
 			</div>
 			<div className={styles.content}>
-				<h1>{titles[order]}</h1>
-				<p> {texts[order]} </p>
+				<h2>{titles[0]}</h2>
+				<p> {texts[0]} </p>
 			</div>
 			{/* <div className="leasing__cards">
 				<InfoCard text={t("leasingPage.cards.card1")} title={"18-48"} />

@@ -47,8 +47,11 @@ const Header = () => {
 		<>{t("home.hero.title2")}</>,
 		<>{t("home.hero2.title2")}</>,
 	];
+	const scrollToTop = () => {
+		window.scrollTo(0, 0);
+	};
 	const texts = [<>{t("home.hero.text")}</>, <>{t("home.hero.text2")}</>];
-	const btnLinks = ["/leasing", "/funds"];
+	const btnLinks = ["/cho'lquvar", "/paxtazor"];
 	useEffect(() => {
 		const interval = setInterval(() => {
 			selected === tLength - 1
@@ -103,7 +106,10 @@ const Header = () => {
 								alt={headerData[selected].img}
 							/>
 						</AnimatePresence>
-						<div className={scss.header__container_elements_button}>
+						<div
+							className={scss.header__container_elements_button}
+							onClick={scrollToTop}
+						>
 							<Button
 								btnLink={btnLinks[selected]}
 								btnTitle={t("home.hero.btnText1")}

@@ -60,6 +60,9 @@ const Projects = () => {
 		prevArrow: <PrevArrow />,
 		beforeChange: (current, next) => setImageIndex(next),
 	};
+	const scrollToTop = () => {
+		window.scrollTo(0, 0);
+	};
 	return (
 		<div className="projects">
 			<div className="container">
@@ -71,9 +74,10 @@ const Projects = () => {
 								key={index}
 								className={index === imageIndex ? "slide active" : "slide"}
 								data-aos="fade-up"
+								onClick={scrollToTop}
 							>
-								<Link to={item.link}  data-aos="fade-up">
-									<img src={item.img} alt={item.img} />
+								<Link onClick={scrollToTop} to={item.link} data-aos="fade-up">
+									<img src={item.img} alt={item.img} onClick={scrollToTop} />
 									{/* <p >{item.title}</p> */}
 									<img className="link" src={item.logo} alt={item.logo} />
 								</Link>

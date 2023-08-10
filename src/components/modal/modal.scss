@@ -10,20 +10,23 @@
 		overflow: hidden;
 		border-radius: $br_r_0;
 		max-width: 1000px;
-		width: 95%;
+		width: 80%;
 		position: fixed;
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -350%);
-		display: flex;
-		flex-direction: column;
-		background: var(--background);
-		background: $dark;
+		// background: var(--background);
+		background: rgba(255, 255, 255, 0.259);
+		backdrop-filter: blur(15px);
 		color: $light;
 		box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.75);
-		padding: 2% 2% 2% 2%;
+		padding: 5%;
 		transition: 1s all;
 		z-index: 101;
+		display: none;
+		border-radius: 15px;
+		font-size: 20px;
+		border: 3px solid rgba(255, 255, 255, 0.638);
 	}
 	.modalBg {
 		position: fixed;
@@ -36,27 +39,28 @@
 		z-index: 100;
 		display: none;
 	}
-	&.active {
-		.modalContainer {
-			transform: translate(-50%, -50%);
-		}
-		.modalBg {
-			display: block;
-		}
-	}
-	.close {
+
+	.modalCloser {
 		cursor: pointer;
 		position: absolute;
 		top: 7%;
 		right: 4%;
 		z-index: 12345;
 		svg {
-			color: var(--color);
+			color: $light;
 			font-size: 30px;
 		}
 	}
 }
-
+.active {
+	.modalContainer {
+		transform: translate(-50%, -50%);
+		display: block;
+	}
+	.modalBg {
+		display: block;
+	}
+}
 .modalContainer.animate {
 	top: 50%;
 }

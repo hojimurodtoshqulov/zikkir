@@ -3,20 +3,21 @@ import Submit from "../submitApp/submit";
 import "./modal.scss";
 import { useState } from "react";
 import { VscChromeClose } from "react-icons/vsc";
-
+import NewsService from "../news/newsService";
 const Modal = ({ open, onClose, theme }) => {
 	// const [openModal, setOpenModal] = useState(true);
-	console.log(open);
+	console.log(open, ">>>open");
 	//   if (!open) return null;
 	const log = () => {
 		// console.log("bla");
 	};
 	return (
-		<div className={"overlay" + (open ? "active" : "")}>
-			<div className={`modalContainer `}>
+		// <div className={"overlay active"}>
+		<div className={open ? "overlay active " : "overlay"}>
+			<div className="modalContainer">
 				{/* <Submit onClose={onClose} /> */}
-				{theme === "submit" ? <Submit onClose={onClose} /> : <>...</>}
-				<p onClick={onClose} className="close">
+				{theme === "submit" ? <Submit onClose={onClose} /> : <NewsService />}
+				<p onClick={onClose} className="modalCloser">
 					<VscChromeClose />
 				</p>
 			</div>

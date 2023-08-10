@@ -145,6 +145,9 @@ const News = ({}) => {
 			arrowR: <HiArrowLongRight />,
 		},
 	];
+	{
+		console.log("<<modal>>", openModal);
+	}
 	return (
 		<>
 			<div className={scss.news}>
@@ -153,16 +156,17 @@ const News = ({}) => {
 					<div className={scss.slider} data-aos="fade-up">
 						<div className={scss.slide_track}>
 							{dataCards?.map((item, index) => (
-								<Link
+								<div
 									to="/news"
 									className={scss.slide}
 									key={index}
-									// onClick={() => {
-									// 	setOpenModal(true);
-									// 	setcardOreder(index);
-									// }}
-									onClick={scrollToTop}
+									onClick={() => {
+										setOpenModal(true);
+										setcardOreder(index);
+									}}
+									// onClick={scrollToTop}
 								>
+									{console.log("<<open modal>>", openModal)}
 									<div className={scss.titlesDiv}>
 										<p>2023-06-24</p>
 										<h5>{item.title}</h5>
@@ -174,7 +178,7 @@ const News = ({}) => {
 									/>
 									<img src={img4} alt={img4} className={scss.slideImgLine} />
 									<p className={scss.slideText}>{item.description}</p>
-								</Link>
+								</div>
 							))}
 						</div>
 						<div className={scss.shadow}></div>
@@ -184,11 +188,11 @@ const News = ({}) => {
 					<img src={img5} alt={img5} className={scss.whiteLogo2} />
 				</div>
 			</div>
-			{/* <Modal
+			<Modal
 				open={openModal}
 				onClose={() => setOpenModal(false)}
-				theme={`leasingDatas ${cardOreder}`}
-			/> */}
+				// theme={`leasingDatas ${cardOreder}`}
+			/>
 		</>
 	);
 };

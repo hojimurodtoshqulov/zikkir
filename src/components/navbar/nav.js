@@ -78,7 +78,7 @@ const Nav = ({ onClick }) => {
 							className={scss.nav__container_logo}
 							to="/"
 						>
-							<img src={navLogo} alt="nav logo" />
+							<img src={navLogo} alt={navLogo} />
 						</Link>
 						<div className={scss.nav__container_links}>
 							{/* company */}
