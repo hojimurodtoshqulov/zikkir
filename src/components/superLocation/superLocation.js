@@ -56,21 +56,21 @@ const SuperLocation = ({ bgImg, space }) => {
               <div className={scss.row2__ele}>
                 <p>
                   <img src={school} alt={school} />
-                  Школа
+                  <span>Школа</span>
                 </p>
                 <p>
                   <img src={alphabet} alt={alphabet} />
-                  Детский сад
+                  <span>Детский сад</span>
                 </p>
               </div>
               <div className={scss.row2__ele}>
                 <p>
                   <img src={bank} alt={bank} />
-                  Хакимият г.Карши
+                  <span>Хакимият г.Карши</span>
                 </p>
                 <p>
                   <img src={mall} alt={mall} />
-                  ТРЦ Sharq
+                  <span>ТРЦ Sharq</span>
                 </p>
               </div>
             </div>

@@ -8,73 +8,73 @@ import Counter from "../counter/counter";
 import MainSymbol from "../mainSymbol/mainSymbol";
 
 const AboutUs = () => {
-	const transition = { type: "spring", duration: 2 };
-	const { t } = useTranslation();
-	return (
-		<div className={scss.aboutUsDiv}>
-			<div className="container">
-				<div className={scss.aboutUs}>
-					<div className={scss.aboutUs__col1}>
-						<div className={scss.aboutUs__col1_titles} data-aos="fade-right">
-							<h2>
-								<MainSymbol symbolWith={30} brr={9} /> {t("nav.company")}
-							</h2>
-						</div>
-						<div className={scss.aboutUs__col1_texts} data-aos="fade-right">
-							<p>{t("home.aboutUs.text")}</p>
-						</div>
-						<div className={scss.counts} data-aos="fade-right">
-							<h4>
-								2
-								<span>
-									<MainSymbol symbolWith={15} brr={5} /> лет на рынке
-								</span>
-							</h4>
-							<h4>
-								2
-								<span>
-									<MainSymbol symbolWith={15} brr={5} /> успешных проектов
-								</span>
-							</h4>
-						</div>
-						<div className={scss.counts} data-aos="fade-right">
-							<h4>
-								1000 +
-								<span>
-									<MainSymbol symbolWith={15} brr={5} /> cчастливыx семeй
-								</span>
-							</h4>
-							<h4>
-								50000 +
-								<span>
-									<MainSymbol symbolWith={15} brr={5} /> площадь проектов
-								</span>
-							</h4>
-						</div>
-					</div>
-					<div className={scss.aboutUs__col2}>
-						<img
-							className={scss.aboutUs__col2_img1}
-							src={img1}
-							alt={img1}
-							data-aos="fade-up"
-							data-aos-delay="500"
-						/>
-						<img
-							className={scss.aboutUs__col2_img2}
-							src={img2}
-							alt={img2}
-							data-aos="fade-up"
-							style={{ opacity: "0.7" }}
-						/>
-						<div className={scss.aboutUs__col2_img3}>
-							<img src={img2} alt={img2} data-aos="fade-up" />
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	);
+  const transition = { type: "spring", duration: 2 };
+  const { t } = useTranslation();
+  return (
+    <div className={scss.aboutUsDiv}>
+      <div className="container">
+        <div className={scss.aboutUs}>
+          <div className={scss.aboutUs__col1}>
+            <div className={scss.aboutUs__col1_titles} data-aos="fade-right">
+              <h2>
+                <MainSymbol symbolWith={30} brr={9} /> {t("nav.company")}
+              </h2>
+            </div>
+            <div className={scss.aboutUs__col1_texts} data-aos="fade-right">
+              <p>{t("home.aboutUs.text")}</p>
+            </div>
+            <div className={scss.counts} data-aos="fade-right">
+              <h4>
+                2
+                <span>
+                  <MainSymbol symbolWith={15} brr={5} /> лет на рынке
+                </span>
+              </h4>
+              <h4>
+                2
+                <span>
+                  <MainSymbol symbolWith={15} brr={5} /> успешных проектов
+                </span>
+              </h4>
+            </div>
+            <div className={scss.counts} data-aos="fade-right">
+              <h4>
+                1000 +
+                <span>
+                  <MainSymbol symbolWith={15} brr={5} /> cчастливыx семeй
+                </span>
+              </h4>
+              <h4>
+                5000 +
+                <span>
+                  <MainSymbol symbolWith={15} brr={5} /> площадь проектов
+                </span>
+              </h4>
+            </div>
+          </div>
+          <div className={scss.aboutUs__col2}>
+            <img
+              className={scss.aboutUs__col2_img1}
+              src={img1}
+              alt={img1}
+              data-aos="fade-up"
+              data-aos-delay="500"
+            />
+            <img
+              className={scss.aboutUs__col2_img2}
+              src={img2}
+              alt={img2}
+              data-aos="fade-up"
+              style={{ opacity: "0.7" }}
+            />
+            <div className={scss.aboutUs__col2_img3}>
+              <img src={img2} alt={img2} data-aos="fade-up" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default AboutUs;

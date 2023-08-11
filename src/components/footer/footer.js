@@ -39,9 +39,9 @@ const Footer = () => {
               <a href="tel:+998336450555">+998 33 645 05 55</a>
               <a href="tel:+998335250555">+998 33 525 05 55</a>
             </p>
-            <p>
-              Г. Ташкент, Яшнабадский р-н, ул. Паркентская, д. 180, Ориентир:
-              бывшая «Корзинка Авиатор»
+            <p style={{ lineHeight: 1.5 }}>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Accusamus harum officiis, alias quam est voluptatem.
             </p>
           </div>
           <div className={scss.footer__row1_col2} data-aos="fade-down">
