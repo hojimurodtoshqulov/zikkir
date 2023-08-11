@@ -18,7 +18,6 @@
 	height: 10vh;
 	margin: 0 auto;
 	transition: 0.3s;
-	// box-shadow: 0 5px 20px 5px rgba(0, 0, 0, 0.364);
 	&__container {
 		width: 100%;
 		display: flex;
@@ -69,7 +68,7 @@
 				flex-wrap: wrap;
 				transition: 0s !important;
 				position: relative;
-				text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.884);
+				// text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.884);
 
 				&:hover {
 					span {
@@ -138,9 +137,10 @@
 						font-size: 18px;
 						line-height: 25px;
 						cursor: pointer;
-						text-shadow: 1px 3px 10px rgba(0, 0, 0, 0.499);
+						text-shadow: none;
 						&:hover {
 							background: $primary;
+							text-shadow: 1px 3px 10px rgba(0, 0, 0, 0.499);
 							color: $light;
 						}
 					}

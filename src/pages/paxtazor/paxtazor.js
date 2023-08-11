@@ -22,13 +22,22 @@ const Paxtazor = () => {
 			<div className={scss.paxtazor}>
 				<ProjectsHeader bgImage={img1} logo={logo} />
 				<ProjectsAbout
+					title={"5 ФАКТОВ О ПРОЕКТЕ"}
+					text={
+						"В центральной части Карши мы создали идеальное сочетание стиля, безопасности и комфорта благодаря современным технологиям и квалифицированности наших специалистов"
+					}
 					img1={img2}
 					img2={img3}
 					img3={img4}
 					img4={img5}
 					img5={img6}
 				/>
-				<SuperLocation bgImg={img7} />
+				<SuperLocation
+					bgImg={img7}
+					space={
+						"https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3104.472378174517!2d65.79640461691929!3d38.83663871991241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzjCsDUwJzExLjQiTiA2NcKwNDcnNDcuNSJF!5e0!3m2!1sru!2s!4v1691735889056!5m2!1sru!2s"
+					}
+				/>
 				<Form />
 				<Architect bgImg1={img1} />
 				<ProjectPlan />

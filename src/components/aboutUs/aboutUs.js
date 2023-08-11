@@ -25,13 +25,13 @@ const AboutUs = () => {
 						</div>
 						<div className={scss.counts} data-aos="fade-right">
 							<h4>
-								4
+								2
 								<span>
 									<MainSymbol symbolWith={15} brr={5} /> лет на рынке
 								</span>
 							</h4>
 							<h4>
-								5
+								2
 								<span>
 									<MainSymbol symbolWith={15} brr={5} /> успешных проектов
 								</span>
@@ -39,15 +39,15 @@ const AboutUs = () => {
 						</div>
 						<div className={scss.counts} data-aos="fade-right">
 							<h4>
-								2000 +
+								1000 +
 								<span>
-									<MainSymbol symbolWith={15} brr={5} /> лет на рынке
+									<MainSymbol symbolWith={15} brr={5} /> cчастливыx семeй
 								</span>
 							</h4>
 							<h4>
 								50000 +
 								<span>
-									<MainSymbol symbolWith={15} brr={5} /> успешных проектов
+									<MainSymbol symbolWith={15} brr={5} /> площадь проектов
 								</span>
 							</h4>
 						</div>

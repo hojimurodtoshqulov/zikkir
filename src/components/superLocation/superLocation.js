@@ -8,7 +8,7 @@ import img6 from "../../media/route_cart.png";
 import img7 from "../../media/route_gym.png";
 import img8 from "../../media/route_graduation.png";
 import img9 from "../../media/route_restaurant.png";
-const SuperLocation = ({ bgImg }) => {
+const SuperLocation = ({ bgImg, space }) => {
 	return (
 		<div
 			className={scss.superLocation}
@@ -20,7 +20,7 @@ const SuperLocation = ({ bgImg }) => {
 					<div className={scss.superLocation__elements_col1}>
 						<div className={scss.map} data-aos="fade-up-right">
 							<iframe
-								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d36436.3590327224!2d69.22648206127761!3d41.30390400192779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8afc5ecd0a29%3A0x2ff89e41e2381d4f!2sNEXT%20MALL!5e0!3m2!1sru!2s!4v1690799414742!5m2!1sru!2s"
+								src={space}
 								width="100%"
 								height="100%"
 								style={{ border: 0 }}
@@ -30,7 +30,10 @@ const SuperLocation = ({ bgImg }) => {
 							></iframe>
 						</div>
 					</div>
-					<div className={scss.superLocation__elements_col2} data-aos="fade-up-left">
+					<div
+						className={scss.superLocation__elements_col2}
+						data-aos="fade-up-left"
+					>
 						<div className={scss.row1}>
 							<img src={img1} alt={img1} />
 							Как добраться

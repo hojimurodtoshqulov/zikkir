@@ -1,15 +1,13 @@
 import scss from "./projectsAbout.module.scss";
 
-const ProjectsAbout = ({ img1, img2, img3, img4, img5 }) => {
+const ProjectsAbout = ({title, text, img1, img2, img3, img4, img5 }) => {
 	return (
 		<div className={scss.projectsAbout}>
 			<div className="container">
 				<div className={scss.elements} data-aos="fade-up">
-					<h2 data-aos="flip-up">5 ФАКТОВ О ПРОЕКТЕ</h2>
+					<h2 data-aos="flip-up">{title}</h2>
 					<p data-aos="flip-up">
-						В центральной части Ташкента мы создали концептуальное жилое
-						пространство, гармонично сочетающее современные представления об
-						абсолютном удобстве
+						{text}
 					</p>
 					<div className={scss.elementsImgDiv}>
 						<div
@@ -40,7 +38,7 @@ const ProjectsAbout = ({ img1, img2, img3, img4, img5 }) => {
 									margin: "0 auto",
 								}}
 							>
-								3. Удобная парковка на 100 машин
+								3. Удобная парковка на 20 машин
 							</p>
 						</div>
 					</div>
