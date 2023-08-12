@@ -51,7 +51,7 @@ const Footer = () => {
               className={scss.footer__row1_col2_link}
               onClick={scrollToTop}
             >
-              О компании <p></p>
+              О нас <p></p>
             </Link>
             <Link
               to="/news"
@@ -59,13 +59,6 @@ const Footer = () => {
               onClick={scrollToTop}
             >
               Новости <p></p>
-            </Link>
-            <Link
-              to="/company"
-              className={scss.footer__row1_col2_link}
-              onClick={scrollToTop}
-            >
-              О нас <p></p>
             </Link>
 
             <Link
