@@ -25,21 +25,21 @@ const Architect = ({ bgImg1 }) => {
 					<div className={scss.elementsRow}>
 						<div className={scss.elementsRowDiv} data-aos="fade-up-left">
 							<img src={img1} alt={img1} />
-							<p>Инновационная Архитектура</p>
+							<span>Инновационная Архитектура</span>
 						</div>
 						<div className={scss.elementsRowDiv} data-aos="fade-up-right">
 							<img src={img2} alt={img2} />
-							<p>Европейские Материалы Фасада</p>
+							<span>Европейские Материалы Фасада</span>
 						</div>
 					</div>
 					<div className={scss.elementsRow}>
 						<div className={scss.elementsRowDiv} data-aos="fade-down-left">
 							<img src={img3} alt={img3} />
-							<p>Внутреннее Eco пространство</p>
+							<span>Внутреннее Eco пространство</span>
 						</div>
 						<div className={scss.elementsRowDiv} data-aos="fade-down-right">
 							<img src={img4} alt={img4} />
-							<p>Надежная система безопасности</p>
+							<span>Надежная система безопасности</span>
 						</div>
 					</div>
 				</div>

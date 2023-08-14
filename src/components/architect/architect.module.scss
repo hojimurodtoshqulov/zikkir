@@ -24,16 +24,25 @@
 				background: rgba(148, 148, 148, 0.641);
 				display: flex;
 				align-items: center;
-				justify-content: flex-start;
-				gap: 15px;
+				justify-content: center;
+				gap: 5px;
 				padding: 20px 40px;
 				font-size: 21px;
 				border-radius: 15px;
 				text-align: center;
+				span {
+					// width: 77%;
+					display: inline;
+					// border: 1px solid rgb(30, 0, 255);
+					// display: flex;
+					// align-items: center;
+					// justify-content: center;
+					text-align: center;
+				}
 			}
 		}
 	}
-	&Text{
+	&Text {
 		font-size: 32px;
 		text-align: center;
 	}
