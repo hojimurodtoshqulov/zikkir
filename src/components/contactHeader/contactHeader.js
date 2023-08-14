@@ -13,8 +13,8 @@ const ContactHeader = ({ bgImage, title }) => {
 							<p>
 								Время работы <br />
 								Отдел продаж: Пн-Пт: с <span>9:00</span> до <br />
-								<span>19:00</span> Сб-ВС: с <span>10:00</span> до{" "}
-								<span>18:00</span>
+								<span>20:00</span> Сб-ВС: с <span>9:00</span> до{" "}
+								<span>20:00</span>
 							</p>
 						</div>
 						<div className={scss.elementsDivCol1} data-aos="fade-up-right">

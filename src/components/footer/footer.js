@@ -36,12 +36,17 @@ const Footer = () => {
 							</a>
 						</p>
 						<p>
-							<a href="tel:+998990003300">+998 99 000 33 00 </a>
-							<a href="tel:+998991113300 ">+998 99 111 33 00 </a>
+							<a href="tel:+998336450555">+998 33 645 05 55</a>
+							<a href="tel:+998335250555">+998 33 525 05 55</a>
 						</p>
-						<p>
-							Г. Ташкент, Яшнабадский р-н, ул. Паркентская, д. 180, Ориентир:
-							бывшая «Корзинка Авиатор»
+						<p
+							style={{
+								lineHeight: 1.5,
+								letterSpacing: "1px",
+								fontSize: "19px",
+							}}
+						>
+							Офис - Карши, Насаф улица 27а дом
 						</p>
 					</div>
 					<div className={scss.footer__row1_col2} data-aos="fade-down">
@@ -51,7 +56,7 @@ const Footer = () => {
 							className={scss.footer__row1_col2_link}
 							onClick={scrollToTop}
 						>
-							О компании <p></p>
+							О нас <p></p>
 						</Link>
 						<Link
 							to="/news"
@@ -59,13 +64,6 @@ const Footer = () => {
 							onClick={scrollToTop}
 						>
 							Новости <p></p>
-						</Link>
-						<Link
-							to="/company"
-							className={scss.footer__row1_col2_link}
-							onClick={scrollToTop}
-						>
-							О нас <p></p>
 						</Link>
 
 						<Link
@@ -92,20 +90,20 @@ const Footer = () => {
 						>
 							Cholquvar <p></p>
 						</Link>
-						<Link
-							to="/contact"
-							className={scss.footer__row1_col2_link}
-							onClick={scrollToTop}
-						>
-							Lorem ipsum <p></p>
-						</Link>
-						<Link
-							to="/programs"
-							className={scss.footer__row1_col2_link}
-							onClick={scrollToTop}
-						>
-							Lorem ipsum <p></p>
-						</Link>
+						{/* <Link
+              to="/contact"
+              className={scss.footer__row1_col2_link}
+              onClick={scrollToTop}
+            >
+              Lorem ipsum <p></p>
+            </Link>
+            <Link
+              to="/programs"
+              className={scss.footer__row1_col2_link}
+              onClick={scrollToTop}
+            >
+              Lorem ipsum <p></p>
+            </Link> */}
 					</div>
 					<div className={scss.footer__row1_col2} data-aos="fade-down">
 						<h4>Социальные сети</h4>

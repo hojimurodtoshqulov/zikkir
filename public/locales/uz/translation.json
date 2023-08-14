@@ -1,113 +1,113 @@
 {
-	"nav": {
-		"company": "Biz haqimizda",
-		"projects": "Proektlar",
-		"news": "Yangiliklar",
-		"contact": "Aloqa",
-		"layout": "Tartib"
-	},
-	"uz": "UZ",
-	"ru": "RU",
-	"sum": "so'm",
-	"month": "oy",
-	"map": "Xarita",
+  "nav": {
+    "company": "Biz haqimizda",
+    "projects": "Proektlar",
+    "news": "Yangiliklar",
+    "contact": "Aloqa",
+    "layout": "Tartib"
+  },
+  "uz": "UZ",
+  "ru": "RU",
+  "sum": "so'm",
+  "month": "oy",
+  "map": "Xarita",
 
-	"company": "Kompaniya",
-	"leasing": "Lizing dasturlari",
-	"client": "Mijozlar uchun",
-	"contact": "Aloqa",
-	"langCheck": "Uz",
-	"hello": "uzbekcha salom",
-	"explainSection": {
-		"title": "Qanday qilib ijaraga olish mumkin",
-		"card1": "Ulovni tanlaysiz",
-		"card2": "Arizani to'ldiring lizingni moliyalashtirish uchun va uni ko'rib chiqish uchun yuboring.",
-		"card3": "Siz bitim uchun hujjatlar to'plamini imzolaysiz, garovni tuzasiz va avans to'laysiz",
-		"card4": "Shu paytdan boshlab lizing shartnomasi va oldi-sotdi shartnomasi kuchga kirgan deb hisoblanadi!"
-	},
+  "company": "Kompaniya",
+  "leasing": "Lizing dasturlari",
+  "client": "Mijozlar uchun",
+  "contact": "Aloqa",
+  "langCheck": "Uz",
+  "hello": "uzbekcha salom",
+  "explainSection": {
+    "title": "Qanday qilib ijaraga olish mumkin",
+    "card1": "Ulovni tanlaysiz",
+    "card2": "Arizani to'ldiring lizingni moliyalashtirish uchun va uni ko'rib chiqish uchun yuboring.",
+    "card3": "Siz bitim uchun hujjatlar to'plamini imzolaysiz, garovni tuzasiz va avans to'laysiz",
+    "card4": "Shu paytdan boshlab lizing shartnomasi va oldi-sotdi shartnomasi kuchga kirgan deb hisoblanadi!"
+  },
 
-	"home": {
-		"hero": {
-			"text": "QUYOSH TURAGAN JOY",
-			"text2": "Kelajagingizni biz bilan quring",
-			"btnText1": "Ko'rish"
-		},
-		"aboutUs": {
-			"title": "Biz haqimizda",
-			"text": "Zikkir binosi - Qurilish kompaniyasi turar-joy va tijorat ob'ektlarini qurish uchun kompleks echimga e'tibor qaratgan. Kompaniyamiz ob'ektlarimizning Yevropa sifatini ta'minlash uchun ilg'or texnologiyalar bilan jihozlangan va har xil turdagi ob'ektlarni qurishda individual yondashuvni qo'llaydi. Biz jamoamizning professionalligiga va ishimiz sifatiga ishonamiz, shuning uchun biz bajargan barcha ishlarni ta'minlaymiz."
-		},
-		"advantages": {
-			"title": "Afzalliklar",
-			"step1": {
-				"title": "Tajriba va professionallik",
-				"text": "Bizning mutaxassislar jamoasi qurilish sohasida boy tajribaga ega. Biz nafaqat barcha zarur bilim va ko'nikmalarga egamiz, balki doimiy ravishda takomillashtirib boramiz, qurilishning eng so'nggi tendentsiyalari va eng yangi texnologiyalariga amal qilamiz."
-			},
-			"step2": {
-				"title": "Sifat va ishonchlilik: ",
-				"text": "Biz bajarilgan ishlarning yuqori sifati va majburiyatlarning o'z vaqtida bajarilishini kafolatlaymiz. Biz faqat sertifikatlangan materiallar va zamonaviy jihozlardan foydalanamiz. Kompaniyamiz ishonchli yetkazib beruvchilar va hamkorlar bilan ishlaydi, bu bizga qurilish jarayonlarining uzluksizligini ta'minlash imkonini beradi."
-			},
-			"step3": {
-				"title": "Individual yondashuv:",
-				"text": "Kompaniyamiz har bir mijozning ehtiyojlariga alohida e'tibor beradi. Biz mijozning talablarini sinchkovlik bilan tahlil qilamiz va ob'ektning barcha istaklari va xususiyatlarini hisobga olgan holda individual echimlarni ishlab chiqamiz."
-			}
-		},
-		"footer": {
-			"address": "Bizning manzil",
-			"location": "Yunusobod tumani",
-			"phone": "Telefon"
-		}
-	},
+  "home": {
+    "hero": {
+      "text": "QUYOSH TURAGAN JOY",
+      "text2": "Kelajagingizni biz bilan quring",
+      "btnText1": "Ko'rish"
+    },
+    "aboutUs": {
+      "title": "Biz haqimizda",
+      "text": "Zikkir building - Qurilish kompaniyasi turar-joy va tijorat obyektlarini qurish uchun kompleks yechimga qaratilgan. Kompaniyamiz obyektlarimizning Yevropa sifatini ta'minlashi uchun ilg'or texnologiyalar bilan jihozlangan va qurilishga individual yondashuvni qo'llaydi. Biz jamoamizning professionalligiga va ishimiz sifatiga ishonchimiz komil, shuning uchun biz tugatgan barcha loyihalarni taqdim etamiz."
+    },
+    "advantages": {
+      "title": "Afzalliklar",
+      "step1": {
+        "title": "Tajriba va professionallik",
+        "text": "Bizning mutaxassislar jamoasi qurilish sohasida boy tajribaga ega. Biz nafaqat barcha zarur bilim va ko'nikmalarga egamiz, balki doimiy ravishda takomillashtirib boramiz, qurilishning eng so'nggi tendentsiyalari va eng yangi texnologiyalariga amal qilamiz."
+      },
+      "step2": {
+        "title": "Sifat va ishonchlilik: ",
+        "text": "Biz bajarilgan ishlarning yuqori sifati va majburiyatlarning o'z vaqtida bajarilishini kafolatlaymiz. Biz faqat sertifikatlangan materiallar va zamonaviy jihozlardan foydalanamiz. Kompaniyamiz ishonchli yetkazib beruvchilar va hamkorlar bilan ishlaydi, bu bizga qurilish jarayonlarining uzluksizligini ta'minlash imkonini beradi."
+      },
+      "step3": {
+        "title": "Individual yondashuv:",
+        "text": "Kompaniyamiz har bir mijozning ehtiyojlariga alohida e'tibor beradi. Biz mijozning talablarini sinchkovlik bilan tahlil qilamiz va ob'ektning barcha istaklari va xususiyatlarini hisobga olgan holda individual echimlarni ishlab chiqamiz."
+      }
+    },
+    "footer": {
+      "address": "Bizning manzil",
+      "location": "Yunusobod tumani",
+      "phone": "Telefon"
+    }
+  },
 
-	"clients": {
-		"title": "Mijozlar uchun",
-		"section1": {
-			"title": "Normativ hujjatlar",
-			"p1": "Ro'yxatdan o'tish guvohnomasi",
-			"p2": "Tashkilotlar va korxonalarning yagona davlat reestridan (EGRPO) kompaniya haqida ma'lumot",
-			"p3": "Direktorning buyrug'i",
-			"p4": "Ta'sischining IP 00O ljara Leasingni yaratish to'g'risidagi qarori"
-		},
-		"section2": {
-			"title": "Normativ hujjatlar",
-			"p1": "Ro'yxatdan o'tish guvohnomasi"
-		},
-		"section3": {
-			"title": "Sug'urta ishi",
-			"p1": "Da'volar bo'yicha hujjatlar ro'yxati",
-			"p2": "Sug'urta da'volarini ko'rib chiqish tartibi"
-		},
-		"section4": {
-			"title": "Lizing oluvchining ma'lumotlarini o'zgartirish",
-			"p1": "Lizing oluvchining rekvizitlari o'zgargan taqdirda, u kompaniyaning firma blankida rahbarning muhri va imzosi bilan tasdiqlangan rasmiy xat yuborish orqali Lizing beruvchini ushbu fakt to'g'risida xabardor qilishi shart.",
-			"p2": "Xatning asl nusxasi pochta orqali Yunusobod tumani, C-5, 78-uy, 13-uy manziliga yuboriladi. Xatning fotonusxasi elektron pochtaga yuboriladi."
-		},
-		"section5": {
-			"title": "Lizing shartnomasini ijara muddati oxirida bekor qilish",
-			"p1": "Lizing ob'ekti lizing shartnomasining amal qilish muddati tugagandan so'ng lizing oluvchining mulkiga o'tadi va lizing oluvchi alohida tuzilgan lizing ob'ektini sotib olish to'g'risidagi shartnomaga muvofiq Shartnoma bo'yicha o'zining barcha majburiyatlarini bajaradi. ijara shartnomasi muddati tugashining oxirgi kunida.",
-			"p2": "Lizing ob'ekti bo'yicha sotib olish shartnomasini tayyorlash faqat lizing oluvchining ijara shartnomasi bo'yicha qarzlari bo'lmagan taqdirdagina boshlanadi.",
-			"p3": "Hujjatlarni tayyorlash muddati 10 ish kunidan oshmaydi."
-		},
-		"section6": {
-			"title": "Lizing shartnomasini muddatidan oldin bekor qilish (erta sotib olish)",
-			"p1": "Alohida hollarda, lizing shartnomasini muddatidan oldin bekor qilish Lizing beruvchi Lizing oluvchi tomonidan ko'rsatilgan holatlarni ko'rib chiqqandan keyin amalga oshirilishi mumkin."
-		},
-		"requisities": {
-			"title": "Rekvizitlar",
-			"subtitle": "Bank rekvizitlari",
-			"p1": "Hisob-kitob schyoti (O‘zb.so‘m)",
-			"p2": "“Ipak yo‘li” АИКБ bank ma’lumotlari, Toshkent",
-			"p3": "Bank kodi 00444"
-		}
-	},
-	"modal": {
-		"submitTitle": "Umumiy ma'lumotni to'ldiring",
-		"submitDescription": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, illo.",
-		"submitPhone": "F.I.O",
-		"submitPrice": "Yuridik shaxsning STIR",
-		"submitProduct": "Qo'l telefoningiz",
-		"submitComments": "Elektron manzilingiz",
-		"modalAgree": "Men shaxsiy ma'lumotlarni",
-		"modalAgreeLink": "qayta ishlash shartlariga roziman",
-		"submitSucces": "Arizangiz muvaffaqiyatli yuborildi!"
-	}
+  "clients": {
+    "title": "Mijozlar uchun",
+    "section1": {
+      "title": "Normativ hujjatlar",
+      "p1": "Ro'yxatdan o'tish guvohnomasi",
+      "p2": "Tashkilotlar va korxonalarning yagona davlat reestridan (EGRPO) kompaniya haqida ma'lumot",
+      "p3": "Direktorning buyrug'i",
+      "p4": "Ta'sischining IP 00O ljara Leasingni yaratish to'g'risidagi qarori"
+    },
+    "section2": {
+      "title": "Normativ hujjatlar",
+      "p1": "Ro'yxatdan o'tish guvohnomasi"
+    },
+    "section3": {
+      "title": "Sug'urta ishi",
+      "p1": "Da'volar bo'yicha hujjatlar ro'yxati",
+      "p2": "Sug'urta da'volarini ko'rib chiqish tartibi"
+    },
+    "section4": {
+      "title": "Lizing oluvchining ma'lumotlarini o'zgartirish",
+      "p1": "Lizing oluvchining rekvizitlari o'zgargan taqdirda, u kompaniyaning firma blankida rahbarning muhri va imzosi bilan tasdiqlangan rasmiy xat yuborish orqali Lizing beruvchini ushbu fakt to'g'risida xabardor qilishi shart.",
+      "p2": "Xatning asl nusxasi pochta orqali Yunusobod tumani, C-5, 78-uy, 13-uy manziliga yuboriladi. Xatning fotonusxasi elektron pochtaga yuboriladi."
+    },
+    "section5": {
+      "title": "Lizing shartnomasini ijara muddati oxirida bekor qilish",
+      "p1": "Lizing ob'ekti lizing shartnomasining amal qilish muddati tugagandan so'ng lizing oluvchining mulkiga o'tadi va lizing oluvchi alohida tuzilgan lizing ob'ektini sotib olish to'g'risidagi shartnomaga muvofiq Shartnoma bo'yicha o'zining barcha majburiyatlarini bajaradi. ijara shartnomasi muddati tugashining oxirgi kunida.",
+      "p2": "Lizing ob'ekti bo'yicha sotib olish shartnomasini tayyorlash faqat lizing oluvchining ijara shartnomasi bo'yicha qarzlari bo'lmagan taqdirdagina boshlanadi.",
+      "p3": "Hujjatlarni tayyorlash muddati 10 ish kunidan oshmaydi."
+    },
+    "section6": {
+      "title": "Lizing shartnomasini muddatidan oldin bekor qilish (erta sotib olish)",
+      "p1": "Alohida hollarda, lizing shartnomasini muddatidan oldin bekor qilish Lizing beruvchi Lizing oluvchi tomonidan ko'rsatilgan holatlarni ko'rib chiqqandan keyin amalga oshirilishi mumkin."
+    },
+    "requisities": {
+      "title": "Rekvizitlar",
+      "subtitle": "Bank rekvizitlari",
+      "p1": "Hisob-kitob schyoti (O‘zb.so‘m)",
+      "p2": "“Ipak yo‘li” АИКБ bank ma’lumotlari, Toshkent",
+      "p3": "Bank kodi 00444"
+    }
+  },
+  "modal": {
+    "submitTitle": "Umumiy ma'lumotni to'ldiring",
+    "submitDescription": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, illo.",
+    "submitPhone": "F.I.O",
+    "submitPrice": "Yuridik shaxsning STIR",
+    "submitProduct": "Qo'l telefoningiz",
+    "submitComments": "Elektron manzilingiz",
+    "modalAgree": "Men shaxsiy ma'lumotlarni",
+    "modalAgreeLink": "qayta ishlash shartlariga roziman",
+    "submitSucces": "Arizangiz muvaffaqiyatli yuborildi!"
+  }
 }

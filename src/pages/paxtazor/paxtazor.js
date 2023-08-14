@@ -6,12 +6,17 @@ import Form from "../../components/form/form";
 import ProjectsHeader from "../../components/projectsHeader/projectsHeader";
 import logo from "../../media/paxtazor.png";
 import img1 from "../../media/u4.png";
-import img2 from "../../media/u7.png";
+import img2 from "../../media/u11.png";
 import img3 from "../../media/u17.png";
-import img4 from "../../media/u18.png";
-import img5 from "../../media/u19.png";
-import img6 from "../../media/u11.png";
+import img4 from "../../media/Rectangle 1293.png";
+import img5 from "../../media/Rectangle 1294.png";
+import img6 from "../../media/u15.png";
 import img7 from "../../media/u2.png";
+import archImg1 from "../../media/arch1.png";
+import archImg2 from "../../media/arch2.png";
+import archImg3 from "../../media/arch3.png";
+import archImg4 from "../../media/arch4.png";
+import archImg5 from "../../media/arch7.png";
 import ProjectsAbout from "../../components/projectsAbout/projectsAbout";
 import SuperLocation from "../../components/superLocation/superLocation";
 import Architect from "../../components/architect/architect";
@@ -31,6 +36,13 @@ const Paxtazor = () => {
 					img3={img4}
 					img4={img5}
 					img5={img6}
+					title1={"Удобная локация"}
+					title2={"Детская площадка"}
+					title3={
+						"Чистый питьевой вода с запасом воды на 80 тонн и многими другими удобствами"
+					}
+					title4={"Отдельная канализация"}
+					title5={"Парковка имеется"}
 				/>
 				<SuperLocation
 					bgImg={img7}
@@ -39,7 +51,19 @@ const Paxtazor = () => {
 					}
 				/>
 				<Form />
-				<Architect bgImg1={img1} />
+				<Architect
+					bgImg1={img1}
+					img1={archImg1}
+					img2={archImg2}
+					img3={archImg3}
+					img4={archImg4}
+					img5={archImg5}
+					title1={"Инновационная Архитектура"}
+					title2={"Европейские Материалы Фасада"}
+					title3={"Витражное Остекление"}
+					title4={"Увеличенная Высота Потолков В Чистоте"}
+					title5={"Автоклавный газаблок"}
+				/>
 				<ProjectPlan />
 				{/* <Map_form /> */}
 			</div>

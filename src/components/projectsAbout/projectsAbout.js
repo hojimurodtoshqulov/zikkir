@@ -1,28 +1,39 @@
 import scss from "./projectsAbout.module.scss";
 
-const ProjectsAbout = ({title, text, img1, img2, img3, img4, img5 }) => {
+const ProjectsAbout = ({
+	title,
+	text,
+	img1,
+	img2,
+	img3,
+	img4,
+	img5,
+	title1,
+	title2,
+	title3,
+	title4,
+	title5,
+}) => {
 	return (
 		<div className={scss.projectsAbout}>
 			<div className="container">
 				<div className={scss.elements} data-aos="fade-up">
 					<h2 data-aos="flip-up">{title}</h2>
-					<p data-aos="flip-up">
-						{text}
-					</p>
+					<p data-aos="flip-up">{text}</p>
 					<div className={scss.elementsImgDiv}>
 						<div
 							className={scss.elementsImgDivHidden}
 							style={{ backgroundImage: `url("${img1}")` }}
 							data-aos="fade-right"
 						>
-							<p>1. Супер - локация</p>
+							<p>1. {title1}</p>
 						</div>
 						<div
 							className={scss.elementsImgDivHidden}
 							style={{ backgroundImage: `url("${img2}")` }}
 							data-aos="fade-left"
 						>
-							<p>2. Детская - площадка</p>
+							<p>2. {title2}</p>
 						</div>
 					</div>
 					<div className={scss.elementsImgDiv} data-aos="flip-up">
@@ -38,7 +49,7 @@ const ProjectsAbout = ({title, text, img1, img2, img3, img4, img5 }) => {
 									margin: "0 auto",
 								}}
 							>
-								3. Удобная парковка на 20 машин
+								3. {title3}
 							</p>
 						</div>
 					</div>
@@ -48,14 +59,14 @@ const ProjectsAbout = ({title, text, img1, img2, img3, img4, img5 }) => {
 							style={{ backgroundImage: `url("${img4}")` }}
 							data-aos="fade-left"
 						>
-							<p> 4. Lorem, ipsum.</p>
+							<p> 4. {title4} </p>
 						</div>
 						<div
 							className={scss.elementsImgDivHidden}
 							style={{ backgroundImage: `url("${img5}")` }}
 							data-aos="fade-right"
 						>
-							<p>5. Lorem, ipsum.</p>
+							<p>5. {title5}</p>
 						</div>
 					</div>
 				</div>

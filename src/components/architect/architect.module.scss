@@ -32,12 +32,14 @@
 				text-align: center;
 				span {
 					// width: 77%;
-					display: inline;
+					display: inline-block;
 					// border: 1px solid rgb(30, 0, 255);
 					// display: flex;
 					// align-items: center;
 					// justify-content: center;
 					text-align: center;
+					font-size: 30px;
+					padding: 10px 0 10px 20px;
 				}
 			}
 		}
