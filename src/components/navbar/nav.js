@@ -34,11 +34,7 @@ const Nav = ({ onClick }) => {
     };
   }, []);
   const [langCheck, setLangCheck] = useState(1);
-  const [langColor, setLangColor] = useState("");
-  const langBtn = [
-    { btntitle: "Ru", id: 1 },
-    { btntitle: "Uz", id: 2 },
-  ];
+  const [langColor, _] = useState("");
   const currentLang = i18n.language === "en-US" ? "ru" : i18n.language;
   const checkLangImg = (e) => {
     if (e.target.value === "ru") {
@@ -59,6 +55,7 @@ const Nav = ({ onClick }) => {
       return navSizeMobile;
     }
   };
+
   return (
     <Suspense fallback="loading">
       <nav

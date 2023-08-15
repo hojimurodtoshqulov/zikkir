@@ -12,11 +12,11 @@ const NewsService = ({ theme }) => {
 	const { t } = useTranslation();
 	const images = [img1, img2, img3, img4, img5];
 	const titles = [
-		t("News houses"),
-		t("News houses"),
-		t("News houses"),
-		t("News houses"),
-		t("News houses"),
+		t("News-houses"),
+		t("News-houses"),
+		t("News-houses"),
+		t("News-houses"),
+		t("News-houses"),
 	];
 	const texts = [
 		t(
