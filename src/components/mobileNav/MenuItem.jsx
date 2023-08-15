@@ -22,7 +22,7 @@ const variants = {
 const colors = ["#FF008C", "#D309E1", "#9C1AFF", "#7700FF", "#4400FF"];
 
 export const MenuItem = ({ title, href, toggleOpen }) => {
-	// const style = { border: `2px solid ${colors[i]}` };
+    
 	const scrollToTop = () => {
 		window.scrollTo(0, 0);
 	};

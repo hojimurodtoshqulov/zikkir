@@ -1,6 +1,6 @@
 import scss from "./contactHeader.module.scss";
 import img1 from "../../media/logo_white.png";
-const ContactHeader = ({ bgImage, title }) => {
+const ContactHeader = ({ bgImage }) => {
 	return (
 		<div
 			className={scss.contactHeader}
@@ -12,7 +12,7 @@ const ContactHeader = ({ bgImage, title }) => {
 						<div className={scss.elementsDivCol1} data-aos="fade-up-left">
 							<p>
 								Время работы <br />
-								Отдел продаж: Пн-Пт: с <span>9:00</span> до <br />
+								Отдел продаж: Пн-Пт: c <span>9:00</span> до <br />
 								<span>20:00</span> Сб-ВС: с <span>9:00</span> до{" "}
 								<span>20:00</span>
 							</p>
@@ -38,20 +38,20 @@ const ContactHeader = ({ bgImage, title }) => {
 							<p>
 								Почтовые адреса Общая информация:{" "}
 								<span>
-									<a href="">info@gh.uz</a>{" "}
+									<a href="#">info@gh.uz</a>{" "}
 								</span>{" "}
 								<br />
 								Обратная связь:{" "}
 								<span>
-									<a href=""> feedback@gh.uz</a>{" "}
+									<a href="#"> feedback@gh.uz</a>{" "}
 								</span>
 								Отдел снабжения:{" "}
 								<span>
-									<a href="">supply@gh.uz</a>{" "}
+									<a href="#">supply@gh.uz</a>{" "}
 								</span>
 								Отдел продаж:{" "}
 								<span>
-									<a href="">sales@gh.uz</a>{" "}
+									<a href="#">sales@gh.uz</a>{" "}
 								</span>
 							</p>
 						</div>

@@ -4,7 +4,6 @@ import { motion, sync, useCycle } from "framer-motion";
 import { useDimensions } from "./use-deminsions";
 import { MenuToggle } from "./MenuToggle";
 import { Navigation } from "./Navigation";
-import { useTranslation } from "react-i18next";
 import "./style.scss";
 
 const sidebar = {
@@ -52,6 +51,7 @@ const MobileNav = () => {
 	const containerRef = useRef(null);
 	const { height } = useDimensions(containerRef);
 	const func = () => {
+        console.log("clicked");
 	};
 	return (
 		<div className={`mobileNavWrap ${isOpen && "active"}`}>
