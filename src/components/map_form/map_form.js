@@ -34,9 +34,9 @@ const Map_form = () => {
 							течение 30 минут!
 						</p>
 						<form action="">
-							<input type="text" placeholder="Ваше  имя..." />
-							<input type="text" placeholder="Ваш телефон..." />
-							<input type="text" placeholder="Ваш вопрос..." />
+							<input required type="text" placeholder="Ваше  имя..." />
+							<input required type="text" placeholder="Ваш телефон..." />
+							<textarea required type="text" placeholder="Ваш вопрос..." />
 							<button type="submit">Отправить сообщение</button>
 							<p>
 								Нажимая на кнопку вы соглашаетесь с политикой конфиденциальности{" "}

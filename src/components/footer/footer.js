@@ -31,8 +31,8 @@ const Footer = () => {
 					<div className={scss.footer__row1_col3} data-aos="fade-right">
 						<h4>Контактная информация</h4>
 						<p>
-							<a href="mail:info@zikkir">
-								<span>info@zikkir</span>
+							<a href="mail:shuxratuljaboyev@gmail.com">
+								<span>shuxratuljaboyev@gmail.com</span>
 							</a>
 						</p>
 						<p>

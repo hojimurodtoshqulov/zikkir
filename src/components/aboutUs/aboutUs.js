@@ -25,13 +25,13 @@ const AboutUs = () => {
             </div>
             <div className={scss.counts} data-aos="fade-right">
               <h4>
-                25
+                2
                 <span>
                   <MainSymbol symbolWith={15} brr={5} /> лет на рынке
                 </span>
               </h4>
               <h4>
-                2
+                25
                 <span>
                   <MainSymbol symbolWith={15} brr={5} /> успешных проектов
                 </span>
