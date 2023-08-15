@@ -29,7 +29,6 @@
 			transition: 0s !important;
 		}
 		&_logo {
-			// transition: 0.3s;
 			width: 20%;
 			height: 100%;
 			display: flex;
@@ -41,14 +40,12 @@
 				width: auto;
 				height: 60%;
 				transition: 2s;
-				// animation: rotate 5s linear infinite alternate;
 				&:hover {
 					transform: perspective(100px) rotateX(-360deg);
 				}
 			}
 			h3 {
 				font-family: $font_titles;
-				// transition: 0.3s;
 			}
 		}
 		&_links {
@@ -66,7 +63,6 @@
 				flex-wrap: wrap;
 				transition: 0s !important;
 				position: relative;
-				// text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.884);
 
 				&:hover {
 					span {
@@ -159,11 +155,6 @@
 				height: 22px;
 				border-radius: 50%;
 				position: relative;
-				&:nth-child(1) {
-					button {
-						// color: #319ba1;
-					}
-				}
 				&:hover {
 					color: $light;
 					div {
@@ -227,6 +218,7 @@
 		}
 	}
 }
+
 // @media (min-width: $xxxl) {
 // 	.nav {
 // 		position: fixed;

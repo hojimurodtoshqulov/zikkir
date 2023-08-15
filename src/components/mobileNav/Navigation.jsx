@@ -43,10 +43,8 @@ export const Navigation = ({ toggleOpen }) => {
 		toggleOpen();
 		window.scrollTo(0, 0);
 	};
-
-
 	return (
-		<motion.ul variants={variants}>
+		<motion.ul style={{background : "red"}} variants={variants}>
 			<Link onClick={scrollToTop} className="logo" to="/">
 				<img className="logo__img" src={navLogo} alt="nav logo" />
 				<h3 className="logo__title">IJARA LEASING</h3>

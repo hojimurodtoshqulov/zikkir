@@ -53,6 +53,7 @@ const MobileNav = () => {
 	const func = () => {
         console.log("clicked");
 	};
+
 	return (
 		<div className={`mobileNavWrap ${isOpen && "active"}`}>
 			<motion.nav
