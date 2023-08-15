@@ -42,11 +42,52 @@
 		/>
 		<!-- icon of head -->
 		<link rel="icon" type="image/x-icon" href="./logo_head.png" />
+		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
 		<title>ZIK KIR</title>
 	</head>
 	<body>
 		<div id="root"></div>
-		<script src="https://smtpjs.com/v3/smtp.js">
-		</script>
+
+		<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+		<script src="https://smtpjs.com/v3/smtp.js"></script>
+		<!-- <script>
+			//bot token
+			let telegram_bot_id = "6624056078:AAFNCrZW2Pfv-VhrKYNfXPv61Jf3Qsmq0ZA"; // token'ni o'rniga Siz yaratgan Bot tokenini yozing
+			//chat id
+			let chat_id = -1001762218496; // 1111'ni o'rniga habar borishi kerak bo'lgan joyni ID'sini yozing (Batafsil videoda)
+			let u_name, phone, message;
+			let ready = function () {
+				u_name = document.getElementById("name").value;
+				phone = document.getElementById("phone").value;
+				message = document.getElementById("message").value;
+				message =
+					"Ismi: " + u_name + "\nTel: " + phone + "\nIzoh: " + message;
+			};
+			let sendtelegram = function () {
+				ready();
+				let settings = {
+					async: true,
+					crossDomain: true,
+					url:
+						"https://api.telegram.org/bot" + telegram_bot_id + "/sendMessage",
+					method: "POST",
+					headers: {
+						"Content-Type": "application/json",
+						"cache-control": "no-cache",
+					},
+					data: JSON.stringify({
+						chat_id: chat_id,
+						text: message,
+					}),
+				};
+				$.ajax(settings).done(function (response) {
+					console.log(response);
+				});
+				document.getElementById("name").value = "";
+				document.getElementById("phone").value = "";
+				document.getElementById("message").value = "";
+				return false;
+			};
+		</script> -->
 	</body>
 </html>
