@@ -9,6 +9,8 @@ import Button from "../button/button";
 import sun from "../../media/sun-solid.svg";
 import moon from "../../media/moon-solid.svg";
 import Toggle from "../theme/toggleTheme";
+import { FaPhone } from "react-icons/fa";
+
 const Nav = ({ onClick }) => {
   const [navColorBg, setnavColorBg] = useState(0);
   const [navSize, setnavSize] = useState("12vh");
@@ -161,7 +163,10 @@ const Nav = ({ onClick }) => {
                 <div></div>
               </span>
             </div>
-            <a href="tel:+998336450555">+998 33 645 05 55</a>
+            <div className={scss.nav__container_phoneLink}>
+              <a href="tel:+998336450555">+998 33 645 05 55</a>
+              <a href="tel:+998336450555">{<FaPhone />}</a>
+            </div>
           </div>
         </div>
       </nav>
