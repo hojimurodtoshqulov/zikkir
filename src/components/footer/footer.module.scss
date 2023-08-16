@@ -71,14 +71,15 @@
 
         background: linear-gradient(
             to right,
-            rgb(3, 0, 171),
-            rgba(100, 200, 200, 1)
+            rgba(65, 168, 208, 0.781),
+            rgb(202, 255, 255),
+            rgb(255, 255, 255),
           ),
           linear-gradient(
             to right,
-            rgba(255, 0, 0, 1),
-            rgba(255, 0, 180, 1),
-            rgb(0, 17, 33)
+            rgb(0, 123, 255),
+            rgb(255, 255, 255),
+            rgb(6, 36, 63)
           );
         background-size: 100% 3px, 0 3px;
         background-position: 100% 100%, 0 100%;
