@@ -77,7 +77,7 @@ const Projects = () => {
 								onClick={scrollToTop}
 							>
 								<Link onClick={scrollToTop} to={item.link} data-aos="fade-up">
-									<img src={item.img} alt={item.img} onClick={scrollToTop} />
+									<img className="img" src={item.img} alt={item.img} onClick={scrollToTop} />
 									<img className="link" src={item.logo} alt={item.logo} />
 								</Link>
 							</div>

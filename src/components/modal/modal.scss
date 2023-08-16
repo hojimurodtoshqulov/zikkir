@@ -46,6 +46,10 @@
 		top: 7%;
 		right: 4%;
 		z-index: 12345;
+		@media (max-width: $md) {
+			top: 1%;
+			right: 2%;
+		}
 		svg {
 			color: $light;
 			font-size: 30px;

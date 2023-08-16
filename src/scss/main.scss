@@ -16,14 +16,71 @@ body {
   font-family: sans-serif;
 }
 h2 {
-  font-weight: 600;
-  font-size: 60px;
-  font-family: sans-serif;
+	font-weight: 600;
+	font-size: 60px;
+	font-family: sans-serif;
+	@media (max-width: $xs) {
+		font-weight: 500;
+		font-size: 27px;
+	}
+	@media (min-width: $xs) {
+		font-weight: 500;
+		font-size: 30px;
+	}
+	@media (min-width: $sm) {
+		font-weight: 500;
+		font-size: 35px;
+	}
+	@media (min-width: $md) {
+		font-weight: 500;
+		font-size: 40px;
+	}
+	@media (min-width: $lg) {
+		font-weight: 500;
+		font-size: 50px;
+	}
+	@media (min-width: $xl) {
+		font-weight: 600;
+		font-size: 60px;
+	}
+	@media (min-width: $xxl) {
+		font-weight: 600;
+		font-size: 70px;
+	}
+	@media (min-width: $xxxl) {
+		font-weight: 600;
+		font-size: 90px;
+	}
 }
 .container {
-  width: 100%;
-  padding: 0 10%;
-  margin: 0 auto;
+	width: 100%;
+	padding: 0 10%;
+	margin: 0 auto;
+	@media (max-width: $xs) {
+		padding: 0 ;
+	}
+	@media (min-width: $xs) {
+		padding: 0 2%;
+	}
+	@media (min-width: $sm) {
+		padding: 0 2.5%;
+	}
+	@media (min-width: $md) {
+		padding: 0 5%;
+	}
+	@media (min-width: $lg) {
+		padding: 0 10%;
+	}
+	@media (min-width: $xl) {
+		padding: 0 10%;
+	}
+	@media (min-width: $xxl) {
+		padding: 0 15%;
+	}
+	@media (min-width: $xxxl) {
+		padding: 0 20%;
+	}
+
 }
 .mobileNav {
   display: none;
@@ -40,10 +97,5 @@ h2 {
 @media (max-width: $md) {
   .mobileNav {
     display: block;
-  }
-}
-@media (max-width: $sm) {
-  .container {
-    padding: 0 2%;
   }
 }

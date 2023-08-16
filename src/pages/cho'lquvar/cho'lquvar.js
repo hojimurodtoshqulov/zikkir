@@ -47,7 +47,7 @@ const Cholquvar = () => {
 				<SuperLocation
 					bgImg={img7}
 					space={
-						"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d36436.3590327224!2d69.22648206127761!3d41.30390400192779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8afc5ecd0a29%3A0x2ff89e41e2381d4f!2sNEXT%20MALL!5e0!3m2!1sru!2s!4v1690799414742!5m2!1sru!2s"
+						"https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d5297.470313828899!2d65.79146491513367!3d38.838048979384304!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzjCsDUwJzE1LjUiTiA2NcKwNDcnMzMuNiJF!5e0!3m2!1sru!2s!4v1692176281598!5m2!1sru!2s"
 					}
 				/>
 				<Form />

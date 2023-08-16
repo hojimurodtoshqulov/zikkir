@@ -47,7 +47,6 @@ export const Navigation = ({ toggleOpen }) => {
 		<motion.ul style={{background : "red"}} variants={variants}>
 			<Link onClick={scrollToTop} className="logo" to="/">
 				<img className="logo__img" src={navLogo} alt="nav logo" />
-				<h3 className="logo__title">IJARA LEASING</h3>
 			</Link>
 			<MenuItem
 				toggleOpen={toggleOpen}
