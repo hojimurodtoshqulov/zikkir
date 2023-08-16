@@ -27,8 +27,9 @@ const ContactHeader = ({ bgImage, title }) => {
 							<p>
 								Мы расположены по адресу: <br />
 								<span>
-									Lorem ipsum ased ipsum lorem, Lorem ipsum ased ipsum
-									loremLorem ipsum ased ipsum lorem
+									Paxtazor residence г. Карши, Пахтазор МСГ, микрорайон
+									Пахтазор, дом 7/75. <br />
+									“Cho’lquvar Smart” г. Карши, Чулкувар МСГ, микрорайон 4, дом 8
 								</span>
 							</p>
 						</div>
