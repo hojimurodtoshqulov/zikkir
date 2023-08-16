@@ -3,12 +3,19 @@
 .projectsAbout {
 	padding: 100px 0;
 	background-size: cover;
+	@media (max-width: $md) {
+		padding: 60px 0;
+	}
 	.elements {
 		display: flex;
 		flex-direction: column;
 		align-items: baseline;
 		justify-content: center;
 		gap: 40px;
+		@media (max-width: $md) {
+			gap: 15px;
+			text-align: center;
+		}
 		h2 {
 			color: #0364a0;
 		}
@@ -16,6 +23,10 @@
 			color: #6b6b6b;
 			font-size: 23px;
 			width: 80%;
+			@media (max-width: $md) {
+				font-size: 17px;
+				width: 100%;
+			}
 		}
 		&ImgDiv {
 			display: flex;
@@ -23,6 +34,10 @@
 			justify-content: space-between;
 			gap: 40px;
 			width: 100%;
+			@media (max-width: $md) {
+				gap: 15px;
+				flex-wrap: wrap;
+			}
 			&Hidden {
 				background-size: cover;
 				border-radius: 14px;
@@ -32,12 +47,19 @@
 				display: flex;
 				align-items: flex-end;
 				justify-content: flex-start;
+				@media (max-width: $md) {
+					height: 250px;
+					padding: 20px 10px;
+				}
 				p {
 					color: $light;
 					font-size: 18px;
 					text-shadow: 1px 1px 5px #000;
 					font-size: 30px;
 					font-weight: 600;
+					@media (max-width: $md) {
+						font-size: 19px;
+					}
 				}
 			}
 		}

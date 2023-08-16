@@ -9,6 +9,8 @@ import Button from "../button/button";
 import sun from "../../media/sun-solid.svg";
 import moon from "../../media/moon-solid.svg";
 import Toggle from "../theme/toggleTheme";
+import { FaPhone } from "react-icons/fa";
+
 const Nav = ({ onClick }) => {
   const [navColorBg, setnavColorBg] = useState(0);
   const [navSize, setnavSize] = useState("12vh");
@@ -34,11 +36,7 @@ const Nav = ({ onClick }) => {
     };
   }, []);
   const [langCheck, setLangCheck] = useState(1);
-  const [langColor, setLangColor] = useState("");
-  const langBtn = [
-    { btntitle: "Ru", id: 1 },
-    { btntitle: "Uz", id: 2 },
-  ];
+  const [langColor, _] = useState("");
   const currentLang = i18n.language === "en-US" ? "ru" : i18n.language;
   const checkLangImg = (e) => {
     if (e.target.value === "ru") {
@@ -59,6 +57,7 @@ const Nav = ({ onClick }) => {
       return navSizeMobile;
     }
   };
+
   return (
     <Suspense fallback="loading">
       <nav
@@ -164,7 +163,10 @@ const Nav = ({ onClick }) => {
                 <div></div>
               </span>
             </div>
-            <a href="tel:+998336450555">+998 33 645 05 55</a>
+            <div className={scss.nav__container_phoneLink}>
+              <a href="tel:+998336450555">+998 33 645 05 55</a>
+              <a href="tel:+998336450555">{<FaPhone />}</a>
+            </div>
           </div>
         </div>
       </nav>

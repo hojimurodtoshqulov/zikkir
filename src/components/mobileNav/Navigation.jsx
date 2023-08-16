@@ -35,7 +35,6 @@ export const Navigation = ({ toggleOpen }) => {
 
 	const currentLang = i18n.language === "en-US" ? "ru" : i18n.language;
 
-	// console.log(currentLang);
 
 	const changeLang = (lngCode) => {
 		i18n.changeLanguage(lngCode);
@@ -45,7 +44,7 @@ export const Navigation = ({ toggleOpen }) => {
 		window.scrollTo(0, 0);
 	};
 	return (
-		<motion.ul variants={variants}>
+		<motion.ul style={{background : "red"}} variants={variants}>
 			<Link onClick={scrollToTop} className="logo" to="/">
 				<img className="logo__img" src={navLogo} alt="nav logo" />
 			</Link>
@@ -81,8 +80,6 @@ export const Navigation = ({ toggleOpen }) => {
 			/>
 			<motion.div
 				variants={variantsItem}
-				// whileHover={{ scale: 1.1 }}
-				// whileTap={{ scale: 0.95 }}
 			>
 				<div className="langs_wrapper">
 					<button
