@@ -34,7 +34,7 @@ h2 {
 @media (max-width: $xl) {
   .container {
     padding: 0 5%;
-    overflow-x: hidden;
+    overflow: hidden;
   }
 }
 @media (max-width: $md) {
