@@ -146,6 +146,10 @@
 		bottom: 0;
 		width: 30%;
 		z-index: 33;
+		@media (max-width: $md) {
+			width: 60%;
+			height: auto;
+		}
 	}
 	.whiteLogo2 {
 		position: absolute;
@@ -154,6 +158,10 @@
 		width: 30%;
 		z-index: 33;
 		transform: rotate(180deg);
+		@media (max-width: $md) {
+			width: 60%;
+			height: auto;
+		}
 	}
 }
 // @media (min-width: $xxl) {

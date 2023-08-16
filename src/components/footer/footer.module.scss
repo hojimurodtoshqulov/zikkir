@@ -1,212 +1,114 @@
 @import "../../scss/varuables.scss";
 .footer {
-	background-image: linear-gradient(
-			to top,
-			rgba(102, 102, 102, 0.072),
-			rgba(102, 102, 102, 0.103)
-		),
-		url("../../media/Section.png");
-	background-size: cover;
-	overflow-x: hidden;
-	color: $dark;
-	padding: 50px 0;
-	&__line {
-		margin: 20px 0;
-		width: 100%;
-		height: 4px;
-		background: $light;
-		border-radius: 5px;
-	}
-	&__row1 {
-		display: flex;
-		align-items: flex-start;
-		justify-content: space-between;
-		gap: 20px;
-		padding: 3% 0 5% 0;
-		h4 {
-			font-size: 20px;
-			color: $primary;
-			font-family: sans-serif;
-		}
-		&_group {
-			display: flex;
-			flex-direction: column;
-			gap: 10px;
-			&:nth-child(1) {
-				margin-bottom: 1rem;
-			}
-		}
+  background-image: linear-gradient(
+      to top,
+      rgba(102, 102, 102, 0.072),
+      rgba(102, 102, 102, 0.103)
+    ),
+    url("../../media/Section.png");
+  background-size: cover;
+  overflow-x: hidden;
+  color: $dark;
+  padding: 50px 0;
 
-		&_col1 {
-			width: 20%;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			justify-content: center;
-			gap: 1.5rem;
-			&_logo {
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-				justify-content: center;
-				gap: 0.5rem;
-				img {
-					width: 100%;
-				}
-				h2 {
-					font-family: $font_titles;
-					font-weight: 600;
-					text-transform: uppercase;
-					font-size: 20px;
-				}
-			}
-			&_imgDiv {
-				display: flex;
-				align-items: center;
-				justify-content: space-between;
-				gap: 1rem;
-				&_img {
-					width: 50px;
-					height: 50px;
-					border-radius: $br_r_5;
-					display: flex;
-					align-items: center;
-					justify-content: center;
-					background: $light;
-					color: $primary;
-					font-size: 1.2rem;
-					transition: 0.1s !important;
-					&:hover {
-						color: $primary;
-						background: $primary;
-					}
-				}
-			}
-		}
-		&_col2 {
-			display: flex;
-			flex-direction: column;
-			align-items: flex-start;
-			gap: 1rem;
-			text-align: center;
-			a {
-				font-size: 20px;
-				font-family: $font_titles;
-				display: flex;
-				flex-direction: column;
-				align-items: flex-start;
-				&:hover {
-					color: $primary;
-					p {
-						width: 100%;
-						border-bottom: 3px solid $primary;
-						opacity: 1;
-					}
-				}
-				span {
-					color: $primary;
-				}
-				p {
-					transition: 0.6s;
-					opacity: 0;
-					width: 1%;
-					height: 0;
-					border-bottom: 3px solid $primary;
-				}
-			}
-		}
-		&_col3 {
-			width: 25%;
-			display: flex;
-			flex-direction: column;
-			align-items: flex-start;
-			gap: 1rem;
-			text-align: start;
-			h1 {
-				font-size: 20px;
-				font-family: $font_titles;
-				font-weight: 400;
-			}
-			p {
-				font-size: 17px;
-				font-family: $font_texts;
-				a {
-					display: block;
-					font-size: 17px;
-					font-family: $font_texts;
-					margin-bottom: 0.4rem;
-					&:hover {
-						color: $primary;
-					}
-				}
-			}
-		}
+  &__logo {
+    text-align: center;
+    @media (max-width: 1360px) {
+      width: 150px;
+      margin: auto;
+    }
+  }
+  &__line {
+    margin: 20px 0;
+    width: 100%;
+    height: 4px;
+    background: $light;
+    border-radius: 5px;
+  }
 
-		@media (max-width: $xl) {
-			flex-wrap: wrap;
-			&_line:nth-child(2) {
-				display: none;
-			}
+  &__row1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
 
-			&_col1 {
-				width: 100%;
+    &_col {
+      padding: 5px;
+      width: 24%;
+      height: 240px;
+      &:nth-child(2) {
+        width: 30%;
+        @media (max-width: 1360px) {
+          width: 100%;
+          height: 300px;
+          padding: 0;
+        }
+      }
 
-				img {
-					max-width: 100px;
-				}
-			}
-			&_col2,
-			&_col3 {
-				width: 45%;
-				text-align: center;
-			}
+      &__title {
+        color: $primary;
+        margin: 5px 0;
+        font-size: 18px;
+        font-weight: 700;
+        @media screen and (max-width: 650px) {
+          font-size: 1.6rem;
+          padding: 5px 0;
+        }
+      }
 
-			&_col3 {
-				align-items: center;
-			}
-		}
+      a {
+        line-height: 2rem;
+        color: #000;
+        font-size: 1rem;
+        display: block;
+        width: 80%;
+        @media screen and (max-width: 650px) {
+          font-size: 1.3rem;
+          margin: 10px 0;
+        }
 
-		@media (max-width: $md) {
-			padding: 2rem 0;
-			overflow-x: hidden;
-			&_line:nth-child(4) {
-				display: none;
-			}
+        /* For hover effect */
 
-			gap: 4rem;
+        background: linear-gradient(
+            to right,
+            rgb(3, 0, 171),
+            rgba(100, 200, 200, 1)
+          ),
+          linear-gradient(
+            to right,
+            rgba(255, 0, 0, 1),
+            rgba(255, 0, 180, 1),
+            rgb(0, 17, 33)
+          );
+        background-size: 100% 3px, 0 3px;
+        background-position: 100% 100%, 0 100%;
+        background-repeat: no-repeat;
+        transition: background-size 400ms;
+		border-radius: 10px;
+        &:hover {
+          background-size: 0 3px, 100% 3px;
+        }
+      }
 
-			&_col1,
-			&_col2,
-			&_col3 {
-				width: 100%;
-			}
-		}
-	}
-	&__row2 {
-		height: 60px;
-		border-top: 2px solid $light;
-		text-align: center;
-		padding: 1.2% 0;
-		overflow: hidden;
-		position: relative;
-		@media (max-width: $md) {
-			overflow-x: hidden;
-		}
-		p {
-			position: absolute;
-			top: 0;
-			left: 0;
-			text-align: center;
-			width: 100%;
-			height: 100%;
-			font-size: 16px;
-			font-family: $font_titles;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			a {
-				color: $primary;
-			}
-		}
-	}
+      @media (max-width: 1360px) {
+        width: 100%;
+      }
+      @media (max-width: 630px) {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    /* responsive */
+    @media (max-width: 1360px) {
+      display: grid;
+      grid-template-columns: repeat(2, 45%);
+      justify-content: center;
+    }
+    @media (max-width: 650px) {
+      grid-template-columns: repeat(1, 80%);
+      justify-content: center;
+      align-items: center;
+    }
+  }
 }

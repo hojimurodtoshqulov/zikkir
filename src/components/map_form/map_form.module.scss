@@ -5,10 +5,20 @@
 	padding: 120px 0;
 	position: relative;
 	height: 840px;
+	@media (max-width: $md) {
+		padding: 50px 0;
+		height: 850px;
+	}
 	&__elements {
 		display: flex;
+		@media (max-width: $md) {
+		}
 		&_col1 {
 			width: 50%;
+			@media (max-width: $md) {
+				width: 100%;
+				order: 2;
+			}
 			.map {
 				position: absolute;
 				top: 120px;
@@ -21,6 +31,15 @@
 				border-bottom: 8px solid $primary;
 				border-radius: 0 15px 15px 0;
 				overflow: hidden;
+				@media (max-width: $md) {
+					border-right: none;
+					border-radius: 0;
+					width: 100%;
+					height: 400px;
+					top: 450px;
+					bottom: 0;
+					left: 0;
+				}
 			}
 		}
 		&_col2 {
@@ -31,13 +50,27 @@
 			justify-content: center;
 			align-items: flex-start;
 			gap: 30px;
+			@media (max-width: $xl) {
+				width: 60%;
+				gap: 20px;
+			}
+			@media (max-width: $lg) {
+				width: 70%;
+				gap: 15px;
+			}
 			h2 {
 				line-height: 60px;
+				@media (max-width: $xl) {
+					line-height: 40px;
+				}
 			}
 			p {
 				line-height: 30px;
 				font-size: 20px;
 				letter-spacing: 1px;
+				@media (max-width: $xl) {
+					line-height: 25px;
+				}
 			}
 			form {
 				display: flex;
@@ -45,6 +78,7 @@
 				align-items: flex-start;
 				justify-content: center;
 				gap: 30px;
+				width: 100%;
 				input {
 					width: 90%;
 					border: none;
@@ -78,6 +112,35 @@
 					width: 70%;
 					align-items: flex-start;
 					color: #ddd;
+				}
+			}
+			@media (max-width: $md) {
+				position: absolute;
+				top: 50px;
+				left: 5%;
+				width: 90%;
+				order: 1;
+				padding: 0;
+				align-items: center;
+				text-align: center;
+				gap: 10px;
+				h2 {
+					text-align: center;
+					margin: 0 auto;
+					line-height: 30px;
+				}
+				p {
+					font-size: 16px;
+					line-height: 18px;
+				}
+				form {
+					width: 100%;
+					gap: 10px;
+					align-items: center;
+					justify-content: center;
+					input {
+						width: 100%;
+					}
 				}
 			}
 		}

@@ -1,35 +1,22 @@
-import { useEffect, useState } from "react";
+
 import scss from "./footer.module.scss";
 import logo from "../../media/logo_footer.png";
-import { Link } from "react-router-dom";
-import { FaFacebookF, FaTwitter } from "react-icons/fa";
-import { RiInstagramFill } from "react-icons/ri";
-import { useTranslation } from "react-i18next";
-import { motion } from "framer-motion";
-const Footer = () => {
-	const [year, setyear] = useState(0);
-
-	useEffect(() => {});
+import { Link,  useNavigate} from "react-router-dom";
+export default function Footer () {
 	const scrollToTop = () => {
 		window.scrollTo(0, 0);
 	};
-	const transition = { type: "spring", duration: 2 };
+	const navigate = useNavigate()
 	return (
 		<footer className={scss.footer}>
 			<div className="container">
 				<div className={scss.footer__line}></div>
 				<div className={scss.footer__row1}>
-					<div className={scss.footer__row1_col1} data-aos="fade-left">
-						<Link
-							to="/"
-							className={scss.footer__row1_col1_logo}
-							onClick={scrollToTop}
-						>
-							<img src={logo} alt="" />
-						</Link>
+					<div onClick={() => navigate('/')} className={scss.footer__row1_col}>
+						<img className={scss.footer__logo} src={logo} alt="" />
 					</div>
-					<div className={scss.footer__row1_col3} data-aos="fade-right">
-						<h4>Контактная информация</h4>
+					<div className={scss.footer__row1_col}>
+						<h4 className={scss.footer__row1_col__title}>Контактная информация</h4>
 						<p>
 							<a href="mail:shuxratuljaboyev@gmail.com">
 								<span>shuxratuljaboyev@gmail.com</span>
@@ -42,15 +29,14 @@ const Footer = () => {
 						<p
 							style={{
 								lineHeight: 1.5,
-								letterSpacing: "1px",
-								fontSize: "19px",
+								fontSize: "18px",
 							}}
 						>
-							Офис - Карши, Насаф улица 27а дом
+							Офис - Карши, Насаф улица 27a дом
 						</p>
 					</div>
-					<div className={scss.footer__row1_col2} data-aos="fade-down">
-						<h4>Основные ссылки</h4>
+					<div className={scss.footer__row1_col}>
+						<h4 className={scss.footer__row1_col__title}>Основные ссылки</h4>
 						<Link
 							to="/company"
 							className={scss.footer__row1_col2_link}
@@ -74,8 +60,8 @@ const Footer = () => {
 							Контакты <p></p>
 						</Link>
 					</div>
-					<div className={scss.footer__row1_col2} data-aos="fade-up">
-						<h4>Наши проекты</h4>
+					<div className={scss.footer__row1_col}>
+						<h4 className={scss.footer__row1_col__title}>Наши проекты</h4>
 						<Link
 							to="/paxtazor"
 							className={scss.footer__row1_col2_link}
@@ -90,72 +76,42 @@ const Footer = () => {
 						>
 							Cholquvar <p></p>
 						</Link>
-						{/* <Link
-              to="/contact"
-              className={scss.footer__row1_col2_link}
-              onClick={scrollToTop}
-            >
-              Lorem ipsum <p></p>
-            </Link>
-            <Link
-              to="/programs"
-              className={scss.footer__row1_col2_link}
-              onClick={scrollToTop}
-            >
-              Lorem ipsum <p></p>
-            </Link> */}
 					</div>
-					<div className={scss.footer__row1_col2} data-aos="fade-down">
-						<h4>Социальные сети</h4>
+					<div className={scss.footer__row1_col}>
+						<h4 className={scss.footer__row1_col__title}>Социальные сети</h4>
 
 						<Link
 							to="/Telegram"
 							className={scss.footer__row1_col2_link}
 							onClick={scrollToTop}
 						>
-							Telegram <p></p>
+							Telegram
 						</Link>
 						<Link
 							to="/Instagram"
 							className={scss.footer__row1_col2_link}
 							onClick={scrollToTop}
 						>
-							Instagram <p></p>
+							Instagram 
 						</Link>
 						<Link
 							to="/Facebook"
 							className={scss.footer__row1_col2_link}
 							onClick={scrollToTop}
 						>
-							Facebook <p></p>
+							Facebook 
 						</Link>
 						<Link
 							to="/YouTube"
 							className={scss.footer__row1_col2_link}
 							onClick={scrollToTop}
 						>
-							YouTube <p></p>
+							YouTube
 						</Link>
 					</div>
 				</div>
 			</div>
-			{/* <div className={scss.footer__row2}>
-				<motion.p
-					initial={{
-						transform: "rotate(30deg)",
-						transformOrigin: " right top",
-					}}
-					whileInView={{
-						transform: "rotate(0deg)",
-						transformOrigin: " right top",
-					}}
-					transition={{ transition, duration: 1 }}
-				>
-					OOO &nbsp; <Link to="/">" ZIK KIR "</Link>&nbsp; 2021 - 2023
-					<span></span>
-				</motion.p>
-			</div> */}
 		</footer>
 	);
 };
-export default Footer;
+
