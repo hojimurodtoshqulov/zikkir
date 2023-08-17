@@ -12,6 +12,7 @@ const Architect = ({
 	img3,
 	img4,
 	img5,
+text
 }) => {
 	return (
 		<div
@@ -61,9 +62,7 @@ const Architect = ({
 					</div>
 				</div>
 				<p className={scss.architectText} data-aos="flip-up">
-					Подходя к архитектуре, как к искусству, команда создала проект с
-					узнаваемым творческим почерком.Особый шарм и очарование Сho'lquvar
-					невозможно будет перепутать с другим жилым комплексом в Ташкенте.
+					{text}
 				</p>
 			</div>
 		</div>
