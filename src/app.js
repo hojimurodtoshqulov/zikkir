@@ -12,7 +12,7 @@ import { Paxtazor } from "./pages/paxtazor/paxtazor";
 import News from "./pages/news/news";
 const App = () => {
   useEffect(() => {
-    if (typeof window !== undefined) {
+    if (typeof window !== null) {
       Aos.init({ duration: 1000, mirror: true });
     }
   }, []);

@@ -1,4 +1,5 @@
 @import "../../scss/varuables.scss";
+
 .advantages {
 	background-image: url("../../media/Section.png");
 	background-size: cover;
@@ -80,6 +81,186 @@
 					padding: 20px 40px;
 					box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.347);
 					font-size: 17px;
+				}
+			}
+		}
+	}
+}
+
+
+@media (max-width: $xxxl) {
+	.advantages {
+		background-image: url("../../media/Section.png");
+		background-size: cover;
+		color: #424242;
+		padding: 100px 150px;
+		h2 {
+			margin-bottom: 50px;
+		}
+		&__elements {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: flex-start;
+			// gap: 50px;
+			&_texts {
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+				justify-content: center;
+				gap: 20px;
+				padding-bottom: 50px;
+				position: relative;
+				.line {
+					border-right: 2px solid #b8b8c1;
+					height: 100%;
+					position: absolute;
+					top: 0;
+					bottom: 0;
+					left: 35px;
+				}
+				h3 {
+					display: flex;
+					align-items: center;
+					gap: 25px;
+					font-weight: 700;
+					font-size: 53px;
+					span {
+						position: relative;
+						z-index: 2;
+						font-weight: 500;
+						width: 70px;
+						height: 70px;
+						color: $light;
+						border-radius: 50%;
+						background: $primary;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+					}
+				}
+				p {
+					margin-left: 80px;
+					font-size: 30px;
+					line-height: 42px;
+					font-weight: 600;
+				}
+				.videoTexts {
+					margin: 40px 0 40px 80px;
+					display: flex;
+					align-items: flex-start;
+					justify-content: space-between;
+					gap: 40px;
+					width: 80%;
+					h3 {
+						display: flex;
+						flex-direction: column;
+						align-items: flex-start;
+						justify-content: center;
+						p {
+							margin: 0;
+						}
+					}
+				}
+				.button {
+					margin: 20px 0 0px 80px;
+					button {
+						background: #08a1dd;
+						color: $light;
+						padding: 20px 40px;
+						box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.347);
+						font-size: 17px;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+@media (max-width: $xxxl) {
+	.advantages {
+		background-image: url("../../media/Section.png");
+		background-size: cover;
+		color: #424242;
+		padding: 100px 150px;
+		h2 {
+			margin-bottom: 50px;
+		}
+		&__elements {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: flex-start;
+			// gap: 50px;
+			&_texts {
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+				justify-content: center;
+				gap: 20px;
+				padding-bottom: 50px;
+				position: relative;
+				.line {
+					border-right: 2px solid #b8b8c1;
+					height: 100%;
+					position: absolute;
+					top: 0;
+					bottom: 0;
+					left: 35px;
+				}
+				h3 {
+					display: flex;
+					align-items: center;
+					gap: 25px;
+					font-weight: 700;
+					font-size: 53px;
+					span {
+						position: relative;
+						z-index: 2;
+						font-weight: 500;
+						width: 70px;
+						height: 70px;
+						color: $light;
+						border-radius: 50%;
+						background: $primary;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+					}
+				}
+				p {
+					margin-left: 80px;
+					font-size: 30px;
+					line-height: 42px;
+					font-weight: 600;
+				}
+				.videoTexts {
+					margin: 40px 0 40px 80px;
+					display: flex;
+					align-items: flex-start;
+					justify-content: space-between;
+					gap: 40px;
+					width: 80%;
+					h3 {
+						display: flex;
+						flex-direction: column;
+						align-items: flex-start;
+						justify-content: center;
+						p {
+							margin: 0;
+						}
+					}
+				}
+				.button {
+					margin: 20px 0 0px 80px;
+					button {
+						background: #08a1dd;
+						color: $light;
+						padding: 20px 40px;
+						box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.347);
+						font-size: 17px;
+					}
 				}
 			}
 		}
