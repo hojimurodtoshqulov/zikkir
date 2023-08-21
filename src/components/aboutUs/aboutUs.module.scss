@@ -8,11 +8,15 @@
 	border-top: 10px solid $primary;
 	border-bottom: 10px solid $primary;
 	width: 100%;
-	height: 900px;
+	// height: 900px;
 	overflow: hidden;
-	padding: 150px 0;
+	padding: 100px 0 150px;
 	.aboutUs {
 		height: 100%;
+		// margin-bottom: 100px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
 		&__col1 {
 			width: 60%;
 			display: flex;
@@ -20,6 +24,13 @@
 			align-items: flex-start;
 			justify-content: center;
 			gap: 50px;
+			position: relative;
+			z-index: 2;
+			// margin-bottom: 100px;
+			@media (max-width: $md) {
+				gap: 20px 15px;
+				width: 160%;
+			}
 			&_titles {
 				h2 {
 					display: flex;
@@ -34,24 +45,79 @@
 					font-size: 23px;
 					text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.538);
 					line-height: 1.5;
+					@media (max-width: $xl) {
+						line-height: 1.2;
+						width: 120%;
+					}
+					@media (max-width: $lg) {
+						width: 150%;
+					}
+					@media (max-width: $md) {
+						font-size: 17px;
+						width: 120%;
+					}
 				}
 			}
 			.counts {
 				display: flex;
 				justify-content: space-between;
 				align-items: center;
-				gap: 100px;
-				width: 65%;
+				gap: 100px 80px;
+				width: 100%;
+				@media (max-width: $xl) {
+					gap: 40px 30px;
+				}
+				@media (max-width: $lg) {
+					gap: 20px 40px;
+					width: 150%;
+				}
+				@media (max-width: $md) {
+					gap: 0px 20px;
+					width: 125%;
+				}
+				@media (max-width: $sm) {
+					gap: 0px 20px;
+					width: 125%;
+				}
 				h4 {
 					font-size: 45px;
 					font-weight: normal;
 					line-height: 50px;
+					border: 2px solid rgba(255, 255, 255, 0.46);
+					width: 45%;
+					padding: 1% 5%;
+					border-radius: 15px;
+					backdrop-filter: blur(10px);
+					@media (max-width: $xl) {
+						width: 47%;
+					}
+					@media (max-width: $lg) {
+						width: 80%;
+					}
+					@media (max-width: $md) {
+						width: 80%;
+						font-size: 35px;
+						line-height: 35px;
+						padding: 2% 5%;
+					}
+					@media (max-width: $sm) {
+						width: 80%;
+						font-size: 30px;
+						line-height: 30px;
+						padding: 2% 3%;
+						overflow: hidden;
+					}
 					span {
 						display: flex;
 						align-items: center;
 						gap: 15px;
 						font-size: 15px;
 						font-weight: normal;
+						@media (max-width: $sm) {
+							width: 120%;
+							font-size: 13px;
+							gap: 5px;
+						}
 					}
 				}
 			}
@@ -64,12 +130,30 @@
 				position: absolute;
 				bottom: 0;
 				right: 0;
+				object-fit: cover;
+				z-index: 1;
+				@media (max-width: $xl) {
+					width: 50%;
+					height: 70%;
+				}
+				@media (max-width: $md) {
+					display: none;
+				}
 			}
 			&_img2 {
 				width: 35%;
 				position: absolute;
 				bottom: 0;
 				left: 0;
+				@media (max-width: $xl) {
+					width: 45%;
+				}
+				@media (max-width: $md) {
+					width: 55%;
+				}
+				@media (max-width: $sm) {
+					width: 80%;
+				}
 			}
 			&_img3 {
 				width: 30%;
@@ -77,1029 +161,19 @@
 				top: -0.5%;
 				right: 0;
 				transform: rotate(180deg);
+				@media (max-width: $xl) {
+					width: 45%;
+				}
+				@media (max-width: $md) {
+					width: 55%;
+				}
+				@media (max-width: $sm) {
+					width: 60%;
+				}
 				img {
 					width: 100%;
 				}
 			}
 		}
 	}
-}
-
-// @media (max-width: $xxl) {
-//   .aboutUsDiv {
-//     // background: $bg;
-//     position: relative;
-//     padding: 5% 0 0 0;
-//     .aboutUs {
-//       &__col1 {
-//         width: 85%;
-//         display: flex;
-//         flex-direction: column;
-//         align-items: flex-start;
-//         justify-content: space-between;
-//         gap: 2rem;
-//         &_titles {
-//           display: flex;
-//           align-items: center;
-//           justify-content: space-between;
-//           gap: 1rem;
-//           position: relative;
-//           div {
-//             height: 30px;
-//             width: 2px;
-//             border-radius: 50%;
-//             background: linear-gradient(
-//               to bottom,
-//               #319ba124,
-//               #319ba1,
-//               #319ba124
-//             );
-//           }
-//           h1 {
-//             height: 40px;
-//             font-size: 35px;
-//             font-family: $font_titles;
-//             position: relative;
-//             p {
-//               font-size: 50px;
-//               position: relative;
-//               z-index: 1;
-//             }
-//             span {
-//               width: 100px;
-//               height: 15px;
-//               background: $primary;
-//               position: absolute;
-//               top: 70%;
-//               left: 0;
-//               z-index: 0;
-//             }
-//           }
-//         }
-//         &_texts {
-//           display: flex;
-//           flex-direction: column;
-//           align-items: flex-start;
-//           justify-content: space-between;
-//           gap: 1rem;
-//           font-weight: 400;
-//           font-family: $font_texts;
-//           font-size: 15px;
-//           span {
-//             font-weight: 700;
-//           }
-//         }
-//       }
-//       &__col2 {
-//         width: 37%;
-//         height: 100%;
-//         &_img1 {
-//           width: 50%;
-//           position: absolute;
-//           top: 45%;
-//           right: -13%;
-//           z-index: 3;
-//         }
-//         &_img2 {
-//           width: 40%;
-//           position: absolute;
-//           top: 40%;
-//           right: -10%;
-//           z-index: 2;
-//           transform: rotate(5deg);
-//         }
-//         &_img3 {
-//           width: 40%;
-//           position: absolute;
-//           bottom: 16%;
-//           right: -2%;
-//           z-index: 1;
-//           transform: rotate(-5deg);
-//         }
-//         &_img4 {
-//           width: 40%;
-//           position: absolute;
-//           bottom: 50%;
-//           right: -2%;
-//           z-index: 1;
-//           transform: rotate(-5deg);
-//         }
-//       }
-//     }
-//   }
-// }
-
-// @media (max-width: $xl) {
-//   .aboutUsDiv {
-//     // background: $bg;
-//     position: relative;
-//     padding: 5% 0 0 0;
-//     .aboutUs {
-//       &__col1 {
-//         width: 75%;
-//         display: flex;
-//         flex-direction: column;
-//         align-items: flex-start;
-//         justify-content: space-between;
-//         gap: 1rem;
-//         &_titles {
-//           display: flex;
-//           align-items: center;
-//           justify-content: space-between;
-//           gap: 1rem;
-//           position: relative;
-//           div {
-//             height: 30px;
-//             width: 2px;
-//             border-radius: 50%;
-//             background: linear-gradient(
-//               to bottom,
-//               #319ba124,
-//               #319ba1,
-//               #319ba124
-//             );
-//           }
-//           h1 {
-//             height: 40px;
-//             font-size: 35px;
-//             font-family: $font_titles;
-//             position: relative;
-//             p {
-//               font-size: 40px;
-//               position: relative;
-//               z-index: 1;
-//             }
-//             span {
-//               width: 100px;
-//               height: 15px;
-//               background: $primary;
-//               position: absolute;
-//               top: 70%;
-//               left: 0;
-//               z-index: 0;
-//             }
-//           }
-//         }
-//         &_texts {
-//           display: flex;
-//           flex-direction: column;
-//           align-items: flex-start;
-//           justify-content: space-between;
-//           gap: 1rem;
-//           font-weight: 400;
-//           font-family: $font_texts;
-//           font-size: 15px;
-//           span {
-//             font-weight: 700;
-//           }
-//         }
-//       }
-//       &__col2 {
-//         width: 45%;
-//         height: 100%;
-//         &_img1 {
-//           width: 50%;
-//           position: absolute;
-//           top: 40%;
-//           right: -13%;
-//           z-index: 3;
-//         }
-//         &_img2 {
-//           width: 40%;
-//           position: absolute;
-//           top: 70%;
-//           right: -10%;
-//           z-index: 2;
-//           transform: rotate(5deg);
-//         }
-//         &_img3 {
-//           width: 40%;
-//           position: absolute;
-//           bottom: 16%;
-//           right: 10%;
-//           z-index: 1;
-//           transform: rotate(-5deg);
-//         }
-//         &_img4 {
-//           width: 40%;
-//           position: absolute;
-//           bottom: 16%;
-//           right: -2%;
-//           z-index: 1;
-//           transform: rotate(-5deg);
-//         }
-//       }
-//     }
-//   }
-// }
-
-@media (max-width: $xxl) {
-  .aboutUsDiv {
-    // background: $bg;
-    position: relative;
-    padding: 5% 0 0 0;
-    .aboutUs {
-      &__col1 {
-        width: 85%;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: space-between;
-        gap: 2rem;
-        &_titles {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          gap: 1rem;
-          position: relative;
-          div {
-            height: 30px;
-            width: 2px;
-            border-radius: 50%;
-            background: linear-gradient(
-              to bottom,
-              #319ba124,
-              #319ba1,
-              #319ba124
-            );
-          }
-          h1 {
-            height: 40px;
-            font-size: 35px;
-            font-family: $font_titles;
-            position: relative;
-            p {
-              font-size: 50px;
-              position: relative;
-              z-index: 1;
-            }
-            span {
-              width: 100px;
-              height: 15px;
-              background: $primary;
-              position: absolute;
-              top: 70%;
-              left: 0;
-              z-index: 0;
-            }
-          }
-        }
-        &_texts {
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          justify-content: space-between;
-          gap: 1rem;
-          font-weight: 400;
-          font-family: $font_texts;
-          font-size: 15px;
-          span {
-            font-weight: 700;
-          }
-        }
-      }
-      &__col2 {
-        width: 37%;
-        height: 100%;
-        &_img1 {
-          width: 50%;
-          position: absolute;
-          top: 45%;
-          right: -13%;
-          z-index: 3;
-        }
-        &_img2 {
-          width: 40%;
-          position: absolute;
-          top: 40%;
-          right: -10%;
-          z-index: 2;
-          transform: rotate(5deg);
-        }
-        &_img3 {
-          width: 40%;
-          position: absolute;
-          bottom: 16%;
-          right: -2%;
-          z-index: 1;
-          transform: rotate(-5deg);
-        }
-        &_img4 {
-          width: 40%;
-          position: absolute;
-          bottom: 50%;
-          right: -2%;
-          z-index: 1;
-          transform: rotate(-5deg);
-        }
-      }
-    }
-  }
-}
-
-
-@media (max-width: $xl) {
-  .aboutUsDiv {
-    // background: $bg;
-    position: relative;
-    padding: 5% 0 0 0;
-    .aboutUs {
-      // background-color: red;
-      &__col1 {
-        width: 75%;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: space-between;
-        gap: 1rem;
-        &_titles {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          gap: 1rem;
-          position: relative;
-          div {
-            height: 30px;
-            width: 2px;
-            border-radius: 50%;
-            background: linear-gradient(
-              to bottom,
-              #319ba124,
-              #319ba1,
-              #319ba124
-            );
-          }
-          h1 {
-            height: 40px;
-            font-size: 35px;
-            font-family: $font_titles;
-            position: relative;
-            p {
-              font-size: 40px;
-              position: relative;
-              z-index: 1;
-            }
-            span {
-              width: 100px;
-              height: 15px;
-              background: $primary;
-              position: absolute;
-              top: 70%;
-              left: 0;
-              z-index: 0;
-            }
-          }
-        }
-        &_texts {
-          display: flex;
-          flex-direction: column;
-          align-items: flex-start;
-          justify-content: space-between;
-          gap: 1rem;
-          font-weight: 400;
-          font-family: $font_texts;
-          font-size: 15px;
-          span {
-            font-weight: 700;
-          }
-        }
-      }
-      &__col2 {
-        width: 45%;
-        height: 100%;
-        &_img1 {
-          width: 50%;
-          position: absolute;
-          top: 55%;
-          right: -13%;
-          z-index: 3;
-        }
-        &_img2 {
-          
-          width: 40%;
-          position: absolute;
-          top: 70%;
-          right: -10%;
-          z-index: 2;
-          transform: rotate(5deg);
-        }
-        &_img3 {
-          width: 40%;
-          position: absolute;
-          bottom: 16%;
-          right: 0%;
-          z-index: 1;
-          transform: rotate(-5deg);
-        }
-        &_img4 {
-          width: 40%;
-          position: absolute;
-          bottom: 16%;
-          right: -2%;
-          z-index: 1;
-          transform: rotate(-5deg);
-        }
-      }
-    }
-  }
-}
-
-// @media (max-width: $md) {
-//   .aboutUsDiv {
-//     // background: $bg;
-//     position: relative;
-//     padding: 5% 0 0 0;
-//     .aboutUs {
-//       display: flex;
-//       flex-direction: column;
-//       &__col1 {
-//         width: 90%;
-//         display: flex;
-//         flex-direction: column;
-//         align-items: flex-start;
-//         justify-content: space-between;
-//         gap: 2rem;
-//         position: relative;
-//         z-index: 12;
-//         text-align: justify;
-//         &_titles {
-//           display: flex;
-//           align-items: center;
-//           justify-content: space-between;
-//           gap: 0.5rem;
-//           position: relative;
-//           div {
-//             height: 30px;
-//             width: 2px;
-//             border-radius: 50%;
-//             background: linear-gradient(
-//               to bottom,
-//               #319ba124,
-//               #319ba1,
-//               #319ba124
-//             );
-//           }
-//           h1 {
-//             height: 40px;
-//             font-size: 30px;
-//             font-family: $font_titles;
-//             position: relative;
-//             p {
-//               font-size: 30px;
-//               position: relative;
-//               z-index: 1;
-
-//             }
-//             span {
-//               width: 100px;
-//               height: 10px;
-//               background: $primary;
-//               position: absolute;
-//               top: 55%;
-//               left: 0;
-//               z-index: 0;
-//             }
-//           }
-//         }
-
-//         &_texts {
-//           p {
-//             font-size: 23px;
-//             text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.538);
-//             line-height: 1.5;
-//           }
-//         }
-//         .counts {
-//           // background-color: red;
-//           margin-top: 1rem;
-//           display: flex;
-//           justify-content: space-between;
-//           align-items: center;
-//           // gap: 60px;
-//           width: 90%;
-//           h4 {
-//             // color: red;
-//             font-size: 35px;
-//             font-weight: normal;
-//             line-height: 43px;
-//             span {
-//               display: flex;
-//               align-items: center;
-//               gap: 15px;
-//               font-size: 15px;
-//               font-weight: normal;
-//             }
-//           }
-//         }
-
-@media (max-width: $md) {
-  .aboutUsDiv {
-    // background: $bg;
-    position: relative;
-    padding: 5% 0 0 0;
-    .aboutUs {
-      display: flex;
-      flex-direction: column;
-      &__col1 {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: space-between;
-        gap: 2rem;
-        position: relative;
-        z-index: 12;
-        text-align: justify;
-        &_titles {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          gap: 0.5rem;
-          position: relative;
-          div {
-            height: 30px;
-            width: 2px;
-            border-radius: 50%;
-            background: linear-gradient(
-              to bottom,
-              #319ba124,
-              #319ba1,
-              #319ba124
-            );
-          }
-          h1 {
-            height: 40px;
-            font-size: 30px;
-            font-family: $font_titles;
-            position: relative;
-            p {
-              font-size: 30px;
-              position: relative;
-              z-index: 1;
-            
-            }
-            span {
-              width: 100px;
-              height: 10px;
-              background: $primary;
-              position: absolute;
-              top: 55%;
-              left: 0;
-              z-index: 0;
-            }
-          }
-        }
-
-// @media (max-width: $sm) {
-//   .aboutUsDiv {
-//     // background: $bg;
-//     position: relative;
-//     padding: 5% 0 0 0;
-//     .aboutUs {
-//       display: flex;
-//       flex-direction: column;
-//       &__col1 {
-//         width: 100%;
-//         display: flex;
-//         flex-direction: column;
-//         align-items: flex-start;
-//         justify-content: space-between;
-//         gap: 1.6rem;
-//         position: relative;
-//         z-index: 12;
-//         text-align: justify;
-//         &_titles {
-//           display: flex;
-//           align-items: center;
-//           justify-content: space-between;
-//           gap: 0.5rem;
-//           position: relative;
-//           div {
-//             height: 30px;
-//             width: 2px;
-//             border-radius: 50%;
-//             background: linear-gradient(
-//               to bottom,
-//               #319ba124,
-//               #319ba1,
-//               #319ba124
-//             );
-//           }
-//           h1 {
-//             height: 40px;
-//             font-size: 30px;
-//             font-family: $font_titles;
-//             position: relative;
-//             p {
-//               font-size: 30px;
-//               position: relative;
-//               z-index: 1;
-
-//             }
-//             span {
-//               width: 100px;
-//               height: 10px;
-//               background: $primary;
-//               position: absolute;
-//               top: 55%;
-//               left: 0;
-//               z-index: 0;
-//             }
-//           }
-//         }
-
-//         &_texts {
-//           // order: 2;
-//           p {
-//             font-size: 20px;
-//             line-height: 1.4;
-
-@media (max-width: $sm) {
-  .aboutUsDiv {
-    // background: $bg;
-    // height: 850px;
-    position: relative;
-    padding: 5% 0 0 0;
-    .aboutUs {
-      display: flex;
-      flex-direction: column;
-      &__col1 {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: space-between;
-        gap: 1.6rem;
-        position: relative;
-        z-index: 12;
-        text-align: justify;
-        &_titles {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          gap: 0.5rem;
-          position: relative;
-          div {
-            height: 30px;
-            width: 2px;
-            border-radius: 50%;
-            background: linear-gradient(
-              to bottom,
-              #319ba124,
-              #319ba1,
-              #319ba124
-            );
-          }
-          h1 {
-            height: 40px;
-            font-size: 30px;
-            font-family: $font_titles;
-            position: relative;
-            p {
-              font-size: 30px;
-              position: relative;
-              z-index: 1;
-            
-            }
-            span {
-              width: 100px;
-              height: 10px;
-              background: $primary;
-              position: absolute;
-              top: 55%;
-              left: 0;
-              z-index: 0;
-            }
-          }
-        }
-
-        &_texts {
-          // order: 2;
-          p {
-            font-size: 18px;
-            line-height: 1.4;
-           
-          }
-        }
-        .counts {
-          // order: 1;
-          // background-color: red;
-          margin: 1rem auto;
-          display: flex;
-          // flex-direction: column;
-          justify-content: flex-start;
-          align-items: center;
-          // gap: 60px;
-          width: 100%;
-          h4 {
-            // color: red;
-            font-size: 30px;
-            font-weight: normal;
-            line-height: 33px;
-            span {
-              display: flex;
-              align-items: center;
-              gap: 15px;
-              font-size: 12px;
-              font-weight: normal;
-            }
-          }
-        }
-
-      }
-      &__col2 {
-        opacity: 1;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        &_img1 {
-          width: 60%;
-          position: absolute;
-          top: 75%;
-          right: -13%;
-          z-index: 3;
-        }
-        &_img2 {
-          width: 40%;
-          position: absolute;
-          top: 86%;
-          right: -10%;
-          z-index: 2;
-          transform: rotate(5deg);
-        }
-        &_img3 {
-          width: 30%;
-          position: absolute;
-          bottom: 26%;
-          right: -2%;
-          z-index: 1;
-          transform: rotate(-5deg);
-        }
-        &_img4 {
-          width: 40%;
-          position: absolute;
-          bottom: 16%;
-          right: -2%;
-          z-index: 1;
-          transform: rotate(-5deg);
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 440px) {
-  .aboutUsDiv {
-    // background: $bg;
-    // height: 850px;
-    position: relative;
-    padding: 5% 0 0 0;
-    .aboutUs {
-      display: flex;
-      flex-direction: column;
-      &__col1 {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: space-between;
-        gap: 1.6rem;
-        position: relative;
-        z-index: 12;
-        text-align: justify;
-        &_titles {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          gap: 0.5rem;
-          position: relative;
-          div {
-            height: 30px;
-            width: 2px;
-            border-radius: 50%;
-            background: linear-gradient(
-              to bottom,
-              #319ba124,
-              #319ba1,
-              #319ba124
-            );
-          }
-          h1 {
-            height: 40px;
-            font-size: 30px;
-            font-family: $font_titles;
-            position: relative;
-            p {
-              font-size: 30px;
-              position: relative;
-              z-index: 1;
-            
-            }
-            span {
-              width: 100px;
-              height: 10px;
-              background: $primary;
-              position: absolute;
-              top: 55%;
-              left: 0;
-              z-index: 0;
-            }
-          }
-        }
-
-        &_texts {
-          // order: 2;
-          p {
-            font-size: 18px;
-            line-height: 1.4;
-           
-          }
-        }
-        .counts {
-          // order: 1;
-          // background-color: red;
-          margin: 0rem auto;
-          display: flex;
-          flex-direction: column;
-          justify-content: flex-start;
-          align-items: flex-start;
-          gap: 20px;
-          width: 100%;
-          h4 {
-            // color: red;
-            font-size: 30px;
-            font-weight: normal;
-            line-height: 33px;
-            span {
-              display: flex;
-              align-items: center;
-              gap: 15px;
-              font-size: 12px;
-              font-weight: normal;
-            }
-          }
-        }
-
-      }
-      &__col2 {
-        opacity: 1;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        &_img1 {
-          width: 60%;
-          position: absolute;
-          top: 75%;
-          right: -13%;
-          z-index: 3;
-        }
-        &_img2 {
-          width: 40%;
-          position: absolute;
-          top: 86%;
-          right: -10%;
-          z-index: 2;
-          transform: rotate(5deg);
-        }
-        &_img3 {
-          width: 30%;
-          position: absolute;
-          bottom: 26%;
-          right: -2%;
-          z-index: 1;
-          transform: rotate(-5deg);
-        }
-        &_img4 {
-          width: 40%;
-          position: absolute;
-          bottom: 16%;
-          right: -2%;
-          z-index: 1;
-          transform: rotate(-5deg);
-        }
-      }
-    }
-  }
-}
-
-//         &_titles {
-//           display: flex;
-//           align-items: center;
-//           justify-content: space-between;
-//           gap: 0.5rem;
-//           position: relative;
-//           div {
-//             height: 30px;
-//             width: 2px;
-//             border-radius: 50%;
-//             background: linear-gradient(
-//               to bottom,
-//               #319ba124,
-//               #319ba1,
-//               #319ba124
-//             );
-//           }
-//           h1 {
-//             height: 40px;
-//             font-size: 30px;
-//             font-family: $font_titles;
-//             position: relative;
-//             p {
-//               font-size: 30px;
-//               position: relative;
-//               z-index: 1;
-
-//             }
-//             span {
-//               width: 100px;
-//               height: 10px;
-//               background: $primary;
-//               position: absolute;
-//               top: 55%;
-//               left: 0;
-//               z-index: 0;
-//             }
-//           }
-//         }
-
-//         &_texts {
-//           // order: 2;
-//           p {
-//             font-size: 17px;
-//             line-height: 1.4;
-
-//           }
-//         }
-
-        .counts {
-          // order: 1;
-          // background-color: red;
-          width: 100%;
-          margin: 0rem auto;
-          display: flex;
-          flex-direction: column;
-          justify-content: flex-start;
-          align-items: flex-start;
-          gap: 20px;
-          h4 {
-            // color: red;
-            font-size: 30px;
-            font-weight: normal;
-            line-height: 35px;
-            span {
-              display: flex;
-              align-items: center;
-              gap: 15px;
-              font-size: 15px;
-              font-weight: normal;
-            }
-          }
-        }
-
-      }
-      &__col2 {
-        opacity: 1;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        &_img1 {
-          width: 60%;
-          position: absolute;
-          top: 84%;
-          right: -13%;
-          z-index: 3;
-        }
-        &_img2 {
-          width: 40%;
-          position: absolute;
-          top: 90%;
-          right: -10%;
-          z-index: 2;
-          transform: rotate(5deg);
-        }
-        &_img3 {
-          width: 30%;
-          position: absolute;
-          bottom: 26%;
-          right: -2%;
-          z-index: 1;
-          transform: rotate(-5deg);
-        }
-        &_img4 {
-          width: 40%;
-          position: absolute;
-          bottom: 16%;
-          right: -2%;
-          z-index: 1;
-          transform: rotate(-5deg);
-        }
-      }
-    }
-  }
 }

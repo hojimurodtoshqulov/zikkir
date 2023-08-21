@@ -27,20 +27,17 @@ const Advantages = ({}) => {
 							<span>2</span>
 							{t("home.advantages.step2.title")}
 						</h3>
-						<p>
-							{t("home.advantages.step2.text")}
-						</p>
-						<div className={scss.videoTexts}>
+						<p>{t("home.advantages.step2.text")}</p>
+						<div className={scss.videoTexts} data-aos="flip-up">
 							<iframe
-								width="560"
-								height="315"
+								width="100%"
+								height="100%"
 								src="https://www.youtube.com/embed/SaseeK2sFTY"
 								title="YouTube video player"
 								frameBorder="0"
 								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 								allowFullScreen
 							></iframe>
-							
 						</div>
 					</div>
 					<div
@@ -51,9 +48,7 @@ const Advantages = ({}) => {
 							<span>3</span>
 							{t("home.advantages.step3.title")}
 						</h3>
-						<p>
-							{t("home.advantages.step3.text")}
-						</p>
+						<p>{t("home.advantages.step3.text")}</p>
 					</div>
 				</div>
 			</div>
