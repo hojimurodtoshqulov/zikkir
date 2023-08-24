@@ -17,6 +17,7 @@ import archImg2 from "../../media/arch2.png";
 import archImg3 from "../../media/arch3.png";
 import archImg4 from "../../media/arch4.png";
 import archImg5 from "../../media/arch7.png";
+import imgAbout from "../../media/u7.png";
 import ProjectsAbout from "../../components/projectsAbout/projectsAbout";
 import SuperLocation from "../../components/superLocation/superLocation";
 import Architect from "../../components/architect/architect";
@@ -27,8 +28,16 @@ const Paxtazor = () => {
 			<div className={scss.paxtazor}>
 				<ProjectsHeader bgImage={img1} logo={logo} />
 				<ProjectsAbout
-					title={"5 ФАКТОВ О ПРОЕКТЕ"}
-					text={
+					titleAbout={"О проекте"}
+					text1About={
+						"Lorem ipsum dolor sit amet consectetur. Pharetra urna vitae ipsum nisl cursus dui hac. Amet proin faucibus arcu lectus sem. Eu mattis dictum duis nulla. Sit commodo praesent nunc sit urna adipiscing amet."
+					}
+					text2About={
+						"Lorem ipsum dolor sit amet consectetur. Pharetra urna vitae ipsum nisl cursus dui hac. Amet proin faucibus arcu lectus sem. Eu mattis dictum duis nulla. Sit commodo praesent nunc sit urna adipiscing amet."
+					}
+					imgAbout={imgAbout}
+					titleAdvantages={"Преимущества"}
+					textAdvantages={
 						"В центральной части Карши мы создали идеальное сочетание стиля, безопасности и комфорта благодаря современным технологиям и квалифицированности наших специалистов"
 					}
 					img1={img2}
@@ -50,7 +59,7 @@ const Paxtazor = () => {
 						"https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3104.472378174517!2d65.79640461691929!3d38.83663871991241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzjCsDUwJzExLjQiTiA2NcKwNDcnNDcuNSJF!5e0!3m2!1sru!2s!4v1691735889056!5m2!1sru!2s"
 					}
 				/>
-				<Form />
+				<Form formProject={" Paxtazor "} />
 				<Architect
 					bgImg1={img1}
 					img1={archImg1}

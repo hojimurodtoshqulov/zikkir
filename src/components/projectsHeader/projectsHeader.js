@@ -4,7 +4,9 @@ const ProjectsHeader = ({ bgImage, title, logo }) => {
 	return (
 		<div
 			className={scss.projectsHeader}
-			style={{ backgroundImage: `url("${bgImage}")` }}
+			style={{
+				backgroundImage: `linear-gradient( to top,#00000000,#00000000,#00000000,#000000ab), url("${bgImage}")`,
+			}}
 		>
 			<h1 data-aos="zoom-in-up">{title ? title : ""}</h1>
 			<img

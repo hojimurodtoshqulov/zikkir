@@ -17,6 +17,7 @@ import archImg2 from "../../media/arch2.png";
 import archImg3 from "../../media/arch5.png";
 import archImg4 from "../../media/arch6.png";
 import archImg5 from "../../media/arch7.png";
+import imgAbout from "../../media/u3.png";
 import ProjectsAbout from "../../components/projectsAbout/projectsAbout";
 import SuperLocation from "../../components/superLocation/superLocation";
 import Architect from "../../components/architect/architect";
@@ -27,8 +28,16 @@ const Cholquvar = () => {
 			<div className={scss.cholquvar}>
 				<ProjectsHeader bgImage={img1} logo={img} />
 				<ProjectsAbout
-					title={"5 ФАКТОВ О ПРОЕКТЕ"}
-					text={
+					titleAbout={"О проекте"}
+					text1About={
+						"Lorem ipsum dolor sit amet consectetur. Pharetra urna vitae ipsum nisl cursus dui hac. Amet proin faucibus arcu lectus sem. Eu mattis dictum duis nulla. Sit commodo praesent nunc sit urna adipiscing amet."
+					}
+					text2About={
+						"Lorem ipsum dolor sit amet consectetur. Pharetra urna vitae ipsum nisl cursus dui hac. Amet proin faucibus arcu lectus sem. Eu mattis dictum duis nulla. Sit commodo praesent nunc sit urna adipiscing amet."
+					}
+					imgAbout={imgAbout}
+					titleAdvantages={"Преимущества"}
+					textAdvantages={
 						"В центральной части Карши мы создали идеальное сочетание стиля, безопасности и комфорта благодаря современным технологиям и квалифицированности наших специалистов"
 					}
 					img1={img2}
@@ -50,7 +59,7 @@ const Cholquvar = () => {
 						"https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d5297.470313828899!2d65.79146491513367!3d38.838048979384304!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzjCsDUwJzE1LjUiTiA2NcKwNDcnMzMuNiJF!5e0!3m2!1sru!2s!4v1692176281598!5m2!1sru!2s"
 					}
 				/>
-				<Form />
+				<Form formProject={" Cho'lquvar "} />
 				<Architect
 					bgImg1={img7}
 					img1={archImg1}

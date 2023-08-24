@@ -2,11 +2,11 @@
 
 .forms {
 	margin: 120px 0;
-	padding: 60px 75px;
-	border-radius: 15px;
+	padding: 60px 14%;
+	// border-radius: 15px;
 	color: $light;
 	text-align: center;
-	background-image: url("../../media/u13.png");
+	background-image: url("../../media/u14.png");
 	background-size: cover;
 	display: flex;
 	flex-direction: column;
@@ -32,10 +32,12 @@
 			width: 450px;
 			height: 60px;
 			padding: 10px 30px;
-			border: 3px solid $light;
+			border: 3px solid $primary;
 			border-radius: 13px;
 			background: #0000;
 			font-size: 18px;
+			color: $light;
+			background: $primary;
 		}
 		button {
 			display: flex;
@@ -48,16 +50,18 @@
 			font-size: 18px;
 			cursor: pointer;
 			span {
-				width: 35px;
-				height: 35px;
-				border-radius: 7px;
+				background: $primary;
+				width: 135px;
+				height: 58px;
+				border-radius: 15px;
 				display: flex;
 				align-items: center;
 				justify-content: center;
-				transform: rotate(45deg);
-				border: 3px solid $light;
+				// transform: rotate(45deg);
+				border: 3px solid $primary;
+				// padding: 0 20px;
 				svg {
-					transform: rotate(-45deg);
+					// transform: rotate(-45deg);
 				}
 			}
 		}

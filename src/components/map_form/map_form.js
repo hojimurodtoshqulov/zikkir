@@ -41,9 +41,11 @@ const Map_form = () => {
 			// );
 			const url = `https://api.telegram.org/bot6624056078:AAFNCrZW2Pfv-VhrKYNfXPv61Jf3Qsmq0ZA/sendMessage?chat_id=-1001762218496&text=${
 				"Ismi:" +
-				formValues.name +" "+
+				formValues.name +
+				" " +
 				"\n/      Tel:" +
-				formValues.phone +" "+
+				formValues.phone +
+				" " +
 				"\n/      Izoh:" +
 				formValues.message
 			}`;
@@ -90,6 +92,7 @@ const Map_form = () => {
 								onChange={(e) => handle(e)}
 								value={formValues.name}
 								type="text"
+								required
 								placeholder="Ваше имя..."
 							/>
 							<input
@@ -98,6 +101,7 @@ const Map_form = () => {
 								value={formValues.phone}
 								type="text"
 								placeholder="Ваш телефон..."
+								required
 							/>
 							<input
 								id="message"
@@ -105,6 +109,7 @@ const Map_form = () => {
 								value={formValues.message}
 								type="text"
 								placeholder="Ваш вопрос..."
+								required
 							/>
 							<button type="submit">Отправить сообщение</button>
 							<p>

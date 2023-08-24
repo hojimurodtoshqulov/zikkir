@@ -10,26 +10,30 @@ import "./i18n";
 import { Cholquvar } from "./pages/cho'lquvar/cho'lquvar";
 import { Paxtazor } from "./pages/paxtazor/paxtazor";
 import News from "./pages/news/news";
+import { Smart } from "./pages/smart/smart";
+import { EskiShahar } from "./pages/eskiShahar/eskiShahar";
 const App = () => {
-  useEffect(() => {
-    if (typeof window !== null) {
-      Aos.init({ duration: 1000, mirror: true });
-    }
-  }, []);
-  return (
-    <>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route exact path="/" element={<Home />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/company" element={<Company />} />
-          <Route path="/news" element={<News />} />
-          <Route path="/cho'lquvar" element={<Cholquvar />} />
-          <Route path="/paxtazor" element={<Paxtazor />} />
-        </Route>
-      </Routes>
-    </>
-  );
+	useEffect(() => {
+		if (typeof window !== null) {
+			Aos.init({ duration: 1000, mirror: true });
+		}
+	}, []);
+	return (
+		<>
+			<Routes>
+				<Route path="/" element={<Layout />}>
+					<Route exact path="/" element={<Home />} />
+					<Route path="/contact" element={<Contact />} />
+					<Route path="/company" element={<Company />} />
+					<Route path="/news" element={<News />} />
+					<Route path="/cho'lquvar" element={<Cholquvar />} />
+					<Route path="/paxtazor" element={<Paxtazor />} />
+					<Route path="/smart" element={<Smart />} />
+					<Route path="/eskiShahar" element={<EskiShahar />} />
+				</Route>
+			</Routes>
+		</>
+	);
 };
 
 export default App;

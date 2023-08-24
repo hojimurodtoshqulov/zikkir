@@ -103,6 +103,12 @@ const Nav = ({ onClick }) => {
                     <Link to="/paxtazor" onClick={scrollToTop}>
                       {t("Paxtazor")}
                     </Link>
+                    <Link to="/smart" onClick={scrollToTop}>
+                      {t("Smart")}
+                    </Link>
+                    <Link to="/eskiShahar" onClick={scrollToTop}>
+                      {t("Eski Shahar")}
+                    </Link>
                   </div>
                 </div>
               </Link>{" "}

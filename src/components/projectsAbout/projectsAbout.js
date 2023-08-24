@@ -1,8 +1,12 @@
 import scss from "./projectsAbout.module.scss";
 
 const ProjectsAbout = ({
-	title,
-	text,
+	titleAbout,
+	text1About,
+	text2About,
+	imgAbout,
+	titleAdvantages,
+	textAdvantages,
 	img1,
 	img2,
 	img3,
@@ -16,10 +20,29 @@ const ProjectsAbout = ({
 }) => {
 	return (
 		<div className={scss.projectsAbout}>
+			<img
+				data-aos="fade-left"
+				data-aos-delay="100"
+				className={scss.projectsAboutImg}
+				src={imgAbout}
+				alt={imgAbout}
+			/>
+			<div
+				data-aos="fade-left"
+				data-aos-delay="400"
+				className={scss.projectsAboutImgBG}
+			></div>
 			<div className="container">
+				<div className={scss.aboutProject} data-aos="fade-up">
+					<div className={scss.aboutProjectCol1}>
+						<h2>{titleAbout}</h2>
+						<p> {text1About} </p>
+						<p> {text2About} </p>
+					</div>
+				</div>
 				<div className={scss.elements} data-aos="fade-up">
-					<h2 data-aos="flip-up">{title}</h2>
-					<p data-aos="flip-up">{text}</p>
+					<h2 data-aos="flip-up">{titleAdvantages}</h2>
+					<p data-aos="flip-up">{textAdvantages}</p>
 					<div className={scss.elementsImgDiv}>
 						<div
 							className={scss.elementsImgDivHidden}
