@@ -126,15 +126,7 @@ const Nav = ({ onClick }) => {
               >
                 {t("nav.contact")} <span></span>
               </NavLink>
-              {/* <NavLink
-								style={{ color: navLinkColor }}
-								to="/layout"
-								onClick={scrollToTop}
-							>
-								{t("nav.layout")} <span></span>
-							</NavLink> */}
             </div>
-            {/* <Toggle color={navLinkColor} /> */}
             <div className={scss.nav__container_lang}>
               <span
                 className={scss.nav__container_lang_ru}
@@ -164,7 +156,6 @@ const Nav = ({ onClick }) => {
                   type="btn"
                   style={{ color: langColor }}
                 >
-                  {/* {t("uz")} */}
                 </button>
                 <div></div>
               </span>
