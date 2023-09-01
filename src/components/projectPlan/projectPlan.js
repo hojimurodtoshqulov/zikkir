@@ -7,29 +7,30 @@ import img1 from "../../media/1.png.png";
 import img2 from "../../media/2.png.png";
 import img3 from "../../media/3.png.png";
 import img4 from "../../media/2.png.png";
-const ProjectPlan = () => {
-	const data = [
-		{
-			img: img1,
-			text: "Общая площадь: 44.67 м²",
-			title: "Количество комнат: 1",
-		},
-		{
-			img: img2,
-			text: "Общая площадь: 44.30 м²",
-			title: "Количество комнат: 1",
-		},
-		{
-			img: img3,
-			text: "Общая площадь: 49.12 м²",
-			title: "Количество комнат: 1",
-		},
-		{
-			img: img4,
-			text: "Общая площадь: 50.15 м²",
-			title: "Количество комнат: 1",
-		},
-	];
+
+const ProjectPlan = ({datas}) => {
+	// const data = [
+	// 	{
+	// 		img: img1,
+	// 		text: "Общая площадь: 44.67 м²",
+	// 		title: "Количество комнат: 1",
+	// 	},
+	// 	{
+	// 		img: img2,
+	// 		text: "Общая площадь: 44.30 м²",
+	// 		title: "Количество комнат: 1",
+	// 	},
+	// 	{
+	// 		img: img3,
+	// 		text: "Общая площадь: 49.12 м²",
+	// 		title: "Количество комнат: 1",
+	// 	},
+	// 	{
+	// 		img: img4,
+	// 		text: "Общая площадь: 50.15 м²",
+	// 		title: "Количество комнат: 1",
+	// 	},
+	// ];
 	const NextArrow = ({ onClick }) => (
 		<div className="arrow next" onClick={onClick}>
 			<FaArrowRight />
@@ -73,13 +74,13 @@ const ProjectPlan = () => {
 				</div>
 				<div className="resourses" data-aos="flip-up">
 					<Slider {...settings}>
-						{data.map((item, index) => (
+						{datas?.map((item, index) => (
 							<div
 								key={index}
 								className={index === imageIndex ? "slide active" : "slide"}
 								
 							>
-								<a>
+								<a >
 									<img src={item.img} alt={item.img} />
 									<div className="text">
 										<p>{item.text}</p>

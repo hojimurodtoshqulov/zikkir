@@ -18,11 +18,37 @@ import archImg3 from "../../media/arch5.png";
 import archImg4 from "../../media/arch6.png";
 import archImg5 from "../../media/arch7.png";
 import imgAbout from "../../media/u3.png";
+import pPimg1 from "../../media/1.png.png";
+import pPimg2 from "../../media/2.png.png";
+import pPimg3 from "../../media/3.png.png";
+import pPimg4 from "../../media/2.png.png";
 import ProjectsAbout from "../../components/projectsAbout/projectsAbout";
 import SuperLocation from "../../components/superLocation/superLocation";
 import Architect from "../../components/architect/architect";
 import ProjectPlan from "../../components/projectPlan/projectPlan";
 const Cholquvar = () => {
+	const data = [
+		{
+			img: pPimg1,
+			text: "Общая площадь: 44.67 м²",
+			title: "Количество комнат: 1",
+		},
+		{
+			img: pPimg2,
+			text: "Общая площадь: 44.30 м²",
+			title: "Количество комнат: 1",
+		},
+		{
+			img: pPimg3,
+			text: "Общая площадь: 49.12 м²",
+			title: "Количество комнат: 1",
+		},
+		{
+			img: pPimg4,
+			text: "Общая площадь: 50.15 м²",
+			title: "Количество комнат: 1",
+		},
+	];
 	return (
 		<Suspense fallback="loading">
 			<div className={scss.cholquvar}>
@@ -76,7 +102,7 @@ const Cholquvar = () => {
 						"Подходя к архитектуре, как к искусству, команда создала проект с узнаваемым творческим почерком.Особый шарм и очарование Сho'lquvar невозможно будет перепутать с другим жилым комплексом в Ташкенте."
 					}
 				/>
-				<ProjectPlan />
+				<ProjectPlan datas={data} />
 				{/* <Map_form /> */}
 			</div>
 		</Suspense>
