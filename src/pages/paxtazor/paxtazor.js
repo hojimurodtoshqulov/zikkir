@@ -17,10 +17,11 @@ import archImg2 from "../../media/arch2.png";
 import archImg3 from "../../media/arch3.png";
 import archImg4 from "../../media/arch4.png";
 import archImg5 from "../../media/arch7.png";
-import pPimg1 from "../../media/1.png.png";
-import pPimg2 from "../../media/2.png.png";
-import pPimg3 from "../../media/3.png.png";
-import pPimg4 from "../../media/2.png.png";
+import pPimg1 from "../../media/2,1.png";
+import pPimg2 from "../../media/2,2.png";
+import pPimg3 from "../../media/2,3.png";
+import pPimg4 from "../../media/2,4.png";
+import pPimg5 from "../../media/2,5.png";
 import imgAbout from "../../media/u7.png";
 import ProjectsAbout from "../../components/projectsAbout/projectsAbout";
 import SuperLocation from "../../components/superLocation/superLocation";
@@ -48,6 +49,11 @@ const Paxtazor = () => {
 			text: "Общая площадь: 50.15 м²",
 			title: "Количество комнат: 1",
 		},
+		{
+			img: pPimg5,
+			text: "Общая площадь: 50.19 м²",
+			title: "Количество комнат: 2",
+		},
 	];
 	return (
 		<Suspense fallback="loading">
@@ -56,10 +62,10 @@ const Paxtazor = () => {
 				<ProjectsAbout
 					titleAbout={"О проекте"}
 					text1About={
-						"Lorem ipsum dolor sit amet consectetur. Pharetra urna vitae ipsum nisl cursus dui hac. Amet proin faucibus arcu lectus sem. Eu mattis dictum duis nulla. Sit commodo praesent nunc sit urna adipiscing amet."
+						'Воплощение премиальных ценностей с "Paxtazor residence". Архитектурное искусство, служащее во благо народа, представляет из себя самую передовую технологию строительства.'
 					}
 					text2About={
-						"Lorem ipsum dolor sit amet consectetur. Pharetra urna vitae ipsum nisl cursus dui hac. Amet proin faucibus arcu lectus sem. Eu mattis dictum duis nulla. Sit commodo praesent nunc sit urna adipiscing amet."
+						'Удобное расположение жилого комплекса, развитая инфраструктура, удобства для детей и взрослых. Более того в "Paxtazor" внедрено внутреннее Eco пространство для стабилизации здоровья, а надежная система безопасности прослужит вам в роли спокойствия.'
 					}
 					imgAbout={imgAbout}
 					titleAdvantages={"Преимущества"}
@@ -99,7 +105,7 @@ const Paxtazor = () => {
 					title4={"Увеличенная Высота Потолков В Чистоте"}
 					title5={"Автоклавный газаблок"}
 					text={
-						"Подходя к архитектуре, как к искусству, команда создала проект с узнаваемым творческим почерком.Особый шарм и очарование Paxtazor невозможно будет перепутать с другим жилым комплексом в Ташкенте."
+						'ЖК "Paxtazor" предлагает современные и комфортабельные условия для жизни. В комплексе есть разнообразие квартир, подходящих для семей разных размеров, с открытыми планировками и большими окнами для естественного света.'
 					}
 				/>
 				<ProjectPlan datas={data} />

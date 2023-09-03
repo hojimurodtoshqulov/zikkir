@@ -12,7 +12,7 @@ const Architect = ({
 	img3,
 	img4,
 	img5,
-text
+	text,
 }) => {
 	return (
 		<div

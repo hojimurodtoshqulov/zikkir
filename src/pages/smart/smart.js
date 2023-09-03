@@ -56,10 +56,10 @@ const Smart = () => {
 				<ProjectsAbout
 					titleAbout={"О проекте"}
 					text1About={
-						"Lorem ipsum dolor sit amet consectetur. Pharetra urna vitae ipsum nisl cursus dui hac. Amet proin faucibus arcu lectus sem. Eu mattis dictum duis nulla. Sit commodo praesent nunc sit urna adipiscing amet."
+						"Новостройка ЖК 'Сho'lquvar smart' - это современный жилой комплекс, расположенный в центре города. Одной из его главных особенностей является высокое качество строительства и использование экологически чистых материалов."
 					}
 					text2About={
-						"Lorem ipsum dolor sit amet consectetur. Pharetra urna vitae ipsum nisl cursus dui hac. Amet proin faucibus arcu lectus sem. Eu mattis dictum duis nulla. Sit commodo praesent nunc sit urna adipiscing amet."
+						"В комплексе есть различные типы квартир, от небольших однокомнатных до просторных четырехкомнатных. Также в ЖК 'Cho'lqivor smart' есть подземная парковка, игровая площадка и круглосуточная охрана. "
 					}
 					imgAbout={imgAbout}
 					titleAdvantages={"Преимущества"}
@@ -99,7 +99,7 @@ const Smart = () => {
 					title4={"Увеличенная Высота Потолков В Чистоте"}
 					title5={"Автоклавный газаблок"}
 					text={
-						"Подходя к архитектуре, как к искусству, команда создала проект с узнаваемым творческим почерком.Особый шарм и очарование Smart невозможно будет перепутать с другим жилым комплексом в Ташкенте."
+						"ЖК 'Cho'qivor Smart' - расположена в тихом зеленом районе города. В здании есть все, что нужно для комфортной жизни в городе: большие окна, панорамные виды, просторные планировки и многое другое. "
 					}
 				/>
 				<ProjectPlan datas={data} />

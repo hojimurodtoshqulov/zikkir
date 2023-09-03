@@ -18,10 +18,12 @@ import archImg3 from "../../media/arch5.png";
 import archImg4 from "../../media/arch6.png";
 import archImg5 from "../../media/arch7.png";
 import imgAbout from "../../media/u3.png";
-import pPimg1 from "../../media/1.png.png";
-import pPimg2 from "../../media/2.png.png";
-import pPimg3 from "../../media/3.png.png";
-import pPimg4 from "../../media/2.png.png";
+import pPimg1 from "../../media/1,1.png";
+import pPimg2 from "../../media/1,2.png";
+import pPimg3 from "../../media/1,3.png";
+import pPimg4 from "../../media/1,4.png";
+import pPimg5 from "../../media/1,5.png";
+import pPimg6 from "../../media/1,6.png";
 import ProjectsAbout from "../../components/projectsAbout/projectsAbout";
 import SuperLocation from "../../components/superLocation/superLocation";
 import Architect from "../../components/architect/architect";
@@ -48,6 +50,16 @@ const Cholquvar = () => {
 			text: "Общая площадь: 50.15 м²",
 			title: "Количество комнат: 1",
 		},
+		{
+			img: pPimg5,
+			text: "Общая площадь: 50.15 м²",
+			title: "Количество комнат: 1",
+		},
+		{
+			img: pPimg6,
+			text: "Общая площадь: 50.15 м²",
+			title: "Количество комнат: 1",
+		},
 	];
 	return (
 		<Suspense fallback="loading">
@@ -56,10 +68,10 @@ const Cholquvar = () => {
 				<ProjectsAbout
 					titleAbout={"О проекте"}
 					text1About={
-						"Lorem ipsum dolor sit amet consectetur. Pharetra urna vitae ipsum nisl cursus dui hac. Amet proin faucibus arcu lectus sem. Eu mattis dictum duis nulla. Sit commodo praesent nunc sit urna adipiscing amet."
+						"'Cho'lquvar' - комфортабельный жилой комплекс, конкурирующий с премиальным сегментом. В этомпроекте использованы новые методики из зарубежных стран, которые были реализованы благодаря опытным и высококвалифицированным специалистам."
 					}
 					text2About={
-						"Lorem ipsum dolor sit amet consectetur. Pharetra urna vitae ipsum nisl cursus dui hac. Amet proin faucibus arcu lectus sem. Eu mattis dictum duis nulla. Sit commodo praesent nunc sit urna adipiscing amet."
+						"Кроме того, 'Cho'lquvar' был разработан специально для города Карши и обладает архитектурной привлекательностью и удобством для населения. С 'Cho'lquvar' вы будете находиться в центре внимания и удобства!"
 					}
 					imgAbout={imgAbout}
 					titleAdvantages={"Преимущества"}
@@ -99,7 +111,7 @@ const Cholquvar = () => {
 					title4={"Надежная система безопасности"}
 					title5={"Автоклавный газаблок"}
 					text={
-						"Подходя к архитектуре, как к искусству, команда создала проект с узнаваемым творческим почерком.Особый шарм и очарование Сho'lquvar невозможно будет перепутать с другим жилым комплексом в Ташкенте."
+						"Подходя к архитектуре, как к искусству, команда создала проект с узнаваемым творческим почерком.Особый шарм и очарование Сho'lquvar невозможно будет перепутать с другим жилым комплексом в Карши."
 					}
 				/>
 				<ProjectPlan datas={data} />
