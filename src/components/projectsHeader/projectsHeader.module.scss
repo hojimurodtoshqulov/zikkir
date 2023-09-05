@@ -41,7 +41,13 @@
 	@media (max-width: $md) {
 		height: 70vh;
 		&Logo {
-			width: 55%;
+			width: 70%;
+		}
+		&Img {
+			width: 70%;
+		}
+		&Img2 {
+			width: 70%;
 		}
 	}
 	@media (max-width: $xs) {

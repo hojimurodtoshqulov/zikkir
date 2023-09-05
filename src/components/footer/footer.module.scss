@@ -69,26 +69,26 @@
 
 				/* For hover effect */
 
-				background: linear-gradient(
-						to right,
-						rgba(65, 168, 208, 0.781),
-						rgb(202, 255, 255),
-						rgb(255, 255, 255)
-					),
-					linear-gradient(
-						to right,
-						rgb(0, 123, 255),
-						rgb(255, 255, 255),
-						rgb(6, 36, 63)
-					);
-				background-size: 100% 2px, 0 2px;
-				background-position: 100% 100%, 0 100%;
-				background-repeat: no-repeat;
-				transition: background-size 400ms;
-				border-radius: 10px;
-				&:hover {
-					background-size: 0 3px, 100% 3px;
-				}
+				// background: linear-gradient(
+				// 		to right,
+				// 		rgba(65, 168, 208, 0.781),
+				// 		rgb(202, 255, 255),
+				// 		rgb(255, 255, 255)
+				// 	),
+				// 	linear-gradient(
+				// 		to right,
+				// 		rgb(0, 123, 255),
+				// 		rgb(255, 255, 255),
+				// 		rgb(6, 36, 63)
+				// 	);
+				// background-size: 100% 2px, 0 2px;
+				// background-position: 100% 100%, 0 100%;
+				// background-repeat: no-repeat;
+				// transition: background-size 400ms;
+				// border-radius: 10px;
+				// &:hover {
+				// 	background-size: 0 3px, 100% 3px;
+				// }
 			}
 
 			@media (max-width: 1360px) {

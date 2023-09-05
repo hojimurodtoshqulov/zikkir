@@ -55,10 +55,11 @@ const Form = ({ formProject }) => {
 	return (
 		<div className={scss.forms} data-aos="zoom-in-up">
 			<h3 data-aos="flip-up" data-aos-delay="300">
-				ПОЛУЧИТЬ ПОДРОБНУЮ КОНСУЛЬТАЦИЮ
+				Оставить свою заявку можете тут
 			</h3>
 			<p data-aos="flip-up" data-aos-delay="400">
-				Мы свяжемся с вами как можно быстрее
+				Наши специалисты свяжутся с вами в скором времени Свяжитесь с нами и
+				получите бесплатную консультацию
 			</p>
 			<form
 				action=""
@@ -98,7 +99,7 @@ const Form = ({ formProject }) => {
 				</button>
 			</form>
 			<p data-aos="flip-up" data-aos-delay="600">
-				Свяжитесь с нами и получите бесплатную консультацию!
+				Мы свяжемся с вами как можно быстрее!
 			</p>
 		</div>
 	);

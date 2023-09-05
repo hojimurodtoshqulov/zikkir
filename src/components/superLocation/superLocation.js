@@ -18,8 +18,8 @@ const SuperLocation = ({ bgImg, space }) => {
 			className={scss.superLocation}
 			style={{ backgroundImage: `url(${bgImg})` }}
 		>
-			<h2 data-aos="fade-up">СУПЕР ЛОКАЦИЯ</h2>
 			<div className="container">
+				<h2 data-aos="fade-up">УДОБНАЯ ЛОКАЦИЯ</h2>
 				<div className={scss.superLocation__elements}>
 					<div className={scss.superLocation__elements_col1}>
 						<div className={scss.map} data-aos="fade-up-right">
@@ -45,7 +45,11 @@ const SuperLocation = ({ bgImg, space }) => {
 						<div className={scss.row2}>
 							<div
 								className={scss.row2__ele}
-								style={{ background: "#0fbaee94", backdropFilter: "blur(7px)" }}
+								style={{
+									background: "#0fbaee94",
+									backdropFilter: "blur(7px)",
+									
+								}}
 							>
 								<h5>
 									<img src={img2} alt={img2} />

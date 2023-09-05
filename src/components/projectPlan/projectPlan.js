@@ -56,7 +56,7 @@ const ProjectPlan = ({datas}) => {
 	return (
 		<div className="projectPlan">
 			<div className="container" data-aos="fade-up">
-				<h3 data-aos="flip-up">ПРОДУМАННЫЕ ПЛАНИРОВОЧНЫЕ РЕШЕНИЯ</h3>
+				<h2 data-aos="flip-up">ПРОДУМАННЫЕ ПЛАНИРОВОЧНЫЕ РЕШЕНИЯ</h2>
 				<div className="projectPlan__rooms" data-aos="fade-left">
 					<button>Все</button>
 					<p data-aos="flip-up" data-aos-delay="300">

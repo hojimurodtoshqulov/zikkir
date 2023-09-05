@@ -2,9 +2,21 @@
 
 .architect {
 	padding: 100px 0;
-	color: $dark;
 	background-size: cover;
 	color: $light;
+	&Element {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 80px;
+		@media (max-width: $md) {
+			gap: 30px;
+		}
+		h2 {
+			text-align: center;
+		}
+	}
 	.elements {
 		display: flex;
 		flex-direction: column;
@@ -12,14 +24,23 @@
 		justify-content: center;
 		gap: 70px;
 		width: 80%;
+		@media (max-width: $md) {
+			gap: 30px;
+		}
 		&Row {
 			display: flex;
 			justify-content: center;
 			align-items: center;
 			gap: 70px;
 			width: 100%;
+			@media (max-width: $md) {
+				gap: 30px;
+			}
+			@media (max-width: $sm) {
+				flex-wrap: wrap;
+			}
 			&Div {
-				width: 100%;
+				width: 70%;
 				backdrop-filter: blur(7px);
 				background: rgba(148, 148, 148, 0.641);
 				display: flex;
@@ -30,16 +51,30 @@
 				font-size: 21px;
 				border-radius: 15px;
 				text-align: center;
+				@media (max-width: $md) {
+					font-size: 17px;
+					gap: 3px;
+					padding: 10px 25px;
+				}
+				@media (max-width: $sm) {
+					width: 100%;
+					gap: 10px;
+					padding: 15px 25px;
+				}
+				img {
+					width: 60px;
+					@media (max-width: $md) {
+						width: 40px;
+					}
+				}
 				span {
-					// width: 77%;
 					display: inline-block;
-					// border: 1px solid rgb(30, 0, 255);
-					// display: flex;
-					// align-items: center;
-					// justify-content: center;
 					text-align: center;
 					font-size: 30px;
 					padding: 10px 0 10px 20px;
+					@media (max-width: $md) {
+						font-size: 22px;
+					}
 				}
 			}
 		}
@@ -47,5 +82,11 @@
 	&Text {
 		font-size: 32px;
 		text-align: center;
+		@media (max-width: $md) {
+			font-size: 20px;
+		}
+		@media (max-width: $sm) {
+			font-size: 17px;
+		}
 	}
 }
