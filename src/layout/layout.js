@@ -15,7 +15,7 @@ const Layout = () => {
 	useEffect(() => {
 		setTimeout(() => {
 			setActive(false);
-		}, 4000);
+		}, 100);
 	}, []);
 	return (
 		<Suspense fallback="loading">

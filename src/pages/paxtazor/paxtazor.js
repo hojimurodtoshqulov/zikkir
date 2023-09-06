@@ -17,73 +17,66 @@ import archImg2 from "../../media/arch2.png";
 import archImg3 from "../../media/arch3.png";
 import archImg4 from "../../media/arch4.png";
 import archImg5 from "../../media/arch7.png";
-import pPimg1 from "../../media/2,1.png";
-import pPimg2 from "../../media/2,2.png";
-import pPimg3 from "../../media/2,3.png";
-import pPimg4 from "../../media/2,4.png";
-import pPimg5 from "../../media/2,5.png";
+import pPimg1 from "../../media/2,2.png";
+import pPimg2 from "../../media/2,3.png";
+import pPimg3 from "../../media/2,5.png";
+import pPimg4 from "../../media/2,1.png";
+import pPimg5 from "../../media/2,4.png";
 import imgAbout from "../../media/u7.png";
 import ProjectsAbout from "../../components/projectsAbout/projectsAbout";
 import SuperLocation from "../../components/superLocation/superLocation";
 import Architect from "../../components/architect/architect";
 import ProjectPlan from "../../components/projectPlan/projectPlan";
+import { useTranslation } from "react-i18next";
 const Paxtazor = () => {
+	const { t } = useTranslation();
 	const data = [
 		{
 			img: pPimg1,
-			text: "Общая площадь: 44.67 м²",
-			title: "Количество комнат: 1",
+			text: t("paxtazor.projectPlan.title1"),
+			title: t("paxtazor.projectPlan.text1"),
 		},
 		{
 			img: pPimg2,
-			text: "Общая площадь: 44.30 м²",
-			title: "Количество комнат: 1",
+			text: t("paxtazor.projectPlan.title2"),
+			title: t("paxtazor.projectPlan.text2"),
 		},
 		{
 			img: pPimg3,
-			text: "Общая площадь: 49.12 м²",
-			title: "Количество комнат: 1",
+			text: t("paxtazor.projectPlan.title3"),
+			title: t("paxtazor.projectPlan.text3"),
 		},
 		{
 			img: pPimg4,
-			text: "Общая площадь: 50.15 м²",
-			title: "Количество комнат: 1",
+			text: t("paxtazor.projectPlan.title4"),
+			title: t("paxtazor.projectPlan.text4"),
 		},
 		{
 			img: pPimg5,
-			text: "Общая площадь: 50.19 м²",
-			title: "Количество комнат: 2",
+			text: t("paxtazor.projectPlan.title5"),
+			title: t("paxtazor.projectPlan.text5"),
 		},
 	];
+
 	return (
 		<Suspense fallback="loading">
 			<div className={scss.paxtazor}>
 				<ProjectsHeader bgImage={img1} logo={logo} />
 				<ProjectsAbout
-					titleAbout={"О проекте"}
-					text1About={
-						'Воплощение премиальных ценностей с "Paxtazor residence". Архитектурное искусство, служащее во благо народа, представляет из себя самую передовую технологию строительства.'
-					}
-					text2About={
-						'Удобное расположение жилого комплекса, развитая инфраструктура, удобства для детей и взрослых. Более того в "Paxtazor" внедрено внутреннее Eco пространство для стабилизации здоровья, а надежная система безопасности прослужит вам в роли спокойствия.'
-					}
+					text1About={t("paxtazor.aboutProject.text1")}
+					text2About={t("paxtazor.aboutProject.text2")}
+					textAdvantages={t("paxtazor.advanteges.text")}
 					imgAbout={imgAbout}
-					titleAdvantages={"Преимущества"}
-					textAdvantages={
-						"В центральной части Карши мы создали идеальное сочетание стиля, безопасности и комфорта благодаря современным технологиям и квалифицированности наших специалистов"
-					}
 					img1={img2}
 					img2={img3}
 					img3={img4}
 					img4={img5}
 					img5={img6}
-					title1={"Удобная локация"}
-					title2={"Детская площадка"}
-					title3={
-						"Чистый питьевой вода с запасом воды на 80 тонн и многими другими удобствами"
-					}
-					title4={"Отдельная канализация"}
-					title5={"Парковка имеется"}
+					title1={t("paxtazor.advanteges.title1")}
+					title2={t("paxtazor.advanteges.title2")}
+					title3={t("paxtazor.advanteges.title3")}
+					title4={t("paxtazor.advanteges.title4")}
+					title5={t("paxtazor.advanteges.title5")}
 				/>
 				<SuperLocation
 					bgImg={img7}
@@ -99,14 +92,12 @@ const Paxtazor = () => {
 					img3={archImg3}
 					img4={archImg4}
 					img5={archImg5}
-					title1={"Инновационная Архитектура"}
-					title2={"Европейские Материалы Фасада"}
-					title3={"Витражное Остекление"}
-					title4={"Увеличенная Высота Потолков В Чистоте"}
-					title5={"Автоклавный газаблок"}
-					text={
-						'ЖК "Paxtazor" предлагает современные и комфортабельные условия для жизни. В комплексе есть разнообразие квартир, подходящих для семей разных размеров, с открытыми планировками и большими окнами для естественного света.'
-					}
+					title1={t("paxtazor.architect.title1")}
+					title2={t("paxtazor.architect.title2")}
+					title3={t("paxtazor.architect.title3")}
+					title4={t("paxtazor.architect.title4")}
+					title5={t("paxtazor.architect.title5")}
+					text={t("paxtazor.architect.text")}
 				/>
 				<ProjectPlan datas={data} />
 				{/* <Map_form /> */}

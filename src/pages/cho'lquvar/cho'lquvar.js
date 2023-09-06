@@ -18,78 +18,71 @@ import archImg3 from "../../media/arch5.png";
 import archImg4 from "../../media/arch6.png";
 import archImg5 from "../../media/arch7.png";
 import imgAbout from "../../media/u3.png";
-import pPimg1 from "../../media/1,1.png";
-import pPimg2 from "../../media/1,2.png";
-import pPimg3 from "../../media/1,3.png";
-import pPimg4 from "../../media/1,4.png";
-import pPimg5 from "../../media/1,5.png";
-import pPimg6 from "../../media/1,6.png";
+import pPimg1 from "../../media/1,2.png";
+import pPimg2 from "../../media/1,5.png";
+import pPimg3 from "../../media/1,6.png";
+import pPimg4 from "../../media/1,3.png";
+import pPimg5 from "../../media/1,1.png";
+import pPimg6 from "../../media/1,4.png";
 import ProjectsAbout from "../../components/projectsAbout/projectsAbout";
 import SuperLocation from "../../components/superLocation/superLocation";
 import Architect from "../../components/architect/architect";
 import ProjectPlan from "../../components/projectPlan/projectPlan";
+import { useTranslation } from "react-i18next";
 const Cholquvar = () => {
+	const { t } = useTranslation();
 	const data = [
 		{
 			img: pPimg1,
-			text: "Общая площадь: 44.67 м²",
-			title: "Количество комнат: 1",
+			text: t("cho'lquvar.projectPlan.title1"),
+			title: t("cho'lquvar.projectPlan.text1"),
 		},
 		{
 			img: pPimg2,
-			text: "Общая площадь: 44.30 м²",
-			title: "Количество комнат: 1",
+			text: t("cho'lquvar.projectPlan.title2"),
+			title: t("cho'lquvar.projectPlan.text2"),
 		},
 		{
 			img: pPimg3,
-			text: "Общая площадь: 49.12 м²",
-			title: "Количество комнат: 1",
+			text: t("cho'lquvar.projectPlan.title3"),
+			title: t("cho'lquvar.projectPlan.text3"),
 		},
 		{
 			img: pPimg4,
-			text: "Общая площадь: 50.15 м²",
-			title: "Количество комнат: 1",
+			text: t("cho'lquvar.projectPlan.title4"),
+			title: t("cho'lquvar.projectPlan.text4"),
 		},
 		{
 			img: pPimg5,
-			text: "Общая площадь: 50.15 м²",
-			title: "Количество комнат: 1",
+			text: t("cho'lquvar.projectPlan.title5"),
+			title: t("cho'lquvar.projectPlan.text5"),
 		},
 		{
 			img: pPimg6,
-			text: "Общая площадь: 50.15 м²",
-			title: "Количество комнат: 1",
+			text: t("cho'lquvar.projectPlan.title6"),
+			title: t("cho'lquvar.projectPlan.text6"),
 		},
 	];
+
 	return (
 		<Suspense fallback="loading">
 			<div className={scss.cholquvar}>
 				<ProjectsHeader bgImage={img1} logo={img} />
 				<ProjectsAbout
-					titleAbout={"О проекте"}
-					text1About={
-						"'Cho'lquvar' - комфортабельный жилой комплекс, конкурирующий с премиальным сегментом. В этомпроекте использованы новые методики из зарубежных стран, которые были реализованы благодаря опытным и высококвалифицированным специалистам."
-					}
-					text2About={
-						"Кроме того, 'Cho'lquvar' был разработан специально для города Карши и обладает архитектурной привлекательностью и удобством для населения. С 'Cho'lquvar' вы будете находиться в центре внимания и удобства!"
-					}
+					text1About={t("cho'lquvar.aboutProject.text1")}
+					text2About={t("cho'lquvar.aboutProject.text2")}
+					textAdvantages={t("cho'lquvar.advanteges.text")}
 					imgAbout={imgAbout}
-					titleAdvantages={"Преимущества"}
-					textAdvantages={
-						"В центральной части Карши мы создали идеальное сочетание стиля, безопасности и комфорта благодаря современным технологиям и квалифицированности наших специалистов"
-					}
 					img1={img2}
 					img2={img3}
 					img3={img4}
 					img4={img5}
 					img5={img6}
-					title1={"Удобная локация"}
-					title2={"Детская площадка"}
-					title3={
-						"Чистый питьевой вода с запасом воды на 80 тонн и многими другими удобствами"
-					}
-					title4={"Отдельная канализация"}
-					title5={"Удобная парковка на 50 машин"}
+					title1={t("cho'lquvar.advanteges.title1")}
+					title2={t("cho'lquvar.advanteges.title2")}
+					title3={t("cho'lquvar.advanteges.title3")}
+					title4={t("cho'lquvar.advanteges.title4")}
+					title5={t("cho'lquvar.advanteges.title5")}
 				/>
 				<SuperLocation
 					bgImg={img7}
@@ -105,17 +98,14 @@ const Cholquvar = () => {
 					img3={archImg3}
 					img4={archImg4}
 					img5={archImg5}
-					title1={"Инновационная Архитектура"}
-					title2={"Европейские Материалы Фасада"}
-					title3={"Внутреннее Eco пространство"}
-					title4={"Надежная система безопасности"}
-					title5={"Автоклавный газаблок"}
-					text={
-						"Подходя к архитектуре, как к искусству, команда создала проект с узнаваемым творческим почерком.Особый шарм и очарование Сho'lquvar невозможно будет перепутать с другим жилым комплексом в Карши."
-					}
+					title1={t("cho'lquvar.architect.title1")}
+					title2={t("cho'lquvar.architect.title2")}
+					title3={t("cho'lquvar.architect.title3")}
+					title4={t("cho'lquvar.architect.title4")}
+					title5={t("cho'lquvar.architect.title5")}
+					text={t("cho'lquvar.architect.text")}
 				/>
 				<ProjectPlan datas={data} />
-				{/* <Map_form /> */}
 			</div>
 		</Suspense>
 	);

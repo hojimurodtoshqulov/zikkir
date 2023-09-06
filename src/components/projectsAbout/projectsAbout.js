@@ -1,4 +1,5 @@
 import scss from "./projectsAbout.module.scss";
+import { useTranslation } from "react-i18next";
 
 const ProjectsAbout = ({
 	titleAbout,
@@ -18,6 +19,7 @@ const ProjectsAbout = ({
 	title4,
 	title5,
 }) => {
+	const { t } = useTranslation();
 	return (
 		<div className={scss.projectsAbout}>
 			<img
@@ -35,13 +37,13 @@ const ProjectsAbout = ({
 			<div className="container">
 				<div className={scss.aboutProject} data-aos="fade-up">
 					<div className={scss.aboutProjectCol1}>
-						<h2>{titleAbout}</h2>
+						<h2>{t("projects.projectsAbout")}</h2>
 						<p> {text1About} </p>
 						<p> {text2About} </p>
 					</div>
 				</div>
 				<div className={scss.elements} data-aos="fade-up">
-					<h2 data-aos="flip-up">{titleAdvantages}</h2>
+					<h2 data-aos="flip-up">{t("projects.projectsAdvantages")}</h2>
 					<p data-aos="flip-up">{textAdvantages}</p>
 					<div className={scss.elementsImgDiv}>
 						<div
@@ -49,14 +51,14 @@ const ProjectsAbout = ({
 							style={{ backgroundImage: `url("${img1}")` }}
 							data-aos="fade-right"
 						>
-							<p>1. {title1}</p>
+							<p> {title1}</p>
 						</div>
 						<div
 							className={scss.elementsImgDivHidden}
 							style={{ backgroundImage: `url("${img2}")` }}
 							data-aos="fade-left"
 						>
-							<p>2. {title2}</p>
+							<p> {title2}</p>
 						</div>
 					</div>
 					<div className={scss.elementsImgDiv} data-aos="flip-up">
@@ -72,7 +74,7 @@ const ProjectsAbout = ({
 									margin: "0 auto",
 								}}
 							>
-								3. {title3}
+								 {title3}
 							</p>
 						</div>
 					</div>
@@ -82,14 +84,14 @@ const ProjectsAbout = ({
 							style={{ backgroundImage: `url("${img4}")` }}
 							data-aos="fade-left"
 						>
-							<p> 4. {title4} </p>
+							<p>  {title4} </p>
 						</div>
 						<div
 							className={scss.elementsImgDivHidden}
 							style={{ backgroundImage: `url("${img5}")` }}
 							data-aos="fade-right"
 						>
-							<p>5. {title5}</p>
+							<p> {title5}</p>
 						</div>
 					</div>
 				</div>

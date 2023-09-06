@@ -1,5 +1,5 @@
 import scss from "./architect.module.scss";
-
+import { useTranslation } from "react-i18next";
 const Architect = ({
 	bgImg1,
 	title1,
@@ -14,6 +14,7 @@ const Architect = ({
 	img5,
 	text,
 }) => {
+	const { t } = useTranslation();
 	return (
 		<div
 			className={scss.architect}
@@ -27,7 +28,7 @@ const Architect = ({
 				data-aos="fade-up"
 			>
 				<div className={scss.architectElement}>
-					<h2 data-aos="flip-up">ПЕРЕДОВАЯ АРХИТЕКТУРА</h2>
+					<h2 data-aos="flip-up"> {t("projects.projectsArchitect")}</h2>
 					<div className={scss.elements}>
 						<div className={scss.elementsRow}>
 							<div className={scss.elementsRowDiv} data-aos="fade-up-left">

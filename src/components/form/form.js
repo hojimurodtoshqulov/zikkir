@@ -2,6 +2,7 @@ import scss from "./form.module.scss";
 import { FaChevronRight } from "react-icons/fa";
 import { useState } from "react";
 import axios from "axios";
+import { useTranslation } from "react-i18next";
 const Form = ({ formProject }) => {
 	const [formValues, setFormValues] = useState({
 		name: "",
@@ -52,14 +53,14 @@ const Form = ({ formProject }) => {
 		}
 		setFormValues({ name: "", phone: "" });
 	};
+	const { t } = useTranslation();
 	return (
 		<div className={scss.forms} data-aos="zoom-in-up">
 			<h3 data-aos="flip-up" data-aos-delay="300">
-				Оставить свою заявку можете тут
+				{t("projects.projectsForm.title")}
 			</h3>
 			<p data-aos="flip-up" data-aos-delay="400">
-				Наши специалисты свяжутся с вами в скором времени Свяжитесь с нами и
-				получите бесплатную консультацию
+				{t("projects.projectsForm.text1")}
 			</p>
 			<form
 				action=""
@@ -81,7 +82,7 @@ const Form = ({ formProject }) => {
 					value={formValues.name}
 					type="text"
 					required
-					placeholder="Ваше имя:"
+					placeholder={t("projects.projectsForm.input1")}
 				/>
 				<input
 					id="phone"
@@ -89,17 +90,17 @@ const Form = ({ formProject }) => {
 					value={formValues.phone}
 					type="text"
 					required
-					placeholder="Тел:"
+					placeholder={t("projects.projectsForm.input2")}
 				/>
 				<button type="submit">
 					<span>
-						Отправить
+						{t("projects.projectsForm.btn")}
 						<FaChevronRight />
 					</span>
 				</button>
 			</form>
 			<p data-aos="flip-up" data-aos-delay="600">
-				Мы свяжемся с вами как можно быстрее!
+				{t("projects.projectsForm.text2")}
 			</p>
 		</div>
 	);

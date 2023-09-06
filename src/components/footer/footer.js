@@ -1,22 +1,24 @@
-
 import scss from "./footer.module.scss";
 import logo from "../../media/logo_footer.png";
-import { Link,  useNavigate} from "react-router-dom";
-export default function Footer () {
+import { Link, useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+
+export default function Footer() {
+	const { t } = useTranslation();
 	const scrollToTop = () => {
 		window.scrollTo(0, 0);
 	};
-	const navigate = useNavigate()
+	const navigate = useNavigate();
 	return (
 		<footer className={scss.footer}>
 			<div className="container">
 				<div className={scss.footer__line}></div>
 				<div className={scss.footer__row1}>
-					<div onClick={() => navigate('/')} className={scss.footer__row1_col}>
+					<div onClick={() => navigate("/")} className={scss.footer__row1_col}>
 						<img className={scss.footer__logo} src={logo} alt="" />
 					</div>
 					<div className={scss.footer__row1_col}>
-						<h4 className={scss.footer__row1_col__title}>Контактная информация</h4>
+						<h4 className={scss.footer__row1_col__title}>{t("home.footer.title1")}</h4>
 						<p>
 							<a href="mail:shuxratuljaboyev@gmail.com">
 								<span>shuxratuljaboyev@gmail.com</span>
@@ -32,11 +34,11 @@ export default function Footer () {
 								fontSize: "18px",
 							}}
 						>
-							Офис - Карши, Насаф улица 27a дом
+							{t("home.footer.address")}
 						</p>
 					</div>
 					<div className={scss.footer__row1_col}>
-						<h4 className={scss.footer__row1_col__title}>Основные ссылки</h4>
+						<h4 className={scss.footer__row1_col__title}>{t("home.footer.title2")}</h4>
 						<Link
 							to="/company"
 							className={scss.footer__row1_col2_link}
@@ -61,7 +63,7 @@ export default function Footer () {
 						</Link>
 					</div>
 					<div className={scss.footer__row1_col}>
-						<h4 className={scss.footer__row1_col__title}>Наши проекты</h4>
+						<h4 className={scss.footer__row1_col__title}>{t("home.footer.title3")}</h4>
 						<Link
 							to="/paxtazor"
 							className={scss.footer__row1_col2_link}
@@ -78,7 +80,7 @@ export default function Footer () {
 						</Link>
 					</div>
 					<div className={scss.footer__row1_col}>
-						<h4 className={scss.footer__row1_col__title}>Социальные сети</h4>
+						<h4 className={scss.footer__row1_col__title}>{t("home.footer.title4")}</h4>
 
 						<Link
 							to="/Telegram"
@@ -92,14 +94,14 @@ export default function Footer () {
 							className={scss.footer__row1_col2_link}
 							onClick={scrollToTop}
 						>
-							Instagram 
+							Instagram
 						</Link>
 						<Link
 							to="/Facebook"
 							className={scss.footer__row1_col2_link}
 							onClick={scrollToTop}
 						>
-							Facebook 
+							Facebook
 						</Link>
 						<Link
 							to="/YouTube"
@@ -113,5 +115,4 @@ export default function Footer () {
 			</div>
 		</footer>
 	);
-};
-
+}

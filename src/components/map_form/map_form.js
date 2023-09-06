@@ -1,8 +1,10 @@
 import scss from "./map_form.module.scss";
 import { useState } from "react";
 import axios from "axios";
+import { useTranslation } from "react-i18next";
 
 const Map_form = () => {
+	const { t } = useTranslation();
 	const [formValues, setFormValues] = useState({
 		name: "",
 		phone: "",
@@ -81,11 +83,8 @@ const Map_form = () => {
 						</div>
 					</div>
 					<div className={scss.mapForm__elements_col2} data-aos="fade-up-left">
-						<h2>У вас остались вопросы?</h2>
-						<p>
-							Остались вопросы? Напишите нам и наши специалисты ответят вам в
-							течение 30 минут!
-						</p>
+						<h2>{t("home.mapForm.title")}</h2>
+						<p> {t("home.mapForm.text")}</p>
 						<form action="" onSubmit={onSubmit}>
 							<input
 								id="name"
@@ -93,14 +92,14 @@ const Map_form = () => {
 								value={formValues.name}
 								type="text"
 								required
-								placeholder="Ваше имя..."
+								placeholder={t("home.mapForm.input1")}
 							/>
 							<input
 								id="phone"
 								onChange={(e) => handle(e)}
 								value={formValues.phone}
 								type="text"
-								placeholder="Ваш телефон..."
+								placeholder={t("home.mapForm.input2")}
 								required
 							/>
 							<input
@@ -108,13 +107,11 @@ const Map_form = () => {
 								onChange={(e) => handle(e)}
 								value={formValues.message}
 								type="text"
-								placeholder="Ваш вопрос..."
+								placeholder={t("home.mapForm.input3")}
 								required
 							/>
-							<button type="submit">Отправить сообщение</button>
-							<p>
-								Нажимая на кнопку вы соглашаетесь с политикой конфиденциальности{" "}
-							</p>
+							<button type="submit">{t("home.mapForm.btn")}</button>
+							<p>{t("home.mapForm.littleText")}</p>
 						</form>
 					</div>
 				</div>

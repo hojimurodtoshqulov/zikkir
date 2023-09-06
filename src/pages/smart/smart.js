@@ -6,8 +6,8 @@ import Form from "../../components/form/form";
 import ProjectsHeader from "../../components/projectsHeader/projectsHeader";
 import logo from "../../media/smartLogo.png";
 import img1 from "../../media/smart3.png";
-import img2 from "../../media/smart2.png";
-import img3 from "../../media/smart1.png";
+import img2 from "../../media/smart1.png";
+import img3 from "../../media/u17.png";
 import img4 from "../../media/Rectangle 1293.png";
 import img5 from "../../media/Rectangle 1294.png";
 import img6 from "../../media/smart4.png";
@@ -26,7 +26,9 @@ import ProjectsAbout from "../../components/projectsAbout/projectsAbout";
 import SuperLocation from "../../components/superLocation/superLocation";
 import Architect from "../../components/architect/architect";
 import ProjectPlan from "../../components/projectPlan/projectPlan";
+import { useTranslation } from "react-i18next";
 const Smart = () => {
+	const { t } = useTranslation();
 	const data = [
 		{
 			img: pPimg1,
@@ -54,30 +56,20 @@ const Smart = () => {
 			<div className={scss.smart}>
 				<ProjectsHeader bgImage={img1} logo={logo} />
 				<ProjectsAbout
-					titleAbout={"О проекте"}
-					text1About={
-						"Новостройка ЖК 'Сho'lquvar smart' - это современный жилой комплекс, расположенный в центре города. Одной из его главных особенностей является высокое качество строительства и использование экологически чистых материалов."
-					}
-					text2About={
-						"В комплексе есть различные типы квартир, от небольших однокомнатных до просторных четырехкомнатных. Также в ЖК 'Cho'lqivor smart' есть подземная парковка, игровая площадка и круглосуточная охрана. "
-					}
+					text1About={t("smart.aboutProject.text1")}
+					text2About={t("smart.aboutProject.text2")}
+					textAdvantages={t("smart.advanteges.text")}
 					imgAbout={imgAbout}
-					titleAdvantages={"Преимущества"}
-					textAdvantages={
-						"В центральной части Карши мы создали идеальное сочетание стиля, безопасности и комфорта благодаря современным технологиям и квалифицированности наших специалистов"
-					}
 					img1={img2}
 					img2={img3}
 					img3={img4}
 					img4={img5}
 					img5={img6}
-					title1={"Удобная локация"}
-					title2={"Детская площадка"}
-					title3={
-						"Чистый питьевой вода с запасом воды на 80 тонн и многими другими удобствами"
-					}
-					title4={"Отдельная канализация"}
-					title5={"Парковка имеется"}
+					title1={t("smart.advanteges.title1")}
+					title2={t("smart.advanteges.title2")}
+					title3={t("smart.advanteges.title3")}
+					title4={t("smart.advanteges.title4")}
+					title5={t("smart.advanteges.title5")}
 				/>
 				<SuperLocation
 					bgImg={img7}
@@ -93,17 +85,14 @@ const Smart = () => {
 					img3={archImg3}
 					img4={archImg4}
 					img5={archImg5}
-					title1={"Инновационная Архитектура"}
-					title2={"Европейские Материалы Фасада"}
-					title3={"Витражное Остекление"}
-					title4={"Увеличенная Высота Потолков В Чистоте"}
-					title5={"Автоклавный газаблок"}
-					text={
-						"ЖК 'Cho'qivor Smart' - расположена в тихом зеленом районе города. В здании есть все, что нужно для комфортной жизни в городе: большие окна, панорамные виды, просторные планировки и многое другое. "
-					}
+					title1={t("smart.architect.title1")}
+					title2={t("smart.architect.title2")}
+					title3={t("smart.architect.title3")}
+					title4={t("smart.architect.title4")}
+					title5={t("smart.architect.title5")}
+					text={t("smart.architect.text")}
 				/>
 				<ProjectPlan datas={data} />
-				{/* <Map_form /> */}
 			</div>
 		</Suspense>
 	);

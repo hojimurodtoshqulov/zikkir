@@ -11,7 +11,10 @@ import img4 from "../../media/u5.png";
 import img5 from "../../media/logo_white.png";
 import logo1 from "../../media/cholquvar.png";
 import logo2 from "../../media/paxtazor.png";
+import { useTranslation } from "react-i18next";
+
 const Projects = () => {
+	const { t } = useTranslation();
 	const data = [
 		{
 			img: img1,
@@ -66,7 +69,7 @@ const Projects = () => {
 	return (
 		<div className="projects">
 			<div className="container">
-				<h2 data-aos="fade-up">Наши проекты</h2>
+				<h2 data-aos="fade-up"> {t("home.projects")}</h2>
 				<div className="resourses">
 					<Slider {...settings}>
 						{data.map((item, index) => (
@@ -77,7 +80,12 @@ const Projects = () => {
 								onClick={scrollToTop}
 							>
 								<Link onClick={scrollToTop} to={item.link} data-aos="fade-up">
-									<img className="img" src={item.img} alt={item.img} onClick={scrollToTop} />
+									<img
+										className="img"
+										src={item.img}
+										alt={item.img}
+										onClick={scrollToTop}
+									/>
 									<img className="link" src={item.logo} alt={item.logo} />
 								</Link>
 							</div>

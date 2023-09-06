@@ -152,7 +152,7 @@ const News = ({}) => {
 		<>
 			<div className={scss.news}>
 				<div className={scss.sectionSlides} data-aos="fade-up">
-					<h2 data-aos="flip-up">Новости</h2>
+					<h2 data-aos="flip-up">{t("home.news.title")}</h2>
 					<div className={scss.slider} data-aos="fade-up">
 						<div className={scss.slide_track}>
 							{dataCards?.map((item, index) => (

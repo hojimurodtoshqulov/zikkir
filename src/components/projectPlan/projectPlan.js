@@ -7,8 +7,10 @@ import img1 from "../../media/1.png.png";
 import img2 from "../../media/2.png.png";
 import img3 from "../../media/3.png.png";
 import img4 from "../../media/2.png.png";
+import { useTranslation } from "react-i18next";
 
-const ProjectPlan = ({datas}) => {
+const ProjectPlan = ({ datas }) => {
+	const { t } = useTranslation();
 	// const data = [
 	// 	{
 	// 		img: img1,
@@ -56,8 +58,8 @@ const ProjectPlan = ({datas}) => {
 	return (
 		<div className="projectPlan">
 			<div className="container" data-aos="fade-up">
-				<h2 data-aos="flip-up">ПРОДУМАННЫЕ ПЛАНИРОВОЧНЫЕ РЕШЕНИЯ</h2>
-				<div className="projectPlan__rooms" data-aos="fade-left">
+				<h2 data-aos="flip-up">{t("projects.projectsPlan")}</h2>
+				{/* <div className="projectPlan__rooms" data-aos="fade-left">
 					<button>Все</button>
 					<p data-aos="flip-up" data-aos-delay="300">
 						1 - комнатные
@@ -71,16 +73,15 @@ const ProjectPlan = ({datas}) => {
 					<p data-aos="flip-up" data-aos-delay="900">
 						4 - комнатные
 					</p>
-				</div>
+				</div> */}
 				<div className="resourses" data-aos="flip-up">
 					<Slider {...settings}>
 						{datas?.map((item, index) => (
 							<div
 								key={index}
 								className={index === imageIndex ? "slide active" : "slide"}
-								
 							>
-								<a >
+								<a>
 									<img src={item.img} alt={item.img} />
 									<div className="text">
 										<p>{item.text}</p>
