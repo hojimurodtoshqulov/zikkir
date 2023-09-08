@@ -79,6 +79,7 @@
 				@media (max-width: $sm) {
 					width: 100%;
 					gap: 10px;
+					height: 450px;
 				}
 				&__ele {
 					padding: 0;
@@ -94,6 +95,7 @@
 						gap: 20px;
 					}
 					@media (max-width: $sm) {
+						flex-wrap: wrap;
 						gap: 10px;
 						height: 80px;
 					}
@@ -108,10 +110,17 @@
 						width: 50%;
 						height: 100%;
 						@media (max-width: $sm) {
-							font-size: 21px;
+							padding-left: 5px;
+							justify-content: flex-start;
+							gap: 1px;
+							font-size: 19px;
+							width: 48%;
 						}
 						img {
 							width: 35px;
+							@media (max-width: $sm) {
+								width: 30px;
+							}
 						}
 					}
 					&_div {
@@ -131,6 +140,9 @@
 							font-size: 16px;
 							padding: 0 20px;
 							text-align: center;
+							height: 80px;
+							margin-top: 90px;
+							transform: translateY(-90px);
 						}
 						div {
 							height: 60px;

@@ -26,14 +26,14 @@ const AboutUs = () => {
 						<div className={scss.counts} data-aos="fade-right">
 							<h4>
 								25
-								<span className={scss.counts_span} >
+								<span className={scss.counts_span}>
 									<MainSymbol symbolWith={15} brr={5} />{" "}
 									{t("home.aboutUs.numberTexts.text1")}
 								</span>
 							</h4>
 							<h4>
 								25
-								<span className={scss.counts_span} >
+								<span className={scss.counts_span}>
 									<MainSymbol symbolWith={15} brr={5} />
 									{t("home.aboutUs.numberTexts.text2")}
 								</span>
@@ -42,14 +42,18 @@ const AboutUs = () => {
 						<div className={scss.counts} data-aos="fade-right">
 							<h4>
 								1000 +
-								<span className={scss.counts_span} >
+								<span className={scss.counts_span}>
 									<MainSymbol symbolWith={15} brr={5} />{" "}
 									{t("home.aboutUs.numberTexts.text3")}
 								</span>
 							</h4>
 							<h4>
-								5000 +
-								<span className={scss.counts_span} >
+								5000
+								<i>
+									m<sup>2</sup>
+								</i>{" "}
+								+
+								<span className={scss.counts_span}>
 									<MainSymbol symbolWith={15} brr={5} />{" "}
 									{t("home.aboutUs.numberTexts.text4")}
 								</span>

@@ -27,6 +27,9 @@
 		border-radius: 15px;
 		font-size: 20px;
 		border: 3px solid rgba(255, 255, 255, 0.638);
+		@media (max-width: $sm) {
+			margin-top: 20px;
+		}
 	}
 	.modalBg {
 		position: fixed;

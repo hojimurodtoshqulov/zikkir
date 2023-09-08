@@ -87,7 +87,7 @@ const Cholquvar = () => {
 				<SuperLocation
 					bgImg={img7}
 					space={
-						"https://www.google.com/maps/embed?pb=!1m13!1m8!1m3!1d5297.470313828899!2d65.79146491513367!3d38.838048979384304!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzjCsDUwJzE1LjUiTiA2NcKwNDcnMzMuNiJF!5e0!3m2!1sru!2s!4v1692176281598!5m2!1sru!2s"
+						"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3107.785940267012!2d65.79287394384703!3d38.83736294176741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f4ea9be9c8c8967%3A0xa13aa61dafe266a4!2sCho&#39;lquvar%20buildings!5e0!3m2!1sru!2s!4v1694159408571!5m2!1sru!2s"
 					}
 				/>
 				<Form formProject={" Cho'lquvar "} />

@@ -31,6 +31,10 @@
 				gap: 20px 15px;
 				width: 160%;
 			}
+			@media (max-width: $sm) {
+				gap: 10px 15px;
+				width: 160%;
+			}
 			&_titles {
 				@media (max-width: $md) {
 					position: relative;
@@ -69,6 +73,11 @@
 						font-size: 17px;
 						width: 120%;
 					}
+					@media (max-width: $sm) {
+						font-size: 16px;
+						width: 120%;
+						margin: 15px 0;
+					}
 				}
 			}
 			.counts {
@@ -89,7 +98,7 @@
 					width: 125%;
 				}
 				@media (max-width: $sm) {
-					gap: 0px 20px;
+					gap: 0px 10px;
 					width: 125%;
 				}
 				h4 {
@@ -116,11 +125,10 @@
 					}
 					@media (max-width: $sm) {
 						width: 80%;
-						font-size: 30px;
-						line-height: 30px;
+						font-size: 25px;
+						line-height: 25px;
 						padding: 2% 3%;
 						overflow: hidden;
-						// text-align: center;
 					}
 					.counts_span {
 						display: flex;
@@ -130,12 +138,15 @@
 						font-weight: normal;
 						@media (max-width: $sm) {
 							width: 120%;
-							font-size: 13px;
+							font-size: 11px;
 							gap: 5px;
 							text-align: start;
 							line-height: 15px;
 							margin: 0 auto;
 						}
+					}
+					i {
+						font-size: 16px;
 					}
 				}
 			}

@@ -136,6 +136,10 @@
 				right: 35%;
 				bottom: -25%;
 			}
+			@media (max-width: $sm) {
+				right: 33%;
+				bottom: -30%;
+			}
 			svg {
 				transform: rotate(-45deg);
 			}
@@ -146,6 +150,10 @@
 			@media (max-width: $md) {
 				left: 35%;
 				bottom: -25%;
+			}
+			@media (max-width: $sm) {
+				left: 33%;
+				bottom: -30%;
 			}
 			svg {
 				transform: rotate(-45deg);

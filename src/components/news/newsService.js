@@ -6,10 +6,13 @@ import img2 from "../../media/u3.png";
 import img3 from "../../media/u4.png";
 import img4 from "../../media/u12.png";
 import img5 from "../../media/u7.png";
-
+import { Link } from "react-router-dom";
 const NewsService = ({ theme }) => {
 	// const [_, order] = theme.split(" ");
 	const { t } = useTranslation();
+	const scrollToTop = () => {
+		window.scrollTo(0, 3600);
+	};
 	const images = [img1, img2, img3, img4, img5];
 	const titles = [
 		t("News-houses"),
@@ -44,10 +47,14 @@ const NewsService = ({ theme }) => {
 				<h2>{titles[0]}</h2>
 				<p> {texts[0]} </p>
 				<div className={styles.content_elements}>
-					<div className={styles.content_elements_div}>
-						<h3>bla bla kuu </h3>
+					<Link
+						onClick={scrollToTop}
+						to="cho'lquvar"
+						className={styles.content_elements_div}
+					>
+						<h3>Cho'lquvar</h3>
 						<button>send</button>
-					</div>
+					</Link>
 					<div className={styles.content_elements_div}>
 						<h3>bla bla kuu</h3>
 						<button>send</button>
