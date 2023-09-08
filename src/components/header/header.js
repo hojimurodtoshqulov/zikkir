@@ -9,7 +9,6 @@ import img5 from "../../media/logo_white.png";
 import Button from "../button/button";
 /* Translation */
 import { useTranslation } from "react-i18next";
-
 import { motion, AnimatePresence } from "framer-motion";
 
 const Header = () => {

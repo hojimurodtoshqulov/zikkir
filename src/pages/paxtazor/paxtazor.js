@@ -81,9 +81,10 @@ const Paxtazor = () => {
 				<SuperLocation
 					bgImg={img7}
 					space={
-						"https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3104.472378174517!2d65.79640461691929!3d38.83663871991241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzjCsDUwJzExLjQiTiA2NcKwNDcnNDcuNSJF!5e0!3m2!1sru!2s!4v1691735889056!5m2!1sru!2s"
+						"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3106.7419823119308!2d65.78420118299611!3d38.86126278244213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f4ea73d7ded6827%3A0x28ad11f20714d7b1!2sPaxtazor%20Buildings!5e0!3m2!1sru!2s!4v1694167251568!5m2!1sru!2s"
 					}
 				/>
+				{/* <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3106.7419823119308!2d65.78420118299611!3d38.86126278244213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f4ea73d7ded6827%3A0x28ad11f20714d7b1!2sPaxtazor%20Buildings!5e0!3m2!1sru!2s!4v1694167251568!5m2!1sru!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> */}
 				<Form formProject={" Paxtazor "} />
 				<Architect
 					bgImg1={img1}

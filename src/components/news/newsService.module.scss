@@ -37,7 +37,6 @@
 			align-items: stretch;
 		}
 		h2 {
-			font-size: 2rem;
 			position: relative;
 			z-index: 10;
 			text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.625);
@@ -56,6 +55,7 @@
 			align-items: center;
 			justify-content: space-between;
 			gap: 40px;
+			cursor: pointer;
 			@media (max-width: $sm) {
 				gap: 10px;
 			}
@@ -64,6 +64,8 @@
 				flex-direction: column;
 				gap: 15px;
 				text-align: center;
+				cursor: pointer;
+
 				@media (max-width: $sm) {
 					gap: 10px;
 				}
@@ -86,6 +88,8 @@
 					font-size: 18px;
 					box-shadow: 2px 2px 7px #00000067;
 					text-shadow: 2px 2px 6px #00000077;
+					cursor: pointer;
+
 					@media (max-width: $sm) {
 						font-size: 15px;
 						width: 100%;

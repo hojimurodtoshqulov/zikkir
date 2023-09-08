@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import Modal from "../modal/modal";
 import { useState } from "react";
-const News = ({}) => {
+const News = ({ data }) => {
 	const [openModal, setOpenModal] = useState(false);
 	const [cardOreder, setcardOreder] = useState(0);
 	const { t } = useTranslation();
@@ -69,9 +69,8 @@ const News = ({}) => {
 										setOpenModal(true);
 										setcardOreder(index);
 									}}
-									// onClick={scrollToTop}
 								>
-									{console.log("<<open modal>>", openModal)}
+									{console.log("<<index modal>>", cardOreder)}
 									<div className={scss.titlesDiv}>
 										<p>{item.date}</p>
 										<h5>{item.title}</h5>
@@ -171,7 +170,8 @@ const News = ({}) => {
 			<Modal
 				open={openModal}
 				onClose={() => setOpenModal(false)}
-				// theme={`leasingDatas ${cardOreder}`}
+				// theme={`leasingDatas ${setcardOreder}`}
+				data={cardOreder}
 			/>
 		</>
 	);

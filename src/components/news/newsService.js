@@ -2,72 +2,94 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import styles from "./newsService.module.scss";
 import img1 from "../../media/u2.png";
-import img2 from "../../media/u3.png";
-import img3 from "../../media/u4.png";
-import img4 from "../../media/u12.png";
-import img5 from "../../media/u7.png";
+import newsImg1 from "../../media/u16.png";
+import newsImg2 from "../../media/u10.png";
+import newsImg3 from "../../media/u7.png";
+import newsImg4 from "../../media/smart2.png";
+import newsImg5 from "../../media/u12.png";
 import { Link } from "react-router-dom";
-const NewsService = ({ theme }) => {
+const NewsService = ({ data }) => {
 	// const [_, order] = theme.split(" ");
 	const { t } = useTranslation();
 	const scrollToTop = () => {
 		window.scrollTo(0, 3600);
 	};
-	const images = [img1, img2, img3, img4, img5];
-	const titles = [
-		t("News-houses"),
-		t("News-houses"),
-		t("News-houses"),
-		t("News-houses"),
-		t("News-houses"),
-	];
-	const texts = [
-		t(
-			"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus ab in voluptatibus sunt harum sed iure a consequatur neque doloremque."
-		),
-		t(
-			"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus ab in voluptatibus sunt harum sed iure a consequatur neque doloremque."
-		),
-		t(
-			"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus ab in voluptatibus sunt harum sed iure a consequatur neque doloremque."
-		),
-		t(
-			"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus ab in voluptatibus sunt harum sed iure a consequatur neque doloremque."
-		),
-		t(
-			"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus ab in voluptatibus sunt harum sed iure a consequatur neque doloremque."
-		),
+	const dataCards = [
+		{
+			img: newsImg1,
+			date: "2023-06-24",
+			title: t("news.card1.title"),
+			description: t("news.card1.text"),
+			project: "Paxtazor",
+			link: "/paxtazor",
+		},
+		{
+			img: newsImg2,
+			date: "2023-05-15",
+			title: t("news.card2.title"),
+			description: t("news.card2.text"),
+			project: "Paxtazor",
+			link: "/paxtazor",
+		},
+		{
+			img: newsImg3,
+			date: "2023-04-12",
+			title: t("news.card3.title"),
+			description: t("news.card3.text"),
+			project: "Paxtazor",
+			link: "/paxtazor",
+		},
+		{
+			img: newsImg4,
+			date: "2023-03-22",
+			title: t("news.card4.title"),
+			description: t("news.card4.text"),
+			project: "Smart cho'lquvar",
+			link: "/smart",
+		},
+		{
+			img: newsImg5,
+			date: "2023-02-09",
+			title: t("news.card5.title"),
+			description: t("news.card5.text"),
+			project: "Cho'lquvar",
+			link: "/cho'lquvar",
+		},
 	];
 	return (
-		<div className={styles.main}>
-			<div className={styles.imgWrap}>
-				<img src={img1} alt={img1} />
-			</div>
-			<div className={styles.content}>
-				<h2>{titles[0]}</h2>
-				<p> {texts[0]} </p>
-				<div className={styles.content_elements}>
-					<Link
-						onClick={scrollToTop}
-						to="cho'lquvar"
-						className={styles.content_elements_div}
-					>
-						<h3>Cho'lquvar</h3>
-						<button>send</button>
-					</Link>
-					<div className={styles.content_elements_div}>
-						<h3>bla bla kuu</h3>
-						<button>send</button>
+		<>
+			{dataCards?.map((item, index) =>
+				index === data ? (
+					<div className={styles.main}>
+						<div className={styles.imgWrap}>
+							<img src={img1} alt={img1} />
+						</div>
+						<div className={styles.content}>
+							<h2>{item?.title}</h2>
+							<p> {item?.description} </p>
+							<div className={styles.content_elements}>
+								<Link
+									onClick={scrollToTop}
+									to={item?.link}
+									className={styles.content_elements_div}
+								>
+									<h3>{item?.project}</h3>
+									<button>{t("home.hero.btnText1")}</button>
+								</Link>
+								<Link
+									onClick={scrollToTop}
+									to={item?.link}
+									className={styles.content_elements_div}
+								>
+									<h3>{item?.project}</h3>
+									<button>{t("home.hero.btnText1")}</button>
+								</Link>
+							</div>
+						</div>
 					</div>
-				</div>
-			</div>
-			{/* <div className="leasing__cards">
-				<InfoCard text={t("leasingPage.cards.card1")} title={"18-48"} />
-				<InfoCard text={t("leasingPage.cards.card2")} title={"36%"} />
-				<InfoCard text={t("leasingPage.cards.card3")} title={"20%"} />
-				<InfoCard text={t("leasingPage.cards.card4")} title={"2%"} />
-			</div> */}
-		</div>
+				) : null
+			)}
+		</>
 	);
 };
 

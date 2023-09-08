@@ -37,6 +37,7 @@
 				animation-play-state: paused;
 			}
 			@media (max-width: $md) {
+				animation: scroll 60s linear infinite;
 				width: calc(300px * 18);
 			}
 		}
@@ -73,6 +74,10 @@
 			&Text {
 				color: #424242;
 				text-align: center;
+				@media (max-width: $md) {
+					font-size: 16px;
+					line-height: 18px;
+				}
 			}
 			.titlesDiv {
 				display: flex;
