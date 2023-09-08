@@ -6,11 +6,13 @@ import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import img1 from "../../media/u2.png";
 import img2 from "../../media/u7.png";
-import img3 from "../../media/u8.png";
-import img4 from "../../media/u5.png";
+import img3 from "../../media/smart2.png";
+import img4 from "../../media/eskiShahar4.png";
 import img5 from "../../media/logo_white.png";
 import logo1 from "../../media/cholquvar.png";
 import logo2 from "../../media/paxtazor.png";
+import logo3 from "../../media/smartLogo.png";
+import logo4 from "../../media/eskiShaharLogo.png";
 import { useTranslation } from "react-i18next";
 
 const Projects = () => {
@@ -30,14 +32,14 @@ const Projects = () => {
 		},
 		{
 			img: img3,
-			logo: logo1,
-			link: "/cho'lquvar",
+			logo: logo3,
+			link: "/smart",
 			title: "Bla bla",
 		},
 		{
 			img: img4,
-			logo: logo2,
-			link: "/paxtazor",
+			logo: logo4,
+			link: "/eskiShahar",
 			title: "Big house",
 		},
 	];

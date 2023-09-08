@@ -32,12 +32,25 @@
 				width: 160%;
 			}
 			&_titles {
+				@media (max-width: $md) {
+					position: relative;
+					height: 40px;
+					width: 100%;
+				}
 				h2 {
 					display: flex;
 					justify-content: center;
 					align-items: center;
 					gap: 20px;
 					text-shadow: 2px 2px 7px rgba(0, 0, 0, 0.538);
+					@media (min-width: $xxl) {
+						line-height: 30px;
+					}
+					@media (max-width: $md) {
+						position: absolute;
+						top: 10%;
+						left: 0;
+					}
 				}
 			}
 			&_texts {
@@ -88,6 +101,7 @@
 					padding: 1% 5%;
 					border-radius: 15px;
 					backdrop-filter: blur(10px);
+
 					@media (max-width: $xl) {
 						width: 47%;
 					}
@@ -106,8 +120,9 @@
 						line-height: 30px;
 						padding: 2% 3%;
 						overflow: hidden;
+						// text-align: center;
 					}
-					span {
+					.counts_span {
 						display: flex;
 						align-items: center;
 						gap: 15px;
@@ -117,6 +132,9 @@
 							width: 120%;
 							font-size: 13px;
 							gap: 5px;
+							text-align: start;
+							line-height: 15px;
+							margin: 0 auto;
 						}
 					}
 				}

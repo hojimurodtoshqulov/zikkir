@@ -43,6 +43,16 @@ const NewsService = ({ theme }) => {
 			<div className={styles.content}>
 				<h2>{titles[0]}</h2>
 				<p> {texts[0]} </p>
+				<div className={styles.content_elements}>
+					<div className={styles.content_elements_div}>
+						<h3>bla bla kuu </h3>
+						<button>send</button>
+					</div>
+					<div className={styles.content_elements_div}>
+						<h3>bla bla kuu</h3>
+						<button>send</button>
+					</div>
+				</div>
 			</div>
 			{/* <div className="leasing__cards">
 				<InfoCard text={t("leasingPage.cards.card1")} title={"18-48"} />

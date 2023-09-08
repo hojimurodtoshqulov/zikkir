@@ -16,11 +16,11 @@
 		left: 50%;
 		transform: translate(-50%, -350%);
 		// background: var(--background);
-		background: rgba(255, 255, 255, 0.259);
+		background: #ffffff41;
 		backdrop-filter: blur(15px);
 		color: $light;
 		box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.75);
-		padding: 5%;
+		padding: 1%;
 		transition: 1s all;
 		z-index: 101;
 		display: none;

@@ -1,5 +1,4 @@
 @import "../../scss/varuables.scss";
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
 .projects {
 	border-top: 10px solid $primary;
 	background-image: url("../../media/u2.png");
@@ -12,10 +11,10 @@
 		padding: 100px 0 200px 0;
 	}
 	.container {
+		overflow: none;
 		@media (max-width: $md) {
 			padding: 0 0;
 		}
-		overflow: none;
 	}
 	h2 {
 		text-align: center;
@@ -38,12 +37,17 @@
 			margin-top: 70px;
 			width: 100%;
 		}
+		@media (max-width: $sm) {
+			height: 200px;
+			margin-top: 30px;
+		}
 		.slide {
 			transform: scale(0.8);
 			transition: transform 300ms;
 			opacity: 0.9;
 			position: relative;
 			overflow: hidden;
+			margin: auto 0;
 			@media (max-width: $md) {
 				transform: scale(0.95);
 			}
@@ -51,6 +55,9 @@
 				border: 2px solid #ffffff89;
 				@media (max-width: $md) {
 					height: 230px;
+				}
+				@media (max-width: $sm) {
+					height: 160px;
 				}
 			}
 			img {
@@ -62,6 +69,9 @@
 				filter: blur(1.5px);
 				@media (max-width: $md) {
 					height: 230px;
+				}
+				@media (max-width: $sm) {
+					height: 160px;
 				}
 			}
 			.link {
@@ -77,26 +87,30 @@
 				font-family: "Dancing Script", cursive;
 				font-weight: 400;
 				object-fit: contain;
+				opacity: 0;
 				&:hover {
 					transform: scale(1.07);
 				}
 			}
 		}
 		.active {
-			transform: scale(1);
+			transform: scale(1.05);
 			opacity: 1;
+			position: relative;
+			z-index: 123;
 			@media (max-width: $md) {
-				transform: scale(1);
+				height: 100%;
+				transform: scale(1.6);
 			}
 			img {
 				width: 100%;
-				z-index: 123;
 				object-fit: cover;
 				filter: blur(0px);
 			}
 			.link {
 				bottom: 0%;
 				left: 15%;
+				opacity: 1;
 			}
 		}
 		.arrow {
@@ -142,6 +156,9 @@
 			}
 		}
 	}
+	.slick-list {
+		overflow: none !important;
+	}
 	.logo1 {
 		position: absolute;
 		bottom: 0;
@@ -164,6 +181,16 @@
 		}
 		img {
 			width: 100%;
+		}
+	}
+	@media (max-width: $md) {
+		.slick-list {
+			overflow: none !important;
+			height: 350px;
+			padding: 30px 0;
+			.slick-track {
+				top: 50px;
+			}
 		}
 	}
 }

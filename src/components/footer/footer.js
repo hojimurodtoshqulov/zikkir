@@ -18,7 +18,9 @@ export default function Footer() {
 						<img className={scss.footer__logo} src={logo} alt="" />
 					</div>
 					<div className={scss.footer__row1_col}>
-						<h4 className={scss.footer__row1_col__title}>{t("home.footer.title1")}</h4>
+						<h4 className={scss.footer__row1_col__title}>
+							{t("home.footer.title1")}
+						</h4>
 						<p>
 							<a href="mail:shuxratuljaboyev@gmail.com">
 								<span>shuxratuljaboyev@gmail.com</span>
@@ -38,20 +40,22 @@ export default function Footer() {
 						</p>
 					</div>
 					<div className={scss.footer__row1_col}>
-						<h4 className={scss.footer__row1_col__title}>{t("home.footer.title2")}</h4>
+						<h4 className={scss.footer__row1_col__title}>
+							{t("home.footer.title2")}
+						</h4>
 						<Link
 							to="/company"
 							className={scss.footer__row1_col2_link}
 							onClick={scrollToTop}
 						>
-							О нас <p></p>
+							{t("nav.company")} <p></p>
 						</Link>
 						<Link
 							to="/news"
 							className={scss.footer__row1_col2_link}
 							onClick={scrollToTop}
 						>
-							Новости <p></p>
+							{t("nav.news")} <p></p>
 						</Link>
 
 						<Link
@@ -59,11 +63,13 @@ export default function Footer() {
 							className={scss.footer__row1_col2_link}
 							onClick={scrollToTop}
 						>
-							Контакты <p></p>
+							{t("nav.contact")} <p></p>
 						</Link>
 					</div>
 					<div className={scss.footer__row1_col}>
-						<h4 className={scss.footer__row1_col__title}>{t("home.footer.title3")}</h4>
+						<h4 className={scss.footer__row1_col__title}>
+							{t("home.footer.title3")}
+						</h4>
 						<Link
 							to="/paxtazor"
 							className={scss.footer__row1_col2_link}
@@ -72,15 +78,31 @@ export default function Footer() {
 							Paxtazor <p></p>
 						</Link>
 						<Link
-							to="/cholquvar"
+							to="/cho'lquvar"
 							className={scss.footer__row1_col2_link}
 							onClick={scrollToTop}
 						>
-							Cholquvar <p></p>
+							Cho'lquvar <p></p>
+						</Link>
+						<Link
+							to="/smart"
+							className={scss.footer__row1_col2_link}
+							onClick={scrollToTop}
+						>
+							Smart cho'lquvar <p></p>
+						</Link>
+						<Link
+							to="/eskiShahar"
+							className={scss.footer__row1_col2_link}
+							onClick={scrollToTop}
+						>
+							Eski shahar <p></p>
 						</Link>
 					</div>
 					<div className={scss.footer__row1_col}>
-						<h4 className={scss.footer__row1_col__title}>{t("home.footer.title4")}</h4>
+						<h4 className={scss.footer__row1_col__title}>
+							{t("home.footer.title4")}
+						</h4>
 
 						<Link
 							to="/Telegram"

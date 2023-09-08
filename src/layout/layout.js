@@ -38,7 +38,6 @@ const Layout = () => {
 						></video>
 					</>
 				) : (
-					// <Navbar />
 					<>
 						<Nav onClick={(e) => handleClick(e)} />
 						<div className="mobileNav">

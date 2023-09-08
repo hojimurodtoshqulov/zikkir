@@ -5,7 +5,7 @@ import Form from "../../components/form/form";
 // import Map_form from "../../components/map_form/map_form";
 import ProjectsHeader from "../../components/projectsHeader/projectsHeader";
 import logo from "../../media/eskishahar.png";
-import img1 from "../../media/eskiShahar1.png";
+import img1 from "../../media/eskiShahar1,1.png";
 import img2 from "../../media/eskiShahar2.png";
 import img3 from "../../media/eskiShahar3.png";
 import img4 from "../../media/Rectangle 1293.png";

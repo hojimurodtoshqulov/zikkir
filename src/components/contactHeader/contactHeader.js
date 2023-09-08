@@ -1,6 +1,10 @@
 import scss from "./contactHeader.module.scss";
 import img1 from "../../media/logo_white.png";
+import { useTranslation } from "react-i18next";
+
 const ContactHeader = ({ bgImage, title }) => {
+	const { t } = useTranslation();
+
 	return (
 		<div
 			className={scss.contactHeader}
@@ -11,25 +15,26 @@ const ContactHeader = ({ bgImage, title }) => {
 					<div className={scss.elementsDiv}>
 						<div className={scss.elementsDivCol1} data-aos="fade-up-left">
 							<p>
-								Время работы <br />
-								Отдел продаж: Пн-Пт: с <span>9:00</span> до <br />
-								<span>20:00</span> Сб-ВС: с <span>9:00</span> до{" "}
-								<span>20:00</span>
+								{t("contact.card1.title")} <br />
+								{t("contact.card1.title2")} <br /> {t("contact.card1.text1")}{" "}
+								<span>{t("contact.card1.text3")}</span>
+								<br />
+								{t("contact.card1.text2")}{" "}
+								<span>{t("contact.card1.text3")}</span>
 							</p>
 						</div>
 						<div className={scss.elementsDivCol1} data-aos="fade-up-right">
-							<p>Круглосуточный кол-центр</p> <br />
+							<p> {t("contact.card2.title")}</p> <br />
 							<a href="tel:+998788880000">78 888 00 00</a>
 						</div>
 					</div>
 					<div className={scss.elementsDiv}>
 						<div className={scss.elementsDivCol} data-aos="flip-up">
 							<p>
-								Мы расположены по адресу: <br />
+								{t("contact.card3.title")} <br />
 								<span>
-									Paxtazor residence г. Карши, Пахтазор МСГ, микрорайон
-									Пахтазор, дом 7/75. <br />
-									“Cho’lquvar Smart” г. Карши, Чулкувар МСГ, микрорайон 4, дом 8
+									{t("contact.card3.text")} <br />
+									{t("contact.card3.text2")}
 								</span>
 							</p>
 						</div>
@@ -37,22 +42,22 @@ const ContactHeader = ({ bgImage, title }) => {
 					<div className={scss.elementsDiv}>
 						<div className={scss.elementsDivCol} data-aos="flip-up">
 							<p>
-								Почтовые адреса Общая информация:{" "}
+								{t("contact.card4.title")}{" "}
 								<span>
-									<a href="">info@gh.uz</a>{" "}
+									<a href="">{t("contact.card4.text")}</a>{" "}
 								</span>{" "}
 								<br />
-								Обратная связь:{" "}
+								{t("contact.card4.title2")}{" "}
 								<span>
-									<a href=""> feedback@gh.uz</a>{" "}
+									<a href=""> {t("contact.card4.text2")}</a>{" "}
 								</span>
-								Отдел снабжения:{" "}
+								{t("contact.card4.title3")}{" "}
 								<span>
-									<a href="">supply@gh.uz</a>{" "}
+									<a href="">{t("contact.card4.text3")}</a>{" "}
 								</span>
-								Отдел продаж:{" "}
+								{t("contact.card4.title4")}{" "}
 								<span>
-									<a href="">sales@gh.uz</a>{" "}
+									<a href="">{t("contact.card4.text4")}</a>{" "}
 								</span>
 							</p>
 						</div>

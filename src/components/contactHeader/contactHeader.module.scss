@@ -2,129 +2,139 @@
 @import "../../scss/varuables.scss";
 
 .contactHeader {
-  width: 100%;
-  padding: 5%;
-  min-height: 100vh;
-  background-image: url("../../media/u2.png");
-  background-size: cover;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-bottom: 10px solid $primary;
-  @media (max-width: $xl) {
-    padding: 0;
-  }
-  @media (max-width: $md) {
-    height: auto;
-    padding: 150px 0 50px;
-  }
-  .elements {
-    padding-top: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
-    width: 90%;
-    margin: 0 auto;
-    @media (max-width: $lg) {
-      padding: 130px 0;
-    }
-    @media (max-width: $md) {
-      padding-top: 30px;
-    }
-    &Div {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 30px;
-      text-align: center;
-      color: $light;
-      height: 150px;
-      font-size: 27px;
-      font-weight: normal;
-      @media (max-width: $lg) {
-        font-size: 24px;
-        height: 180px;
-      }
-      @media (max-width: $md) {
-        flex-direction: column;
-      }
+	width: 100%;
+	padding: 5%;
+	min-height: 100vh;
+	background-image: url("../../media/u2.png");
+	background-size: cover;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-bottom: 10px solid $primary;
+	@media (max-width: $xl) {
+		padding: 0;
+	}
+	@media (max-width: $md) {
+		height: auto;
+		padding: 150px 0 50px;
+	}
+	.elements {
+		padding-top: 30px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 40px;
+		width: 90%;
+		margin: 0 auto;
+		position: relative;
+		z-index: 3;
+		@media (max-width: $lg) {
+			padding: 130px 0;
+		}
+		@media (max-width: $md) {
+			padding-top: 30px;
+		}
+		&Div {
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 30px;
+			text-align: center;
+			color: $light;
+			height: 150px;
+			font-size: 27px;
+			font-weight: normal;
+			@media (max-width: $lg) {
+				font-size: 24px;
+				height: 180px;
+			}
+			@media (max-width: $md) {
+				flex-direction: column;
+			}
 
-      @media (max-width: $sm) {
-        font-size: 20px;
-      }
-      &Col1 {
-        padding: 15px 30px;
-        width: 50%;
-        background: #acabaf86;
-        backdrop-filter: blur(2px);
-        height: 100%;
-        text-align: center;
-        border-radius: 17px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-        @media (max-width: $md) {
-          width: 100%;
-          min-height: 150px;
-          flex-direction: column;
-        }
-        p {
-          font-weight: 400;
-          span {
-            font-weight: 600;
-          }
-        }
-        a {
-          display: inline-block;
-          font-size: 50px;
-          font-weight: 500;
-          line-height: 25px;
-          @media (max-width: $lg) {
-            font-size: 38px;
-          }
-        }
-      }
-      &Col {
-        width: 100%;
-        background: #acabaf86;
-        backdrop-filter: blur(2px);
-        height: 100%;
-        text-align: center;
-        border-radius: 17px;
-        // padding: 15px 100px;
-        padding: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-        span {
-          font-weight: 600;
-        }
-        @media (max-width: $md) {
-          transform: translateY(70px);
-        }
-      }
-    }
-  }
-  &Img {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 30%;
-  }
-  &Img2 {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 30%;
-    transform: rotate(180deg);
-    img {
-      width: 100%;
-    }
-  }
+			@media (max-width: $sm) {
+				font-size: 20px;
+			}
+			&Col1 {
+				padding: 15px 30px;
+				width: 50%;
+				background: #acabaf86;
+				backdrop-filter: blur(2px);
+				height: 100%;
+				text-align: center;
+				border-radius: 17px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-wrap: wrap;
+				@media (max-width: $md) {
+					width: 100%;
+					min-height: 150px;
+					flex-direction: column;
+				}
+				p {
+					font-weight: 400;
+					span {
+						font-weight: 600;
+					}
+				}
+				a {
+					display: inline-block;
+					font-size: 50px;
+					font-weight: 500;
+					line-height: 25px;
+					@media (max-width: $lg) {
+						font-size: 38px;
+					}
+				}
+			}
+			&Col {
+				width: 100%;
+				background: #acabaf86;
+				backdrop-filter: blur(2px);
+				height: 100%;
+				text-align: center;
+				border-radius: 17px;
+				// padding: 15px 100px;
+				padding: 20px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-wrap: wrap;
+				span {
+					font-weight: 600;
+				}
+				@media (max-width: $md) {
+					transform: translateY(70px);
+				}
+			}
+		}
+	}
+	&Img {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		z-index: 1;
+		width: 30%;
+		@media (max-width: $md) {
+			width: 50%;
+		}
+	}
+	&Img2 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		z-index: 1;
+		width: 30%;
+		transform: rotate(180deg);
+		@media (max-width: $md) {
+			width: 50%;
+		}
+		img {
+			width: 100%;
+		}
+	}
 }

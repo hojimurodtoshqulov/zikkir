@@ -4,11 +4,11 @@
 	display: flex;
 	align-items: center;
 	gap: 50px;
-	padding: 1rem;
+	padding: 0rem;
 	.imgWrap {
 		position: relative;
-		width: 40%;
-		aspect-ratio: 1 / 1;
+		width: 60%;
+		aspect-ratio: 5 / 4;
 		@media (max-width: $md) {
 			width: 100%;
 		}
@@ -22,52 +22,76 @@
 			object-fit: cover;
 			z-index: 5;
 			border-radius: 10px;
-			border: 3px solid rgba(255, 255, 255, 0.561);
+			border: 3px solid #ffffff84;
 		}
-
-		// &::after {
-		// 	display: inline-block;
-		// 	position: absolute;
-		// 	top: 10px;
-		// 	right: 10px;
-		// 	height: 100%;
-		// 	width: 100%;
-		// 	// border: 3px solid #319ba1;
-		// 	content: "";
-		// }
 	}
-
 	.content {
 		width: 60%;
 		color: $light;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: center;
+		gap: 30px;
+		@media (max-width: $sm) {
+			align-items: stretch;
+		}
 		h2 {
 			font-size: 2rem;
 			position: relative;
 			z-index: 10;
-			margin-bottom: 2rem;
 			text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.625);
-			// &::after {
-			// 	display: inline-block;
-			// 	position: absolute;
-			// 	top: 25px;
-			// 	left: 0;
-			// 	background: #319ba1;
-			// 	content: "";
-			// 	height: 10px;
-			// 	width: 80px;
-			// 	z-index: -1;
-			// }
-
 			@media (max-width: $sm) {
 				width: fit-content;
-				margin-right: auto;
-				margin-left: auto;
+				margin: 0 auto;
+				line-height: 10px;
 			}
 		}
-
 		p {
 			line-height: 140%;
 			text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.708);
+		}
+		&_elements {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: 40px;
+			@media (max-width: $sm) {
+				gap: 10px;
+			}
+			&_div {
+				display: flex;
+				flex-direction: column;
+				gap: 15px;
+				text-align: center;
+				@media (max-width: $sm) {
+					gap: 10px;
+				}
+				h3 {
+					text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.625);
+					text-transform: capitalize;
+					@media (max-width: $sm) {
+						font-size: 18px;
+						line-height: 18px;
+						font-weight: 500;
+					}
+				}
+				button {
+					width: auto;
+					border: 2px solid #ffffff84;
+					padding: 10px 20px;
+					border-radius: 10px;
+					background: #ff00;
+					backdrop-filter: blur(15px);
+					font-size: 18px;
+					box-shadow: 2px 2px 7px #00000067;
+					text-shadow: 2px 2px 6px #00000077;
+					@media (max-width: $sm) {
+						font-size: 15px;
+						width: 100%;
+					}
+				}
+			}
 		}
 	}
 
@@ -79,7 +103,7 @@
 			width: 100%;
 			h2 {
 				text-align: center;
-				margin-bottom: 15px;
+				// margin-bottom: 15px;
 				line-height: 90%;
 			}
 			p {
@@ -118,7 +142,6 @@
 				right: 10px;
 				height: 100%;
 				width: 100%;
-				border: 3px solid #319ba1;
 				content: "";
 			}
 		}

@@ -5,9 +5,10 @@ import Form from "../../components/form/form";
 // import Map_form from "../../components/map_form/map_form";
 import ProjectsHeader from "../../components/projectsHeader/projectsHeader";
 import logo from "../../media/smartLogo.png";
+import smartBG from "../../media/smart1,1.png";
 import img1 from "../../media/smart3.png";
 import img2 from "../../media/smart1.png";
-import img3 from "../../media/u17.png";
+import img3 from "../../media/smart5.png";
 import img4 from "../../media/Rectangle 1293.png";
 import img5 from "../../media/Rectangle 1294.png";
 import img6 from "../../media/smart4.png";
@@ -54,7 +55,7 @@ const Smart = () => {
 	return (
 		<Suspense fallback="loading">
 			<div className={scss.smart}>
-				<ProjectsHeader bgImage={img1} logo={logo} />
+				<ProjectsHeader bgImage={smartBG} logo={logo} />
 				<ProjectsAbout
 					text1About={t("smart.aboutProject.text1")}
 					text2About={t("smart.aboutProject.text2")}

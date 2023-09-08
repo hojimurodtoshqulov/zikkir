@@ -45,11 +45,11 @@ h2 {
 	}
 	@media (min-width: $xxl) {
 		font-weight: 600;
-		font-size: 70px;
+		font-size: 60px;
 	}
 	@media (min-width: $xxxl) {
 		font-weight: 600;
-		font-size: 90px;
+		font-size: 70px;
 	}
 }
 .container {
@@ -91,7 +91,7 @@ h2 {
 @media (max-width: $xl) {
   .container {
     padding: 0 5%;
-    overflow: hidden;
+    // overflow: hidden;
   }
 }
 @media (max-width: $md) {

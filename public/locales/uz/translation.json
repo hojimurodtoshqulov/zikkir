@@ -15,9 +15,7 @@
 	"company": "Kompaniya",
 	"leasing": "Lizing dasturlari",
 	"client": "Mijozlar uchun",
-	"contact": "Aloqa",
 	"langCheck": "Uz",
-	"hello": "uzbekcha salom",
 	"home": {
 		"hero": {
 			"text": "Quyoshga boy bo'lgan makon",
@@ -50,10 +48,6 @@
 			}
 		},
 		"projects": "Bizning loyihalar",
-		"news": {
-			"title": "Yangiliklar",
-			"card1": { "title": "", "text": "" }
-		},
 		"mapForm": {
 			"title": "Savollaringiz bormi?",
 			"text": "Agar sizda biron bir savol bo'lsa, bizga yozing va bizning mutaxassislarimiz sizga 30 daqiqa ichida javob berishadi!",
@@ -69,6 +63,56 @@
 			"title3": " Bizning loyihalar",
 			"title4": " Ijtimoiy tarmoqlar",
 			"address": "Ofis - Qarshi Nasaf ko'chasi, 27a dom"
+		}
+	},
+	"news": {
+		"card1": {
+			"title": "Aksiya",
+			"text": "“Zikkir Buildings” qurilish kompaniyasi Qarshi shahridagi “Paxtazor” rezidensi loyihasi bo‘yicha aksiya e’lon qiladi."
+		},
+		"card2": {
+			"title": "Chegirma",
+			"text": "Biz chegirmalar boshlanganini e'lon qilishdan mamnunmiz! Narxning 100% to'langanda har bir m² uchun -500 000 so'm chegirma taqdim etiladi. Dastlabki 30% ni to'lash va qolgan summani 20 yil davomida to'lash mumkin bo'lgan ipoteka ham mavjud."
+		},
+		"card3": {
+			"title": "Paxtazor residence",
+			"text": "Agar siz 1-qavatdan maydoni 91 m², 81 m², 64 m² bo'lgan 2-3 xonali kvartiralarni sotib olsangiz, sizga bonus sifatida 1- qavat beriladi."
+		},
+		"card4": {
+			"title": "Smart cho'lquvar",
+			"text": "Agar siz 1-qavatdan maydoni 91 m², 81 m², 64 m² bo'lgan 2-3 xonali kvartiralarni sotib olsangiz, sizga bonus sifatida -1 qavat beriladi."
+		},
+		"card5": {
+			"title": "Cho'lquvar",
+			"text": "Agar siz 1-qavatdan maydoni 91 m², 81 m², 64 m² bo'lgan 2-3 xonali kvartiralarni sotib olsangiz, sizga bonus sifatida -1 qavat beriladi."
+		}
+	},
+	"contact": {
+		"card1": {
+			"title": "Ish vaqti: ",
+			"title2": "Savdo bo'limi:",
+			"text1": " Du-Ju:",
+			"text2": " Sha-Yak:",
+			"text3": "9:00, 20:00"
+		},
+		"card2": {
+			"title": " Qo'ng'iroq markazimiz doim aloqada:",
+			"text": "78 888 00 00"
+		},
+		"card3": {
+			"title": " Bizning manzillarimiz: ",
+			"text": "Paxtazor residence Qarshi sh,  Paxtazor tumani, 7/75 uy.",
+			"text2": "“Cho’lquvar Smart” Qarshi sh,  4-mikrorayon,  8 uy"
+		},
+		"card4": {
+			"title": "Pochta manzil haqida barcha ma'lumotlar:  ",
+			"text": "info@gh.uz",
+			"title2": "Qayta aloqa:",
+			"text2": "feedback@gh.uz ",
+			"title3": "Ta'minot bo'limi:",
+			"text3": "supply@gh.uz",
+			"title4": "Savdo bo'limi:",
+			"text4": " sales@gh.uz"
 		}
 	},
 	"projects": {
@@ -157,7 +201,7 @@
 			"title3": "Vitraj oynalar",
 			"title4": "Shift balandligining oshishi",
 			"title5": "Avtoklav gazabloki",
-			"text": "LCD ＂Paxtazor＂ zamonaviy va qulay yashash sharoitlarini taklif etadi. Majmua ochiq qavat rejalari va tabiiy yorug'lik uchun katta derazalar bilan turli o'lchamdagi turli xil kvartiralarni taklif etadi."
+			"text": "＂Paxtazor residence＂- zamonaviy va qulay yashash sharoitlarini taklif etadi. Majmua ochiq qavat rejalari va tabiiy yorug'lik uchun katta derazalar bilan turli o'lchamdagi xonadonlardan iborat."
 		},
 		"projectPlan": {
 			"title1": "Xonalar soni: 1",
@@ -174,8 +218,8 @@
 	},
 	"smart": {
 		"aboutProject": {
-			"text1": "Yangi turar-joy majmuasi ＂Cho'lquvar smart＂ - Qarshi shahri markazida joylashgan zamonaviy turar-joy majmuasi. Uning asosiy xususiyatlaridan biri qurilishning yuqori sifati va ekologik toza materiallardan foydalanishdir.",
-			"text2": "Kompleksda kichik bir xonali kvartiralardan tortib to to'rt xonali keng xonadonlargacha bo'lgan turli turdagi kvartiralar mavjud. Shuningdek, ＂Cho'lquvar smart＂ turar-joy majmuasida yer osti avtoturargohi, bolalar maydonchasi va 24 soat xavfsizlik xizmati mavjud."
+			"text1": "＂Cho'lquvar smart＂ - Qarshi shahri markazida joylashgan zamonaviy turar-joy majmuasi. Uning asosiy xususiyatlaridan biri qurilishning yuqori sifati va ekologik toza materiallardan foydalanishdir.",
+			"text2": "Majmuada kichik 1 xonalikdan tortib 4 xonali keng bo'lgan turli turdagi xonadonlar mavjud. Shuningdek, ＂Cho'lquvar smart＂ turar-joy majmuasida yer osti avtoturargohi, bolalar maydonchasi va 24 soat xavfsizlik xizmati mavjud."
 		},
 		"advanteges": {
 			"text": "Qarshi shahrining markaziy qismida zamonaviy texnologiyalar va mutaxassislarimizning malakasi tufayli uslub, xavfsizlik va qulaylikning mukammal uyg‘unligini yaratdik.",
