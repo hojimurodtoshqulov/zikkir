@@ -4,7 +4,7 @@
 	transition: 0.3s;
 	&Div {
 		display: flex;
-		align-items: center;
+		align-items: flex-start;
 		justify-content: center;
 		flex-wrap: wrap;
 		gap: 30px 60px;
@@ -27,6 +27,7 @@
 			transition: 0.3s;
 			position: relative;
 			margin: 20px 0;
+			overflow: hidden;
 			@media (max-width: $xl) {
 				gap: 15px;
 				margin: 10px 0;
@@ -74,20 +75,29 @@
 				align-items: center;
 				justify-content: space-between;
 				position: absolute;
-				top: 20px;
-				left: 0px;
+				top: 0;
+				left: 0;
 				z-index: 33;
 				width: 100%;
 				font-family: sans-serif;
 				color: $light;
+				padding: 20px 20px 40px;
+				background: linear-gradient(
+					to top,
+					#00000000,
+					#00000064,
+					#0000009f,
+					#000000b0
+				);
 				h5 {
 					width: 50%;
+					text-align: end;
+					font-size: 20px;
 				}
 				p {
 					width: 50%;
 					text-align: start;
 					font-family: "Marko One", serif;
-					padding-left: 20px;
 				}
 				@media (max-width: $md) {
 					top: 20px;

@@ -25,7 +25,7 @@ const ContactHeader = ({ bgImage, title }) => {
 						</div>
 						<div className={scss.elementsDivCol1} data-aos="fade-up-right">
 							<p> {t("contact.card2.title")}</p> <br />
-							<a href="tel:+998788880000">78 888 00 00</a>
+							<a href="tel:+998336450555">33 645 05 55</a>
 						</div>
 					</div>
 					<div className={scss.elementsDiv}>

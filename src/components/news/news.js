@@ -8,13 +8,13 @@ import newsImg5 from "../../media/u12.png";
 import img4 from "../../media/news.line.png";
 import img5 from "../../media/logo_grey.png";
 import { Link } from "react-router-dom";
-import { useTranslation } from "react-i18next";
 import Modal from "../modal/modal";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 const News = ({ data }) => {
+	const { t } = useTranslation();
 	const [openModal, setOpenModal] = useState(false);
 	const [cardOreder, setcardOreder] = useState(0);
-	const { t } = useTranslation();
 	const scrollToTop = () => {
 		window.scrollTo(0, 0);
 	};
