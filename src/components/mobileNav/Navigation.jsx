@@ -52,8 +52,8 @@ export const Navigation = ({ toggleOpen }) => {
 					style={{ backdropFilter: "drop-shadow(4px 4px 10px rgb(0, 0, 0))" }}
 				/>
 			</Link>
-			<MenuItem toggleOpen={toggleOpen} title={t("О нас")} href={"company"} />
-			<MenuItem toggleOpen={toggleOpen} title={t("Новости")} href={"news"} />
+			<MenuItem toggleOpen={toggleOpen} title={t("nav.company")} href={"company"} />
+			<MenuItem toggleOpen={toggleOpen} title={t("nav.news")} href={"news"} />
 			<MenuItem
 				toggleOpen={toggleOpen}
 				title={t("nav.contact")}
