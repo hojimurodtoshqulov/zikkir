@@ -59,21 +59,6 @@ const ProjectPlan = ({ datas }) => {
 		<div className="projectPlan">
 			<div className="container" data-aos="fade-up">
 				<h2 data-aos="flip-up">{t("projects.projectsPlan")}</h2>
-				{/* <div className="projectPlan__rooms" data-aos="fade-left">
-					<button>Все</button>
-					<p data-aos="flip-up" data-aos-delay="300">
-						1 - комнатные
-					</p>
-					<p data-aos="flip-up" data-aos-delay="500">
-						2 - комнатные
-					</p>
-					<p data-aos="flip-up" data-aos-delay="700">
-						3 - комнатные
-					</p>
-					<p data-aos="flip-up" data-aos-delay="900">
-						4 - комнатные
-					</p>
-				</div> */}
 				<div className="resourses" data-aos="flip-up">
 					<Slider {...settings}>
 						{datas?.map((item, index) => (
@@ -84,8 +69,15 @@ const ProjectPlan = ({ datas }) => {
 								<a>
 									<img src={item.img} alt={item.img} />
 									<div className="text">
-										<p>{item.text}</p>
-										<p>{item.title}</p>
+										<p>
+											{item.text.slice(0, 19)}
+											<span>{item.text.slice(18)}</span>
+										</p>
+										<p>
+											{/* {item.title} */}
+											{item.title.slice(0, 15)}
+											<span>{item.title.slice(15)}</span>
+										</p>
 									</div>
 								</a>
 							</div>

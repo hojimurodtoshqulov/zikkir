@@ -46,7 +46,7 @@
 			height: 370px;
 		}
 		.slide {
-			transform: scale(0.8);
+			transform: scale(0.9);
 			transition: transform 300ms;
 			opacity: 1;
 			position: relative;
@@ -89,12 +89,18 @@
 					margin-top: 0px;
 				}
 				p {
-					color: #4a4a4a;
+					margin-top: 15px;
+					color: #4f4f4f;
+					font-family: monospace;
+					span {
+						color: $dark;
+						font-weight: 700;
+					}
 				}
 			}
 		}
 		.active {
-			transform: scale(0.97);
+			transform: scale(0.9);
 			opacity: 1;
 			img {
 				width: 100%;

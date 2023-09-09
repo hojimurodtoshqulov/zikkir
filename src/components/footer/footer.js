@@ -104,34 +104,30 @@ export default function Footer() {
 							{t("home.footer.title4")}
 						</h4>
 
-						<Link
-							to="/Telegram"
+						<a
+							target="_blank"
+							href="https://t.me/zikkir_buildings"
 							className={scss.footer__row1_col2_link}
 							onClick={scrollToTop}
 						>
 							Telegram
-						</Link>
-						<Link
-							to="/Instagram"
+						</a>
+						<a
+							target="_blank"
+							href="https://www.instagram.com/zikkir_buildings/"
 							className={scss.footer__row1_col2_link}
 							onClick={scrollToTop}
 						>
 							Instagram
-						</Link>
-						<Link
-							to="/Facebook"
+						</a>
+						<a
+							target="_blank"
+							href="https://www.facebook.com/profile.php?id=100094604190201"
 							className={scss.footer__row1_col2_link}
 							onClick={scrollToTop}
 						>
 							Facebook
-						</Link>
-						<Link
-							to="/YouTube"
-							className={scss.footer__row1_col2_link}
-							onClick={scrollToTop}
-						>
-							YouTube
-						</Link>
+						</a>
 					</div>
 				</div>
 			</div>
