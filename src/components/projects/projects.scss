@@ -94,7 +94,7 @@
 			}
 		}
 		.active {
-			transform: scale(1.05);
+			transform: scale(1);
 			opacity: 1;
 			position: relative;
 			z-index: 123;
@@ -155,9 +155,6 @@
 				transform: rotate(-45deg);
 			}
 		}
-	}
-	.slick-list {
-		overflow: none !important;
 	}
 	.logo1 {
 		position: absolute;
