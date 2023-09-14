@@ -1,7 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import styles from "./newsService.module.scss";
-import img1 from "../../media/u2.png";
+// import img1 from "../../media/u2.png";
 import newsImg1 from "../../media/u16.png";
 import newsImg2 from "../../media/u10.png";
 import newsImg3 from "../../media/u7.png";
@@ -62,7 +62,7 @@ const NewsService = ({ data }) => {
 				index === data ? (
 					<div className={styles.main}>
 						<div className={styles.imgWrap}>
-							<img src={img1} alt={img1} />
+							<img src={item?.img} alt={item?.img} />
 						</div>
 						<div className={styles.content}>
 							<h2>{item?.title}</h2>

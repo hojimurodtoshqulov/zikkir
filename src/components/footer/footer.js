@@ -22,8 +22,8 @@ export default function Footer() {
 							{t("home.footer.title1")}
 						</h4>
 						<p>
-							<a href="mail:shuxratuljaboyev@gmail.com">
-								<span>shuxratuljaboyev@gmail.com</span>
+							<a href="mailto:info@zikkirbuildings.uz">
+								<span>info@zikkirbuildings.uz</span>
 							</a>
 						</p>
 						<p>

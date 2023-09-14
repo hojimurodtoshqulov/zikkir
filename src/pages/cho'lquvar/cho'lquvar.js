@@ -66,6 +66,7 @@ const Cholquvar = () => {
 
 	return (
 		<Suspense fallback="loading">
+			<h1 style={{ display: "none" }}></h1>
 			<div className={scss.cholquvar}>
 				<ProjectsHeader bgImage={img1} logo={img} />
 				<ProjectsAbout
