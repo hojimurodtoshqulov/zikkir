@@ -37,7 +37,7 @@ const Nav = ({ onClick }) => {
   }, []);
   const [langCheck, setLangCheck] = useState(1);
   const [langColor, _] = useState("");
-  const currentLang = i18n.language === "en-US" ? "ru" : i18n.language;
+  const currentLang = i18n.language === "uz" ? "ru" : i18n.language;
   const checkLangImg = (e) => {
     if (e.target.value === "ru") {
       i18n.changeLanguage("ru");
