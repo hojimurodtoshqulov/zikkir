@@ -48,7 +48,7 @@ const AboutUs = () => {
 								</span>
 							</h4>
 							<h4>
-								5000
+								2000
 								<i>
 									m<sup>2</sup>
 								</i>{" "}
