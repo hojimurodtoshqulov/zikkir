@@ -41,7 +41,7 @@ const AboutUs = () => {
 						</div>
 						<div className={scss.counts} data-aos="fade-right">
 							<h4>
-								1000+
+								1000 +
 								<span className={scss.counts_span}>
 									<MainSymbol symbolWith={15} brr={5} />{" "}
 									{t("home.aboutUs.numberTexts.text3")}
@@ -50,7 +50,7 @@ const AboutUs = () => {
 							<h4>
 								2000
 								<i>
-									m<sup>2</sup>
+									m<sup>2</sup>{" "}
 								</i>
 								+
 								<span className={scss.counts_span}>
