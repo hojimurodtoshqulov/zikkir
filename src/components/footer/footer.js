@@ -75,21 +75,21 @@ export default function Footer() {
 							className={scss.footer__row1_col2_link}
 							onClick={scrollToTop}
 						>
-							Paxtazor <p></p>
+							Paxtazor residence <p></p>
 						</Link>
 						<Link
 							to="/cho'lquvar"
 							className={scss.footer__row1_col2_link}
 							onClick={scrollToTop}
 						>
-							Cho'lquvar <p></p>
+							Cho'lquvar TJM <p></p>
 						</Link>
 						<Link
 							to="/smart"
 							className={scss.footer__row1_col2_link}
 							onClick={scrollToTop}
 						>
-							Smart cho'lquvar <p></p>
+							Smart Cho'lquvar <p></p>
 						</Link>
 						<Link
 							to="/eskiShahar"
