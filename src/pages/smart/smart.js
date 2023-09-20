@@ -18,10 +18,11 @@ import archImg2 from "../../media/arch2.png";
 import archImg3 from "../../media/arch3.png";
 import archImg4 from "../../media/arch4.png";
 import archImg5 from "../../media/arch7.png";
-import pPimg1 from "../../media/1.png.png";
-import pPimg2 from "../../media/2.png.png";
-import pPimg3 from "../../media/3.png.png";
-import pPimg4 from "../../media/2.png.png";
+import pPimg1 from "../../media/2,2.png";
+import pPimg2 from "../../media/2,3.png";
+import pPimg3 from "../../media/2,5.png";
+import pPimg4 from "../../media/2,1.png";
+import pPimg5 from "../../media/2,4.png";
 import imgAbout from "../../media/smart2.png";
 import ProjectsAbout from "../../components/projectsAbout/projectsAbout";
 import SuperLocation from "../../components/superLocation/superLocation";
@@ -33,23 +34,28 @@ const Smart = () => {
 	const data = [
 		{
 			img: pPimg1,
-			text: "Общая площадь: 44.67 м²",
-			title: "Количество комнат: 1",
+			text: t("paxtazor.projectPlan.title1"),
+			title: t("paxtazor.projectPlan.text1"),
 		},
 		{
 			img: pPimg2,
-			text: "Общая площадь: 44.30 м²",
-			title: "Количество комнат: 1",
+			text: t("paxtazor.projectPlan.title2"),
+			title: t("paxtazor.projectPlan.text2"),
 		},
 		{
 			img: pPimg3,
-			text: "Общая площадь: 49.12 м²",
-			title: "Количество комнат: 1",
+			text: t("paxtazor.projectPlan.title3"),
+			title: t("paxtazor.projectPlan.text3"),
 		},
 		{
 			img: pPimg4,
-			text: "Общая площадь: 50.15 м²",
-			title: "Количество комнат: 1",
+			text: t("paxtazor.projectPlan.title4"),
+			title: t("paxtazor.projectPlan.text4"),
+		},
+		{
+			img: pPimg5,
+			text: t("paxtazor.projectPlan.title5"),
+			title: t("paxtazor.projectPlan.text5"),
 		},
 	];
 	return (

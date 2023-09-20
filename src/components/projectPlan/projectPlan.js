@@ -2,11 +2,6 @@ import "./projectPlan.scss";
 import { useState } from "react";
 import Slider from "react-slick";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
-import { Link } from "react-router-dom";
-import img1 from "../../media/1.png.png";
-import img2 from "../../media/2.png.png";
-import img3 from "../../media/3.png.png";
-import img4 from "../../media/2.png.png";
 import { useTranslation } from "react-i18next";
 
 const ProjectPlan = ({ datas }) => {
@@ -72,6 +67,7 @@ const ProjectPlan = ({ datas }) => {
 										<p>
 											{item.text.slice(0, 19)}
 											<span>{item.text.slice(18)}</span>
+											{/* {item.text.slice(0,14)} */}
 										</p>
 										<p>
 											{/* {item.title} */}
