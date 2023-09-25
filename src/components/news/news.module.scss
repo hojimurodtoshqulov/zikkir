@@ -20,29 +20,29 @@
 	}
 	.slider {
 		margin: auto;
-		position: relative;
-		width: 100%;
-		overflow: hidden;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
+		// // position: relative;
+		// width: 100%;
+		// overflow: hidden;
+		// display: flex;
+		// flex-direction: column;
+		// align-items: center;
+		// justify-content: center;
 		padding: 10px 0;
 		.slide_track {
 			height: 100%;
-			display: flex;
-			width: calc(500px * 18);
-			animation: scroll 40s linear infinite;
+			// display: flex;
+			// width: calc(500px * 18);
+			// animation: scroll 40s linear infinite;
 			&:hover {
 				animation-play-state: paused;
 			}
 			@media (max-width: $md) {
-				animation: scroll 60s linear infinite;
-				width: calc(300px * 18);
+				// animation: scroll 60s linear infinite;
+				// width: calc(300px * 18);
 			}
 		}
 		.slide {
-			margin-right: 15px;
+			margin: 20px;
 			width: 500px;
 			padding: 10px;
 			border-radius: 20px;
@@ -55,7 +55,7 @@
 				transform: scale(1.01);
 			}
 			@media (max-width: $md) {
-				width: 300px;
+				// width: 300px;
 				gap: 0.5rem;
 				padding: 1px;
 			}
@@ -63,8 +63,11 @@
 				width: 100%;
 				height: 350px;
 				border-radius: 15px;
+				object-fit: cover;
 				@media (max-width: $md) {
 					height: 250px;
+					width: 90%;
+					margin: 0 auto;
 				}
 			}
 			&ImgLine {

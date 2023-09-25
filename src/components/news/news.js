@@ -9,8 +9,9 @@ import img4 from "../../media/news.line.png";
 import img5 from "../../media/logo_grey.png";
 import { Link } from "react-router-dom";
 import Modal from "../modal/modal";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { useTranslation } from "react-i18next";
+import Slider from "react-slick";
 const News = ({ data }) => {
 	const { t } = useTranslation();
 	const [openModal, setOpenModal] = useState(false);
@@ -50,17 +51,75 @@ const News = ({ data }) => {
 			description: t("news.card5.text"),
 		},
 	];
-	{
-		console.log("<<modal>>", openModal);
-	}
+	const windowSize = useRef([window.innerWidth, window.innerHeight]);
+	const [num, setNum] = useState(4);
+	const listenScrollEvent = () => {
+		if (windowSize.current[0] < 375) {
+			setNum(1);
+		} else if (windowSize.current[0] < 576) {
+			setNum(2);
+		} else if (windowSize.current[0] < 992) {
+			setNum(3);
+		} else if (windowSize.current[0] < 1201) {
+			setNum(4);
+		} else if (windowSize.current[0] < 1920) {
+			setNum(4);
+		} else {
+			setNum(5);
+		}
+	};
+
+	const settings = {
+		dots: true,
+		infinite: true,
+		slidesToShow: num,
+		slidesToScroll: 1,
+		autoplay: true,
+		speed: 3000,
+		autoplaySpeed: 3000,
+		cssEase: "linear",
+	};
+	useEffect(() => {
+		window.addEventListener("scroll", listenScrollEvent);
+		return () => {
+			window.removeEventListener("scroll", listenScrollEvent);
+		};
+	}, []);
 	return (
 		<>
 			<div className={scss.news}>
 				<div className={scss.sectionSlides} data-aos="fade-up">
 					<h2 data-aos="flip-up">{t("nav.news")}</h2>
+
 					<div className={scss.slider} data-aos="fade-up">
 						<div className={scss.slide_track}>
-							{dataCards?.map((item, index) => (
+							<Slider {...settings}>
+								{dataCards?.map((item, index) => (
+									<div
+										to="/news"
+										className={scss.slide}
+										key={index}
+										onClick={() => {
+											setOpenModal(true);
+											setcardOreder(index);
+										}}
+									>
+										{console.log("<<index modal>>", cardOreder)}
+										<div className={scss.titlesDiv}>
+											<p>{item.date}</p>
+											<h5>{item.title}</h5>
+										</div>
+										<img
+											src={item.img}
+											alt={item.img}
+											className={scss.slideImg}
+										/>
+										<img src={img4} alt={img4} className={scss.slideImgLine} />
+										<p className={scss.slideText}>{item.description}</p>
+									</div>
+								))}
+							</Slider>
+							{/* {dataCards?.map((item, index) => (
 								<div
 									to="/news"
 									className={scss.slide}
@@ -83,8 +142,8 @@ const News = ({ data }) => {
 									<img src={img4} alt={img4} className={scss.slideImgLine} />
 									<p className={scss.slideText}>{item.description}</p>
 								</div>
-							))}
-							{dataCards?.map((item, index) => (
+							))} */}
+							{/* {dataCards?.map((item, index) => (
 								<div
 									to="/news"
 									className={scss.slide}
@@ -158,7 +217,7 @@ const News = ({ data }) => {
 									<img src={img4} alt={img4} className={scss.slideImgLine} />
 									<p className={scss.slideText}>{item.description}</p>
 								</div>
-							))}
+							))} */}
 						</div>
 						<div className={scss.shadow}></div>
 						<div className={scss.shadow2}></div>
