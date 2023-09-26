@@ -74,10 +74,17 @@ const News = ({ data }) => {
 		infinite: true,
 		slidesToShow: num,
 		slidesToScroll: 1,
+		centerPadding: "60px",
 		autoplay: true,
-		speed: 3000,
-		autoplaySpeed: 3000,
+		speed: 4000,
+		autoplaySpeed: 4000,
 		cssEase: "linear",
+		swipeToSlide: true,
+		afterChange: function (index) {
+			console.log(
+				`Slider Changed to: ${index + 1}, background: #222; color: #bada55`
+			);
+		},
 	};
 	useEffect(() => {
 		window.addEventListener("scroll", listenScrollEvent);

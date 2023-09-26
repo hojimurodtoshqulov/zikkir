@@ -4,7 +4,8 @@ import "./modal.scss";
 import { useState } from "react";
 import { VscChromeClose } from "react-icons/vsc";
 import NewsService from "../news/newsService";
-const Modal = ({ open, onClose, theme, data }) => {
+import PlanData from "../projectPlan/planData";
+const Modal = ({ open, onClose, theme, data, dataCards }) => {
 	// const [openModal, setOpenModal] = useState(true);
 	console.log(open, ">>>open");
 	//   if (!open) return null;
@@ -16,7 +17,11 @@ const Modal = ({ open, onClose, theme, data }) => {
 		<div className={open ? "overlay active " : "overlay"}>
 			<div className="modalContainer">
 				{/* <Submit onClose={onClose} /> */}
-				{theme === "submit" ? <Submit onClose={onClose} /> : <NewsService data={data} />}
+				{theme === "submit" ? (
+					<PlanData onClose={onClose} data={data} dataCards={dataCards} />
+				) : (
+					<NewsService data={data} />
+				)}
 				<p onClick={onClose} className="modalCloser">
 					<VscChromeClose />
 				</p>
