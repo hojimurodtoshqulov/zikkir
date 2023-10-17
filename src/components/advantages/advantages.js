@@ -32,11 +32,11 @@ const Advantages = ({}) => {
 							<iframe
 								width="100%"
 								height="100%"
-								src="https://www.youtube.com/embed/SaseeK2sFTY"
+								src="https://www.youtube.com/embed/TT_MCKekDVA?si=T9pka5KPvR2U0tsc"
 								title="YouTube video player"
-								frameBorder="0"
+								frameborder="0"
 								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-								allowFullScreen
+								allowfullscreen
 							></iframe>
 						</div>
 					</div>
