@@ -4,7 +4,7 @@ import "react-toastify/dist/ReactToastify.css";
 import Form from "../../components/form/form";
 // import Map_form from "../../components/map_form/map_form";
 import ProjectsHeader from "../../components/projectsHeader/projectsHeader";
-import logo from "../../media/eskishahar.png";
+import logo from "../../media/eskiShaharLogo.png";
 import img1 from "../../media/eskiShahar1,1.png";
 import img2 from "../../media/eskiShahar2.png";
 import img3 from "../../media/eskiShahar3.png";
@@ -56,7 +56,7 @@ const EskiShahar = () => {
 		<Suspense fallback="loading">
 			<div className={scss.eskiShahar}>
 				<ProjectsHeader bgImage={img1} logo={logo} />
-				{/* <ProjectsAbout
+				<ProjectsAbout
 					titleAbout={"О проекте"}
 					text1About={
 						"Lorem ipsum dolor sit amet consectetur. Pharetra urna vitae ipsum nisl cursus dui hac. Amet proin faucibus arcu lectus sem. Eu mattis dictum duis nulla. Sit commodo praesent nunc sit urna adipiscing blaa blaa"
@@ -105,7 +105,7 @@ const EskiShahar = () => {
 						"Подходя к архитектуре, как к искусству, команда создала проект с узнаваемым творческим почерком.Особый шарм и очарование 'Eski Shahar' невозможно будет перепутать с другим жилым комплексом в Карши."
 					}
 				/>
-				<ProjectPlan datas={data} /> */}
+				<ProjectPlan datas={data} />
 			</div>
 		</Suspense>
 	);
