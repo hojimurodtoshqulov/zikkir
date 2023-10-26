@@ -28,7 +28,6 @@ export default function Footer() {
 						</p>
 						<p>
 							<a href="tel:+998555150005">+998 55 515 00 05</a>
-							<a href="tel:+998335250555">+998 33 525 05 55</a>
 						</p>
 						<p
 							style={{
