@@ -47,14 +47,14 @@ const NewsService = ({ data }) => {
 			project: "Smart cho'lquvar",
 			link: "/smart",
 		},
-		{
-			img: newsImg5,
-			date: "2023-02-09",
-			title: t("news.card5.title"),
-			description: t("news.card5.text"),
-			project: "Cho'lquvar",
-			link: "/cho'lquvar",
-		},
+		// {
+		// 	img: newsImg5,
+		// 	date: "2023-02-09",
+		// 	title: t("news.card5.title"),
+		// 	description: t("news.card5.text"),
+		// 	project: "Cho'lquvar",
+		// 	link: "/cho'lquvar",
+		// },
 	];
 	return (
 		<>

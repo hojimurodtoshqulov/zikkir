@@ -37,12 +37,12 @@ const NewsCards = () => {
 			title: t("news.card4.title"),
 			description: t("news.card4.text"),
 		},
-		{
-			img: newsImg5,
-			date: "2023-02-09",
-			title: t("news.card5.title"),
-			description: t("news.card5.text"),
-		},
+		// {
+		// 	img: newsImg5,
+		// 	date: "2023-02-09",
+		// 	title: t("news.card5.title"),
+		// 	description: t("news.card5.text"),
+		// },
 	];
 	return (
 		<>
